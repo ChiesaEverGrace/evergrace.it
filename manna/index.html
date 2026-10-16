@@ -1,0 +1,1338 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Manna per Oggi · Chiesa EverGrace</title>
+<meta name="description" content="Manna per Oggi — un breve devozionale quotidiano in italiano e inglese da Chiesa EverGrace, Messina. Daily devotional in Italian and English.">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chiesa EverGrace">
+<meta property="og:title" content="Manna per Oggi">
+<meta property="og:description" content="Manna per Oggi — un breve devozionale quotidiano in italiano e inglese da Chiesa EverGrace, Messina. Daily devotional in Italian and English.">
+<meta property="og:url" content="https://evergrace.it/manna/">
+<link rel="canonical" href="https://evergrace.it/manna/">
+<meta property="og:image" content="https://evergrace.it/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="it_IT">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column on a stucco wall; the masthead is a facade panel with the church logo, closed off by a band of green shutter slats (the same slats as the steeple in the logo). Three Messina looks share one structure. */
+:root{
+  /* Persiane: beige stucco, shutter green, terracotta */
+  --paper:#EEE5D4; --panel:#E4D7BF; --ink:#2A251F; --muted:#76695A; --rule:#D3C4A9; --accent:#2F5B48; --accent2:#A9573A; --on-accent:#F6EFE2; --grain:.10;
+  --display:"Marcellus","Trajan Pro",Georgia,serif;
+  --serif:"Lora",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1A1F1B; --panel:#222924; --ink:#ECE3D2; --muted:#A79B87; --rule:#35403A; --accent:#7DB197; --accent2:#D58A68; --on-accent:#14201A; --grain:.05; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1A1F1B; --panel:#222924; --ink:#ECE3D2; --muted:#A79B87; --rule:#35403A; --accent:#7DB197; --accent2:#D58A68; --on-accent:#14201A; --grain:.05; color-scheme:dark}
+
+/* Pietra e Stretto: pale limestone, the blue of the Strait, shutter green as second accent */
+:root[data-look="pietra"]{--paper:#F3EFE7; --panel:#E8E1D3; --ink:#23272A; --muted:#6C6F72; --rule:#D9D2C4; --accent:#2B5870; --accent2:#2F5B48; --on-accent:#F3EFE7; --grain:.07}
+@media (prefers-color-scheme: dark){:root[data-look="pietra"]:not([data-theme="light"]){
+  --paper:#161B1F; --panel:#1E252A; --ink:#E7E3DB; --muted:#9A9FA4; --rule:#313A41; --accent:#89B5CD; --accent2:#7DB197; --on-accent:#10181D; --grain:.04; color-scheme:dark}}
+:root[data-look="pietra"][data-theme="dark"]{--paper:#161B1F; --panel:#1E252A; --ink:#E7E3DB; --muted:#9A9FA4; --rule:#313A41; --accent:#89B5CD; --accent2:#7DB197; --on-accent:#10181D; --grain:.04; color-scheme:dark}
+
+/* Sera a Messina: evening, deep shutter green walls and warm lamp-light ochre (always dark) */
+:root[data-look="sera"]{--paper:#1E2A23; --panel:#25332B; --ink:#F1E8D7; --muted:#B5A991; --rule:#3A4840; --accent:#D8A444; --accent2:#C97A59; --on-accent:#1E2A23; --grain:.06; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background-color:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;position:relative}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:var(--grain);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .2 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{position:relative;max-width:720px;margin:0 auto;padding-inline:20px;padding-block:20px 56px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:52px;height:52px;border-radius:50%;display:block}
+.brand span{font-family:var(--display);font-size:20px;letter-spacing:.02em}
+.lang{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;font-family:var(--sans);font-size:13px;letter-spacing:.08em}
+.lang button{font:inherit;background:none;border:0;color:var(--muted);padding:6px 14px;cursor:pointer;min-height:36px}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+
+.sitenav{margin-top:16px;display:flex;flex-wrap:wrap;gap:4px 20px;font-family:var(--sans);font-size:14px;letter-spacing:.04em}
+.sitenav a{color:var(--muted);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.sitenav a:hover{color:var(--accent)}
+.sitenav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+html[lang="it"] .nav-en,html[lang="en"] .nav-it{display:none}
+.mast{margin-top:28px;background:var(--panel);border-radius:4px 4px 0 0;overflow:hidden}
+:root[data-look="pietra"] .mast{border-radius:999px 999px 0 0 / 150px 150px 0 0}
+.mast-in{display:flex;align-items:center;gap:32px;padding:44px 36px 36px;flex-wrap:wrap}
+:root[data-look="pietra"] .mast-in{padding-top:72px;justify-content:center;text-align:center;flex-direction:column;gap:20px}
+.mast-logo{width:132px;height:132px;border-radius:50%;flex:none;box-shadow:0 0 0 6px var(--paper),0 0 0 7px var(--rule)}
+.mast-text{flex:1 1 300px;min-width:0}
+.kicker{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0}
+.mast h1{font-family:var(--display);font-weight:400;font-size:clamp(42px,8.5vw,62px);line-height:1.02;margin:10px 0 0;text-wrap:balance}
+.mast h1 em{font-style:normal;color:var(--accent2)}
+.mast .lede{margin:16px 0 0;color:var(--muted);font-size:17px;max-width:34em}
+:root[data-look="pietra"] .mast .lede{margin-inline:auto}
+.credit{color:var(--muted);font-size:16px;margin:6px 0 0}
+.verse-ref{display:block;font-style:normal;font-family:var(--sans);font-size:13px;letter-spacing:.06em;margin-top:4px}
+.verse{font-style:italic;color:var(--muted);font-size:16px;margin:10px 0 0}
+.persiana{height:44px;background:repeating-linear-gradient(180deg,var(--accent) 0 5px,color-mix(in srgb,var(--accent) 72%,#000) 5px 7px,var(--panel) 7px 10px);border-top:4px solid var(--accent)}
+:root[data-look="pietra"] .persiana{height:10px;border-top:0;background:var(--accent)}
+
+.list{list-style:none;margin:0;padding:0}
+.list li{border-bottom:1px solid var(--rule)}
+.entry{display:grid;grid-template-columns:7.5em 1fr;gap:4px 24px;padding-block:26px;text-decoration:none}
+.entry .when{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.5;padding-top:7px;font-variant-numeric:tabular-nums}
+.entry .when span{display:block;font-size:12px;opacity:.85}
+.entry h2{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.2;margin:0;text-wrap:balance}
+.entry p{margin:8px 0 0;color:var(--muted);font-size:16px;line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.entry .body{min-width:0}
+.entry:hover h2{color:var(--accent)}
+@media (max-width:520px){.entry{grid-template-columns:1fr}.entry .when{padding-top:0}.entry .when span{display:inline}.entry .when span::before{content:" · "}.mast-in{padding:32px 22px 28px;gap:20px}.mast-logo{width:96px;height:96px}}
+
+article{padding-top:40px}
+.eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0}
+article h1{font-family:var(--display);font-weight:400;font-size:clamp(32px,6.5vw,46px);line-height:1.12;margin:14px 0 10px;text-wrap:balance}
+.byline{font-style:italic;color:var(--muted);margin:0 0 30px}
+.slats{height:14px;margin:0 0 32px;background:repeating-linear-gradient(180deg,var(--accent) 0 3px,transparent 3px 6px);max-width:120px}
+:root[data-look="pietra"] .slats{height:3px;background:var(--accent)}
+.text p{margin:0 0 1.1em}
+.text blockquote{margin:0 0 1.4em;padding:16px 20px;background:var(--panel);border-left:3px solid var(--accent);font-style:italic}
+.text blockquote p{margin:0}
+.text blockquote p+p{margin-top:.8em}
+.text ul,.text ol{margin:0 0 1.2em;padding-left:1.4em}
+.text li{margin-bottom:.5em}
+.text li::marker{color:var(--accent)}
+.text ol>li::marker{font-family:var(--sans);font-size:.85em;font-weight:500}
+.text li ul{margin:.5em 0 0}
+.text h3{font-family:var(--display);font-weight:400;font-size:24px;color:var(--accent);margin:1.6em 0 .6em}
+.text h4{font-family:var(--sans);font-weight:500;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:1.6em 0 .6em}
+.booklet-note{font-family:var(--sans);font-size:14px;color:var(--muted);background:var(--panel);border-radius:8px;padding:12px 16px;margin:0 0 28px}
+.booklet-note a{color:var(--accent);font-weight:500}
+.credit-line{font-family:var(--sans);font-size:13px;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-top:36px}
+.text strong{font-weight:600}
+.refs{font-family:var(--sans);font-size:14px;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px;margin-top:32px;font-variant-numeric:tabular-nums}
+.refs b{font-weight:500;letter-spacing:.08em;color:var(--accent);margin-right:8px}
+
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px;padding-top:24px;border-top:1px solid var(--rule)}
+.pager a{text-decoration:none;min-width:0}
+.pager small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.pager span{display:block;font-family:var(--display);font-size:19px;line-height:1.3;margin-top:4px}
+.pager a:hover span{color:var(--accent)}
+.pager .next{text-align:right;grid-column:2}
+.backlink{margin-top:32px;font-family:var(--sans);font-size:14px}
+
+footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:13px;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.foot-cards{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;width:100%}
+.book{display:flex;gap:16px;align-items:stretch;padding:14px 16px 14px 14px;background:var(--panel);border-radius:10px;text-align:left;max-width:360px;flex:1 1 280px;text-decoration:none;color:var(--muted)}
+.book-spine{flex:none;width:58px;border-radius:3px 6px 6px 3px;background:var(--accent);box-shadow:inset 6px 0 0 color-mix(in srgb,var(--accent) 70%,#000)}
+.book small{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.book b{display:block;font-family:var(--display);font-weight:400;font-size:19px;color:var(--ink);line-height:1.2;margin-top:2px}
+.book-by{display:block;font-size:13px}
+.book-desc{display:block;font-size:13px;line-height:1.45;margin-top:6px}
+.book-cta{display:inline-block;margin-top:6px;font-size:13px;font-weight:500;color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.book:hover b{color:var(--accent)}
+.wa{flex:1 1 280px;display:flex;align-items:center;gap:16px;padding:12px 16px 12px 12px;background:var(--panel);border-radius:10px;text-align:left;max-width:360px}
+.wa img{width:88px;height:88px;border-radius:6px;background:#FFFFFF;padding:4px;flex:none}
+.wa b{display:block;font-weight:500;color:var(--ink);font-size:14px}
+.wa p{margin:2px 0 0;font-size:13px;line-height:1.45}
+.wa-link{display:inline-block;margin-top:6px;font-size:13px;font-weight:500;color:var(--accent);text-underline-offset:3px}
+.foot-brand{display:flex;align-items:center;gap:10px}
+.foot-brand img{width:28px;height:28px;border-radius:50%}
+.foot-brand strong{font-weight:500;color:var(--ink)}
+.looks{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;padding:10px 12px;border:1px dashed var(--rule);border-radius:10px}
+.looks span{letter-spacing:.08em;text-transform:uppercase;font-size:11px;margin-right:4px}
+.looks button{font:inherit;font-size:13px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:999px;padding:6px 12px;min-height:36px;cursor:pointer}
+.looks button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+@media (prefers-reduced-motion:no-preference){article,.mast{animation:in .35s ease-out}@keyframes in{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="/" aria-label="Chiesa EverGrace"><img id="brandLogo" src="data:image/webp;base64,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" alt="Logo Chiesa EverGrace"></a>
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button id="btn-it" data-l="it">IT</button><button id="btn-en" data-l="en">EN</button>
+    </div>
+  </div>
+  <nav class="sitenav">
+    <a href="/"><span class="nav-it">Home</span><span class="nav-en">Home</span></a>
+    <a href="/chi-siamo"><span class="nav-it">Chi siamo</span><span class="nav-en">About us</span></a>
+    <a href="/media">Media</a>
+    <a href="/manna/" aria-current="page">Manna per Oggi</a>
+  </nav>
+  <main id="view"></main>
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const POSTS = [
+{ id:"manna-2026-10-09", date:"2026-10-09", place:{it:"Villafranca, Sicilia",en:"Villafranca, Sicily"},
+  it:{title:"Parte 2 – Il nuovo te", body:`## La soluzione
+
+Nel post precedente abbiamo parlato del problema: una natura caduta dentro di noi, nemica di Dio, che si nasconde, trama e non può essere addomesticata né riformata.
+
+Oggi, la buona notizia. Dio non ci ha chiesto di ucciderla. Lo ha già fatto Lui.
+
+«Sapendo questo: che il nostro vecchio io è stato crocifisso con Lui, affinché il corpo del peccato fosse reso impotente, e noi non fossimo più schiavi del peccato» (Rm 6:6).
+
+La parola di Paolo per «vecchio» (_palaios_) significa rotto, logoro, che sta svanendo. E il verbo è al passato. È un'opera compiuta.
+
+Quando Cristo è morto, il nostro vecchio io è morto con Lui.
+
+Non crocifiggiamo il vecchio io con il nostro sforzo, la nostra disciplina o le nostre prestazioni religiose.
+
+Eppure è proprio ciò che la nostra cultura continua a cercare di fare. Il mondo secolare lo chiama miglioramento personale: diventa la versione migliore di te stesso. Individua ciò che ti scatena, rompi le cattive abitudini, gestisci il tuo lato oscuro, fissa nuovi obiettivi, iscriviti a un programma, leggi un altro libro, ricomincia da lunedì.
+
+Il mondo religioso fa la stessa cosa con un vocabolario più santo: più regole, più voti, più digiuni, più sforzi, più impegno per essere buoni.
+
+Sono lo stesso progetto. Entrambi presumono che la parte cattiva di noi sia qualcosa che possiamo raggiungere, gestire ed eliminare da soli, ed entrambi lasciano l'io sul trono.
+
+Il vecchio io è felice di essere migliorato. Aiuterà perfino a gestire il programma, perché un io che si comporta meglio è pur sempre un io che regna. Ma una natura caduta non può aggiustarsi da sola, e il vecchio io non può crocifiggere il vecchio io. Paolo ha percorso quella strada ed è arrivato a dire: «Me infelice! Chi mi libererà?» (Rm 7:24).
+
+La risposta non fu un metodo migliore, ma una Persona: «Grazie siano rese a Dio per mezzo di Gesù Cristo, nostro Signore!» (Rm 7:25). Riceviamo per fede ciò che Cristo ha già compiuto sulla croce.
+
+## La nostra parte
+
+Allora qual è la nostra parte? In Romani 6 Paolo ci dà tre parole.
+
+Primo, **sapere** (v. 6): comprendere che cosa ti è accaduto alla croce.
+
+Secondo, **considerare** (v. 11): «Consideratevi morti al peccato, ma viventi per Dio in Cristo Gesù, nostro Signore». Ritienilo vero, perché è vero.
+
+Terzo, **presentare** (v. 13): metti te stesso, la tua mente e le tue membra a disposizione di Dio, come uno che è tornato in vita dai morti.
+
+## Rinnegare se stessi
+
+Questo è ciò che Gesù intendeva con il rinnegare se stessi: «Se qualcuno vuole venire dietro a me, rinneghi se stesso, prenda la sua croce ogni giorno e mi segua» (Lc 9:23). La parola per «rinnegare» (_aparneomai_) significa disconoscere completamente. È la stessa parola che Gesù usò quando disse a Pietro: «Mi rinnegherai tre volte» (Mc 14:30). Rinnegare me stesso significa dire del vecchio io: «Non lo conosco. Non è più chi sono io».
+
+Rinnegare se stessi non riguarda prima di tutto il rinunciare a delle cose. Riguarda l'identità.
+
+Pietro rinnegò chi era Gesù; noi rinneghiamo chi eravamo. La persona che ero prima, definita dal mio passato, dai miei fallimenti, dai miei successi e dalle mie prestazioni, non è più chi sono.
+
+«Se qualcuno è in Cristo, è una nuova creatura; le cose vecchie sono passate; ecco, tutte le cose sono diventate nuove» (2 Co 5:17).
+
+Non obbediamo per diventare qualcuno di nuovo. Obbediamo perché in Cristo siamo già qualcuno di nuovo.
+
+L'identità viene prima dell'attività.
+
+## Lontano da… verso
+
+Ma la Scrittura non lascia mai il rinnegare se stessi come un semplice voltarsi via. È sempre un voltarsi lontano da… e un voltarsi verso.
+
+Gesù non si fermò a «rinneghi se stesso»; disse: «rinneghi se stesso… e mi segua».
+
+I Tessalonicesi si convertirono «a Dio dagli idoli, per servire il Dio vivente e vero» (1 Ts 1:9).
+
+Paolo fu mandato a far passare le persone «dalle tenebre alla luce e dal potere di Satana a Dio» (At 26:18).
+
+Ci spogliamo del vecchio io e ci rivestiamo del nuovo (Ef 4:22–24). Rinnegare se stessi senza volgersi verso Cristo è solo un altro programma di miglioramento personale: l'io che si sforza di più per rinnegare se stesso.
+
+Il vero rinnegamento di sé distoglie il nostro volto dal vecchio io e lo rivolge verso Colui «che mi ha amato e ha dato se stesso per me» (Ga 2:20).
+
+## Ogni giorno
+
+E nota la parola «ogni giorno» (Lc 9:23). La croce non è una decisione presa una volta e lasciata alle spalle; è il luogo dove viviamo.
+
+Ogni giorno la vecchia natura cercherà di risorgere e di riprendersi il trono. Ogni giorno le rispondiamo con la croce: «Sono stato crocifisso con Cristo; e non sono più io che vivo, ma Cristo vive in me» (Ga 2:20).
+
+Non combattiamo per la vittoria, ma dalla vittoria. Ci spogliamo del vecchio io e ci rivestiamo della nostra nuova identità, creata secondo Dio nella giustizia e nella vera santità (Ef 4:22–24).
+
+E camminiamo nello Spirito, che conferma continuamente la nostra nuova identità, e così non adempiamo i desideri della carne (Ga 5:16).
+
+Dio ci ha anche dato gli uni agli altri. La vecchia natura è un'ingannatrice, perciò abbiamo bisogno di voci fuori di noi che confermino la nostra nuova identità: «Esortatevi a vicenda ogni giorno… affinché nessuno di voi sia indurito dall'inganno del peccato» (Eb 3:13).
+
+Allora chiediamoci:
+- Sappiamo che cosa è accaduto al nostro vecchio io, alla nostra vecchia identità, sulla croce?
+- Ci consideriamo morti all'identità e al comportamento del vecchio io, ciò che eravamo, che è peccaminoso, ma viventi per Dio, con la mente catturata da Lui, ogni giorno?
+- Ci presentiamo a Dio, o cerchiamo ancora di gestire la nostra carne da soli?
+- Camminiamo nello Spirito, o nella nostra forza?
+- Abbiamo permesso ad altri di entrare nella nostra vita per sfidarci e incoraggiarci ogni giorno?
+
+Ricorda: il vecchio io non può essere riformato. Ma è stato crocifisso. Lascialo sulla croce.
+
+REF: Rm 6:6 · Rm 6:11–13 · Rm 7:24–25 · Lc 9:23 · Mc 14:30 · 2 Co 5:17 · 1 Ts 1:9 · At 26:18 · Ef 4:22–24 · Ga 2:20 · Ga 5:16 · Eb 3:13`},
+  en:{title:"Part 2 – The Brand New You", body:`## The Solution
+
+Earlier we discussed the problem: a fallen nature in us that is an enemy of God, that hides, schemes, and cannot be tamed or reformed.
+
+Today, the good news. God did not ask us to kill it. He already did.
+
+"Knowing this, that our old self was crucified with Him, that the body of sin might be rendered powerless, so that we should no longer be slaves to sin" (Rom 6:6).
+
+Paul's word for "old" (_palaios_) means broken, worn out, and fading. And the verb is in the past tense. It is a finished act.
+
+When Christ died, our old self died with Him.
+
+We do not crucify the old self by our effort, our discipline, or our religious performance.
+
+Yet that is exactly what our culture keeps trying to do. The secular world calls it self-improvement: be the best version of yourself. Find your triggers, break your bad habits, manage your shadow side, set new goals, join a program, read one more book, start again on Monday.
+
+The religious world does the same thing with holier vocabulary: more rules, more vows, more fasting, more striving, more trying harder to be good.
+
+Both are the same project. Both assume the bad part of us is something we can reach, manage, and remove by ourselves, and both leave the self on the throne.
+
+The old self is happy to be improved. It will even help run the program, because a better-behaved self is still a self that rules. But a fallen nature cannot fix itself, and the old self cannot crucify the old self. Paul tried that road and ended with, "O wretched man that I am! Who will deliver me?" (Rom 7:24).
+
+The answer was not a better method but a Person: "I thank God, through Jesus Christ our Lord!" (Rom 7:25). We receive by faith what Christ has already done on the cross.
+
+## Our Part
+
+So what is our part? Paul gives us three words in Romans 6.
+
+First, **know** (v. 6): understand what happened to you at the cross.
+
+Second, **reckon** (v. 11): "consider yourselves dead indeed to sin, but alive to God in Christ Jesus our Lord." Count it as true, because it is true.
+
+Third, **present** (v. 13): place yourself, your mind and your members, at God's disposal as one alive from the dead.
+
+## Self-Denial
+
+This is what Jesus meant by self-denial: "If anyone desires to come after Me, let him deny himself, and take up his cross daily, and follow Me" (Luke 9:23). The word for "deny" (_aparneomai_) means to disown completely. It is the same word Jesus used when He told Peter, "you will deny Me three times" (Mark 14:30). To deny myself is to say of the old self, "I do not know him. He is not who I am anymore."
+
+Self-denial is not first about giving things up. It is about identity.
+
+Peter denied who Jesus was; we deny who we were. The person I was before, defined by my past, my failures, my achievements, and my performance, is no longer who I am.
+
+"If anyone is in Christ, he is a new creation; the old things have passed away; behold, all things have become new" (2 Cor 5:17).
+
+We do not obey in order to become someone new. We obey because in Christ we already are someone new.
+
+Identity comes before activity.
+
+## Away From… and Unto
+
+But Scripture never leaves self-denial as only a turning away. It is always a turning away from and a turning unto.
+
+Jesus did not stop at "deny himself"; He said, "deny himself… and follow Me."
+
+The Thessalonians "turned to God from idols, to serve the living and true God" (1 Thess 1:9).
+
+Paul was sent to turn people "from darkness to light, and from the power of Satan to God" (Acts 26:18).
+
+We put off the old self and put on the new self (Eph 4:22–24). Self-denial without turning unto Christ is just another self-improvement program, the self trying harder to deny itself.
+
+True self-denial turns our face from the old self and toward the One "who loved me and gave Himself for me" (Gal 2:20).
+
+## Every Day
+
+And notice the word daily (Luke 9:23). The cross is not a one-time decision we leave behind; it is where we live.
+
+Every day the old nature will try to rise and reclaim the throne. Every day we answer it with the cross: "I have been crucified with Christ; and it is no longer I who live, but Christ lives in me" (Gal 2:20).
+
+We do not fight for victory but from victory. We put off the old self and put on our new identity, created after God in righteousness and true holiness (Eph 4:22–24).
+
+And we walk in the Spirit, who continually affirms our new identity, and so we do not fulfill the desires of the flesh (Gal 5:16).
+
+God also gave us one another. The old nature is a deceiver, so we need voices outside ourselves affirming our new identity: "exhort one another daily… lest any of you be hardened through the deceitfulness of sin" (Heb 3:13).
+
+So we must ask ourselves:
+- Do we know what happened to our old self/identity at the cross?
+- Are we reckoning ourselves dead to the identity and behavior of the old self, what we used to be, which is sinful, but alive to God, with our minds captivated by Him, every day?
+- Are we presenting ourselves to God, or still trying to manage our flesh on our own?
+- Are we walking in the Spirit, or in our own strength?
+- Have we let others into our lives to challenge and encourage us daily?
+
+Remember: the old self cannot be reformed. But it has been crucified. Let it stay on the cross.
+
+REF: Rom 6:6 · Rom 6:11–13 · Rom 7:24–25 · Luke 9:23 · Mark 14:30 · 2 Cor 5:17 · 1 Thess 1:9 · Acts 26:18 · Eph 4:22–24 · Gal 2:20 · Gal 5:16 · Heb 3:13`}},
+
+{ id:"manna-2026-10-08", date:"2026-10-08", place:{it:"Villafranca, Sicilia",en:"Villafranca, Sicily"},
+  it:{title:"Parte 1 – Il vecchio uomo deve morire", body:`## Il problema
+
+C'è una parte di noi che è caduta, corrotta e malvagia, e non resta malvagia in silenzio. Se la lasciamo stare, trama e complotta per rovesciare la nostra volontà e il trono di Cristo nella nostra anima.
+
+La Scrittura la descrive come nemica di Dio (Rm 8:7). È un avversario attivo. Ama nascondersi, indossare maschere e comportarsi abbastanza bene da non essere scoperta e messa a morte.
+
+È la causa profonda delle nostre cattive decisioni e del nostro peccato (Mc 7:20–23). Non è confinata alla mente; permea tutta la nostra natura.
+
+Tutta la nostra persona è caduta.
+
+Questa natura caduta, che ci tormenta tutto il giorno, ogni giorno, non è qualcosa che possiamo addomesticare, ripulire o educare a comportarsi meglio. Non possiamo ignorarla né modificarla, né darle altri programmi religiosi o altre leggi da eseguire per sentirci meglio riguardo alla versione migliore di noi stessi.
+
+Si chiama natura peccaminosa; l'apostolo Paolo la chiamò il «vecchio uomo» (_ho palaios anthrōpos_). Paolo disse che per la natura caduta e peccaminosa c'è una sola soluzione: deve morire. Deve essere crocifissa.
+
+Questa natura caduta resterà con noi fino al giorno della nostra morte. Anche se perde il suo potere e la sua autorità quando nasciamo di nuovo, non se ne va.
+
+Se non comprendiamo la soluzione e non la viviamo ogni giorno, questa natura prenderà il sopravvento per ingannare noi e gli altri, allontanandoci da Gesù verso una vita egocentrica e autodistruttiva, distruggendo così l'opera di Dio.
+
+Allora chiediamoci:
+- Stiamo solo cercando di modificare il comportamento della nostra natura peccaminosa?
+- Stiamo facendo una tregua con lei per non doverla mettere a morte?
+- Stiamo ignorando di avere questa natura?
+- Abbiamo una persona, una voce, un pastore, qualcuno a cui rendere conto, che chiami per nome, sfidi e smascheri la nostra natura peccaminosa quando prende il controllo della nostra vita?
+- Oppure la lasciamo morire ogni giorno?
+
+_(Nel prossimo post, la Parte 2: la soluzione, e come lasciarla morire.)_`},
+  en:{title:"Part 1 – The Old Man Must Die", body:`## The Problem
+
+There is a part of us that is fallen, corrupt, and bad, and it does not remain quietly bad. Left alone, it will scheme and plot to overthrow our will and the throne of Christ in our soul.
+
+Scripture describes it as being an enemy with God (Rom 8:7). It is an active foe. It likes to hide, to wear masks, and to act good enough not to be discovered and slain.
+
+It is the root cause of our bad decisions and our sinful activity (Mark 7:20–23). It is not confined to the mind; it permeates our entire nature.
+
+Our whole persona is fallen.
+
+This fallen nature, which plagues us all day, every day, is not something we can tame, clean up, or teach to behave better. We cannot ignore it, or modify it, give it more religious programs or laws to perform so as to make us feel better about our best version of ourselves.
+
+It is called the sin nature, Paul the apostle called it the "old man" (_ho palaios anthrōpos_). Paul said there is only one solution for the fallen sinful nature: it must die. It must be crucified.
+
+This fallen nature will be with us until the day we die. Even though it does lose its power and authority when we are born again, it does not go away.
+
+If we do not understand the solution and live in it daily, this nature will take us over to deceive us and others, leading us away from Jesus into self-centered and self destructive living thus destroying the work of God.
+
+So we must ask ourselves:
+- Are we only trying to modify the behavior of our sin nature?
+- Are we making a détente with it so we don't have to slay it?
+- Are we ignoring that we have this nature at all?
+- Do we have a person, a voice, a pastor, someone we are accountable to, who will call out, challenge, and expose our sin nature when it is taking control of our lives?
+- Or are we letting it die daily.
+
+_(See the next post, Part 2, about the solution and how we let it die.)_`}},
+
+{ id:"manna-2026-10-06", date:"2026-10-06", place:{it:"Villafranca, Sicilia",en:"Villafranca, Sicily"},
+  it:{title:"Ogni comunicazione si basa sulla capacità", body:`Gesù annunciava la parola alle folle «secondo che erano in grado di udire» (Mc 4:33).
+Ai Suoi discepoli disse: «Ho ancora molte cose da dirvi, ma non siete in grado di portarle ora» (Gv 16:12).
+
+> «Ogni comunicazione si basa sulla capacità»
+> — Pastore Carl H. Stevens
+
+Prima che ci sia frutto nella missione, Dio deve costruire nelle persone la capacità di fidarsi di te. Le persone hanno bisogno di vedere:
+- la tua fedeltà
+- il tuo sudore
+- le tue lacrime
+- un carattere radicato nell'Agape
+- e forse perfino il tuo sangue
+
+Un messaggio può essere vero e tuttavia non essere ricevuto.
+La questione è se nel cuore c'è lo spazio per riceverlo.
+
+Il Figlio di Dio, che custodiva ogni sapienza nell'amore, misurava le Sue parole sulla grandezza del vaso che aveva davanti.
+Non ha mai abbassato la verità, ma ne ha dosato il passo (Gv 16:13).
+
+Ciò che non potevano ancora portare, lo Spirito li avrebbe allargati per portarlo.
+La grazia non rimpicciolisce la verità.
+La grazia fa crescere la persona.
+Crescere non è sforzarsi di contenere di più; è arrendere la nostra capacità alla Croce, perché Lui possa fare più spazio.
+
+Ad alcuni di noi non manca la verità.
+Ci manca lo spazio.
+La paura, le ferite, l'autoprotezione e le vecchie delusioni restringono il cuore, finché perfino la parola di Dio fatica a trovare un posto dove posarsi.
+
+La capacità spiega dove siamo; non è mai un permesso per restarci.
+Lo Spirito non grida più forte a un cuore angusto.
+Lo sgombra, lo allarga, e poi lo riempie.
+
+Dio avrebbe potuto parlarci con un tuono che non avremmo potuto sopportare, come al Sinai.
+Invece «la Parola è diventata carne e ha posto la sua tenda fra noi» (Gv 1:14).
+È venuto nell'unica forma che gli esseri umani potevano ricevere: una voce, un volto, una mano sulla spalla, un corpo su una croce.
+
+Alla stessa chiesa l'apostolo scrisse a cuore aperto:
+«Il nostro cuore si è allargato. Voi non siete allo stretto in noi; siete allo stretto nei vostri affetti più intimi. Allargatevi anche voi» (2 Cor 6:11–13).
+
+In Cristo, la Parola eterna si è chinata alla nostra capacità, perché noi fossimo innalzati alla Sua.
+Porta a Lui oggi i tuoi luoghi stretti e feriti.
+Non devi fabbricare lo spazio. La Parola della Grazia lo crea.`},
+  en:{title:"All Communication Is Based on Capacity", body:`Jesus spoke the word to the crowds "according as they were able to hear" (Mark 4:33).
+To His disciples He said, "I still have many things to say to you, but you are not able to carry them now" (John 16:12).
+
+> "All communication is based on capacity"
+> — Pastor Carl H. Stevens
+
+Before there is fruit in the mission, God has to build capacity in people to trust you. People need to see your:
+- faithfulness
+- sweat
+- tears
+- character grounded in Agape
+- and maybe even your blood
+
+A message can be true and still not be received.
+The issue is if there's the room in the heart that receives it.
+
+The Son of God, holding all wisdom in love, measured His words to the size of the vessel in front of Him.
+He never lowered the truth, but He did pace it (John 16:13).
+
+What they could not carry yet, the Spirit would enlarge them to carry.
+Grace does not shrink the truth.
+Grace grows the person.
+Growth is not striving to hold more; it is surrendering our capacity at the Cross so He can make more room.
+
+Some of us are not short of truth.
+We are short of room.
+Fear, hurt, self-protection and old disappointments narrow the heart until even God's word struggles to find a place to land.
+
+Capacity explains where we are; it is never permission to stay there.
+The Spirit does not shout louder at a cramped heart.
+He clears it out, enlarges it, and then fills it.
+
+God could have spoken to us in thunder we could not bear like at Sinai.
+Instead "the Word became flesh and tabernacled among us" (John 1:14).
+He came in the one form human beings could receive: a voice, a face, a hand on the shoulder, a body on a cross.
+
+To the same church he wrote with an open heart:
+"Our heart is widened. You are not cramped by us; you are cramped in your own inward affections. Be widened, you also." (2 Cor 6:11–13)
+
+In Christ, the eternal Word stooped to our capacity so we could be raised to His.
+Bring Him your cramped hurting places today.
+You don't have to manufacture room. The Word of Grace makes it.`}},
+
+{ id:"manna-2026-09-23", date:"2026-09-23", place:{it:"Villafranca, Sicilia",en:"Villafranca, Sicily"},
+  it:{title:"Sansone continuava a restare", body:`> «Allora lei gli disse: "Come puoi dire: Ti amo, quando il tuo cuore non è con me? Ti sei preso gioco di me tre volte e non mi hai detto dove sta la tua grande forza"» (Gdc 16:15).
+
+1. Sansone non consegnò semplicemente il suo segreto. Lei dovette chiederglielo quattro volte.
+  - La prima volta le disse di legarlo con sette corde fresche. Lei lo fece, e lui le spezzò.
+  - La seconda, funi nuove. Fece anche quello, e lui spezzò anche quelle.
+  - La terza: intreccia i miei capelli nel tuo telaio. Provò anche quello.
+  - E ogni singola volta, chiamò gli uomini contro di lui.
+2. Ecco la parte che fa riflettere.
+  - Era sveglio tutte e tre le volte.
+  - Sentiva le funi, e la sentiva gridare che stavano venendo a prenderlo, quindi sapeva esattamente cosa stava facendo.
+  - Eppure restò.
+3. Allora lei smise di tirare a indovinare e cominciò a logorarlo.
+  - Lo tormentava ogni giorno con le sue parole, finché la sua anima fu angosciata fino alla morte.
+  - E allora lui le disse tutto.
+  - Nessuno lo drogò. Nessuno lo costrinse. Era stanco, logorato, e parlò.
+4. Sansone divenne trascurato.
+  - Il problema non erano i capelli.
+  - Si svegliò e cercò di liberarsi come tutte le altre volte, eppure il testo dice che non sapeva che il SIGNORE si era già ritirato da lui.
+  - Lo stava cedendo da anni. Il taglio di capelli fu solo l'ultimo pezzo.
+5. Dalila non amò mai Sansone.
+  - Lui amò una donna della valle di Sorek, che si chiamava Dalila.
+  - È questa la frase. Lui la amava.
+  - Non dice mai, nemmeno una volta, che lei amasse lui.
+  - E lei sapeva che quella parola funzionava con lui. Come puoi dire «ti amo», quando il tuo cuore non è con me?
+6. Sansone non perse tutto in una notte. Lo perse a piccoli pezzi, con qualcuno che continuava a mostrargli esattamente chi era.
+  - Siamo rimasti in un posto dove avevamo già le prove per andarcene, perché andarcene significava ammettere che avevamo sbagliato per mesi?
+7. Quindi questa non era la storia di una donna che tagliò i capelli a un uomo.
+  - Lui continuava semplicemente a restare.
+  - Che cosa ti ha già mostrato ciò che è, e tu sei ancora lì?`},
+  en:{title:"He Just Kept Staying", body:`> "Then she said to him, 'How can you say, "I love you," when your heart is not with me? You have mocked me these three times, and have not told me where your great strength lies.'" — Judges 16:15 NKJV
+
+1. Samson didn't just hand over his secret. She had to ask him four times.
+  - First he told her to tie him with seven fresh cords. She did, and he snapped them.
+  - Second, new ropes. She did that too, and he snapped those.
+  - Third, weave my hair into your loom. She tried that as well.
+  - And every single time, she called the men in on him.
+2. Here's the sobering part.
+  - He was awake for all three of them.
+  - He felt the ropes, and he heard her shout that they were coming for him, so he knew exactly what she was doing.
+  - Yet he stayed.
+3. So she stopped guessing and started wearing him down.
+  - She pressed him daily with her words, until his soul was vexed unto death.
+  - And then he told her everything.
+  - Nobody drugged him. Nobody forced him. He was tired, worn down and he talked.
+4. Samson got careless.
+  - The hair was not the issue.
+  - He woke up and went to shake himself free like every other time, yet the text says he did not know the Lord had already left him.
+  - He had been giving that away for years. The haircut was only the last piece of it.
+5. Delilah never loved Samson.
+  - He loved a woman in the valley of Sorek, whose name was Delilah.
+  - That's the line. He loved her.
+  - It never once says she loved him.
+  - And she knew that word worked on him. How can you say I love you, when your heart is not with me?
+6. Samson didn't lose it in one night. He lost it in small pieces, with someone who kept showing him exactly who she was.
+  - Have we stayed somewhere where we already had the evidence to leave, because leaving meant admitting we had been wrong for months.
+7. So this was not a story about a woman who cut a man's hair.
+  - He just kept staying.
+  - What has already shown you what it is, and you are still there?`}},
+
+{ id:"manna-2026-09-19", date:"2026-09-19", place:{it:"Villafranca, Sicilia",en:"Villafranca, Sicily"},
+  it:{title:"Ogni patto taglia, ogni altare riscuote", body:`> «Non annullerò mai il Mio patto con voi. E voi, voi non stringerete alcun patto con gli abitanti di questo paese; i loro altari li abbatterete» (Gdc 2:1–2).
+
+Nel mondo di Israele un patto non si stringeva mai senza che qualcosa morisse. Ogni legame aveva un altare, e ogni altare riscuoteva un sacrificio.
+
+Questo non è cambiato.
+
+1. Gli idoli di oggi: prestazione, approvazione, comodità, autonomia, appartenenza al proprio gruppo, rumore e piacere sono i patti che stringiamo senza accorgercene, e ognuno di essi riscuote ancora il suo pagamento a nostre spese. Perché la nostra cultura cerca la pace interiore.
+2. Gedeone ci mostra come cadono gli altari. Prima di abbattere qualsiasi cosa, costruì un altare e lo chiamò «Il SIGNORE è Pace». La Croce è il nostro Altare chiamato Pace. Gesù fu trafitto per la nostra pace.
+3. Ogni altare nella nostra cultura sta ancora riscuotendo il pagamento di un debito che Cristo ha già pagato. Non abbattiamo gli idoli per trovare la pace, ma perché l'altare della Pace è già in piedi e colma il nostro bisogno interiore.
+
+Chiediti questa settimana: sto deponendo questo idolo in risposta a ciò che è stato donato all'Altare della Pace, la Croce, oppure sto pagando con compromessi e autodistruzione per ottenere ciò che sento mancarmi?
+
+REF: Gen 15:9–18 · Es 24:5–8 · Es 34:12–16 · Sal 50:5 · Dt 12:31 · Sal 106:3`},
+  en:{title:"Every Covenant Cuts, and Every Altar Collects", body:`> "I will never annul My covenant with you. And you — you shall cut no covenant with the inhabitants of this land; their altars you shall tear down." (Judges 2:1–2)
+
+In Israel's world a covenant was never cut without something dying. Every binding had an altar, and every altar collected a sacrifice.
+
+That hasn't changed.
+
+1. Today's idols: Performance, approval, comfort, autonomy, tribe, noise and pleasure are the covenants we cut without noticing, and each one still collects its payment at our own expense. Because our culture seeks internal peace.
+2. Gideon shows us how the altars come down. Before he tore anything down, he built an altar and named it "The LORD is Peace". The Cross is our Altar named Peace. Jesus was cut for our Peace.
+3. Every altar in our culture is still collecting payment for a debt Christ has already paid. We tear idols down not to find peace, but because the altar of Peace is already standing and filling our inner need.
+
+Ask yourself this week: Am I laying this idol down in response to what was given at The Altar of Peace - the Cross, or paying in compromise and self destruction to get what I feel lack?
+
+REF: Gen 15:9–18 · Exod 24:5–8 · Exod 34:12–16 · Ps 50:5 · Deut 12:31 · Ps 106:3`}},
+
+{ id:"manna-2026-08-18", date:"2026-08-18", place:{it:"Messina, Sicilia",en:"Messina, Sicily"},
+  it:{title:"Quanto in fretta dimentichiamo", body:`> Giovanni 21:7 – «È il Signore»
+
+Forse camminiamo con il Signore da decenni o da settimane, ma non ci rendiamo conto di quanto in fretta possiamo trovarci in una situazione in cui il Signore è presente e non Lo riconosciamo. Siamo caduti in una sorta di torpore o di sonno. «Quando Giacobbe si svegliò dal sonno, disse: "Certo, il SIGNORE è in questo luogo, e io non lo sapevo"» (Gen 28:16).
+
+Attraverseremo cose davvero difficili e poi ce ne andremo nel nostro dolore e nella nostra delusione, con i discepoli al seguito.
+
+Lo stesso Signore con cui abbiamo trascorso tanti anni, giorno e notte, nella gioia, nell'entusiasmo, nel timore, nello smarrimento, in una comunità così viva; e nel giro di pochi giorni eccoci di nuovo nel nostro modo di fare, che sembra avere senso in mezzo all'insensatezza che ci circonda, senza discernere Colui che ci chiama nella nostra piccola barca, mentre facciamo la nostra piccola cosa.
+
+Le Sue parole erano familiari.
+
+Il Suo miracolo risvegliava un ricordo.
+
+Ma Pietro non riconobbe che era opera del Signore. Fu Giovanni a discernere che era il miracolo di Gesù per Pietro. Allora disse a Pietro: «Pietro, è il Signore».
+
+Fu allora che Pietro capì. Non vide da solo chi fosse l'Uomo sulla riva. Qualcuno dovette indicarglielo.
+
+Ma va bene così. Ci capiterà di andare alla deriva, di esserne sopraffatti, senza conoscere il Piano e Chi è sulla nostra riva a chiamarci nella nostra abitudine e nel nostro scoraggiamento. È allora che Dio usa un altro per correggerci e reindirizzarci. Giovanni fu quel fratello.
+
+Impara a stare a tuo agio con il disagio della correzione e del reindirizzamento. Ci salva da noi stessi, dalla nostra fragilità, dal nostro tornare indietro, e ci riporta al compimento pieno, alla missione e alla gioia della nostra salvezza.`},
+  en:{title:"How Quickly We Forget", body:`> John 21:7 – "It is the Lord"
+
+Maybe we've walked with the Lord for decades or for weeks, but we don't realize how fast we can be in a situation where the Lord is and we don't recognize Him. We have fallen into some kind of stupor or slumber. "Then Jacob awoke from his sleep and said, 'Surely the LORD is in this place, and I did not know it.'" (Genesis 28:16)
+
+We will walk through some really hard things and then walk away in our grief and disappointment, with disciples in tow.
+
+The very Lord we spent so many years with day and night in joy, excitement, fear, bewilderment with such an exciting community; and in a matter of days be back in our way that makes sense in the senselessness all around us and not discern The One crying out to us in our little boat, doing our little thing.
+
+His words were familiar.
+
+His miracle rang a bell.
+
+But Peter did not recognize it was the Lord's doing. It was John who discerned it was Jesus's miracle for Peter. Then he said to Peter, "Peter, it's the Lord".
+
+It was then Peter understood. He did not see for himself who The Man on the beach was. Someone had to point it out.
+
+But it's ok. We are going to drift sometimes, we are going to get overwhelmed with it all, not knowing The Plan and Who it is on our beach crying out to us in our familiarity and despondency. That's when God uses another to correct and redirect us. John was that brother.
+
+Get comfortable with the uncomfortability of correction and redirection. It rescues us from ourselves and our brokenness, our retrogression and redirects us into ultimate fulfillment, mission and the joy of our salvation.`}},
+
+{ id:"manna-2026-07-31", date:"2026-07-31", place:{it:"Villafranca, Sicilia",en:"Villafranca, Sicily"},
+  it:{title:"Il montone dietro di te", body:`> **Genesi 22:8** — E Abrahamo disse: «Dio stesso provvederà l'agnello per l'olocausto, figlio mio». E i due camminarono insieme, come uno solo.
+>
+> **Genesi 22:13** — E Abrahamo alzò gli occhi e guardò, ed ecco, dietro di lui un montone, trattenuto nel boschetto per le corna.
+
+«Dietro di lui».
+
+Non davanti a lui. Non sceso dal cielo nel momento in cui il coltello catturò la luce. Dietro di lui, su un terreno che Abrahamo aveva già attraversato. Ci era passato accanto. Era salito più in alto. Costruì l'altare voltando le spalle alla propria provvista e non si girò nemmeno una volta.
+
+Il montone non fu creato dalla crisi. Stava salendo mentre Abrahamo saliva. Mentre lui contava ciò che non aveva, il montone era impigliato quaranta metri dietro di lui, trattenuto per le corna, incapace di fuggire, in attesa.
+
+La Scrittura non ci dice mai quando arrivò il montone. Ci dice solo quando Abrahamo lo vide: dopo la legatura, dopo la legna, dopo che il coltello fu alzato. Mai prima. La provvista era in anticipo; la rivelazione arrivò dopo. È questa la parte che ci pesa, ed è la parte su cui Dio non tratta.
+
+In mezzo c'erano tre giorni di cammino, un ragazzo che portava la legna su per un colle, e un padre che rispondeva a una domanda a cui non sapeva rispondere. Dov'è l'agnello? E Abrahamo disse la cosa più vera che un uomo abbia mai detto sotto pressione: Dio stesso provvederà. Non: Dio spiegherà. Non: Dio me lo mostrerà. Dio vedrà, e in ebraico, quando Dio vede una questione, quella questione è già sotto la Sua giurisdizione.
+
+Poi la frase più silenziosa: e i due camminarono insieme, come uno solo. Il figlio che non sapeva e il padre che non poteva dirglielo, allo stesso passo. C'è un'ubbidienza che non porta con sé alcuna informazione. Solo compagnia.
+
+Ora guarda dove guardò Abrahamo.
+
+Un sostituto, su un monte, trattenuto per le corna: la sommità del capo presa fra le spine. Già al suo posto. Già legato da qualcosa che non era una corda. E il figlio che aveva portato la legna su per quel colle ne discese vivo, perché un altro salì al suo posto.
+
+Il Cronista ci dice che il Moria divenne il monte del tempio. Su quella stessa altura, secoli dopo, un secondo Figlio portò la propria legna su per il pendio, e per Lui non ci fu alcun montone nel boschetto. Solo una corona di spine e nessun sostituto, perché Lui era l'Agnello, il boschetto era nostro, e Lui era trattenuto dall'amore e non dai rami.
+
+Abrahamo chiamò quel luogo «Il SIGNORE vedrà», poi aggiunse uno strano futuro: sul monte del SIGNORE sarà visto. Aveva intravisto solo l'ombra, e lo sapeva, e lasciò quel nome piantato come un paletto nel terreno fino al giorno in cui la frase si sarebbe avverata.
+
+Così oggi non ti viene chiesta la tua forza. Solo di voltare la testa.
+
+Molto di ciò che stai implorando Dio di creare, Lui lo ha già posizionato: in una persona che hai trascurato, in un testo letto troppo in fretta, in una stagione che hai considerato sprecata. Il coltello può essere ancora nella tua mano e la legna già disposta. Questo non prova che Lui ti abbia dimenticato. Abrahamo non fu mai così vicino alla sua provvista come nel momento in cui se ne sentiva più abbandonato.
+
+Alza gli occhi. Poi voltati.
+
+Dio non improvvisa mai. Il montone saliva sul Moria mentre Abrahamo saliva sul Moria, e l'unica cosa che accadde in cima fu che un uomo vide finalmente ciò che era lì da sempre.
+
+REF: Gen 22:1–14 · 2 Cr 3:1 · Is 65:24 · Gv 1:29 · Gv 19:17 · Rm 8:32 · Eb 11:17–19`},
+  en:{title:"The Ram Behind You", body:`> **Genesis 22:8** — And Abraham said, "God Himself will see to the lamb for the ascending-offering, my son." And the two of them walked on together, as one.
+>
+> **Genesis 22:13** — And Abraham lifted up his eyes and looked, and behold — behind him a ram, held fast in the thicket by his horns.
+
+"Behind him."
+
+Not before him. Not descending out of heaven at the moment the knife caught the light. Behind him — in ground Abraham had already crossed. He had walked past it. He had climbed above it. He built the altar with his back to his own provision and never once turned around.
+
+The ram was not manufactured by the crisis. It had been climbing while Abraham was climbing. While he was counting what he did not have, it was tangled forty yards behind him, held fast by its horns, unable to run, waiting.
+
+Scripture never tells us when the ram arrived. It tells us only when Abraham saw it — after the binding, after the wood, after the knife was raised. Never before. The provision was early; the revelation was later. That is the part we resent, and it is the part God will not negotiate.
+
+Between the two lay three days of walking, a boy carrying wood up a hill, and a father answering a question he could not answer. Where is the lamb? And Abraham said the truest thing a man has ever said under pressure: God Himself will see to it. Not God will explain. Not God will show me. God will see — and in Hebrew, when God sees a matter, the matter is already in His jurisdiction.
+
+Then the quieter line: and the two of them walked on together, as one. The son who did not know, and the father who could not tell him, walking in step. Some obedience carries no information at all. Only company.
+
+Now look where Abraham looked.
+
+A substitute, on a mountain, held fast by his horns — the crown of the head caught in thorns. Already in position. Already bound by something other than rope. And the son who carried the wood up that hill walked down it alive, because another went up in his place.
+
+The Chronicler tells us Moriah became the temple mount. On that same ridge, centuries later, a second Son carried His own wood up the slope — and for Him there was no ram in the thicket. Only a crown of thorns and no substitute, because He was the Lamb, and the thicket was ours, and He was held fast by love and not by branches.
+
+Abraham named the place The LORD Will See, then added a strange future tense: on the mountain of the LORD it shall be seen. He had glimpsed only the shadow, and he knew it, and he left the name standing like a stake in the ground until the day the sentence came true.
+
+So today asks nothing of your strength. Only a turn of the head.
+
+Much of what you are begging God to create, He has already positioned — in a person you overlooked, a text you read too fast, a season you wrote off as waste. The knife may still be in your hand and the wood already laid. That is not evidence He has forgotten. Abraham was never nearer his provision than in the moment he felt most abandoned by it.
+
+Lift up your eyes. Then turn around.
+
+God never improvises. The ram was climbing Moriah while Abraham was climbing Moriah — and the only thing that happened at the top was that a man finally saw what had been there the whole time.
+
+REF: Gen 22:1–14 · 2 Chr 3:1 · Isa 65:24 · John 1:29 · John 19:17 · Rom 8:32 · Heb 11:17–19`}},
+
+{ id:"manna-2026-07-09", date:"2026-07-09", place:{it:"Villafranca, Sicilia",en:"Villafranca, Sicily"},
+  it:{title:"Il tuo Ghilgal", body:`Il primo evento spirituale significativo dopo l'attraversamento del Giordano è Ghilgal, e in particolare ciò che accadde lì prima che Israele sguainasse la spada contro Gerico. Prima che Israele potesse combattere per il paese, Dio doveva finire di trattare l'Egitto che era in loro. Ghilgal è il luogo dove la tua identità viene stabilita prima che il ministero cominci. Ghilgal in ebraico significa «rotolare via». Ghilgal è per noi un'immagine della risurrezione, dove la pietra dell'ostacolo e della schiavitù viene rotolata via e Cristo si fa avanti ed è rivelato!
+
+Ecco 4 realtà di ciò che Ghilgal significa per noi nella nostra chiamata e nei prossimi passi che Gesù, il nostro Giosuè, ha per noi!
+
+1. **L'accampamento e il memoriale d'Israele (4:19–20).** Le dodici pietre prese dal mezzo del Giordano vengono erette qui. Il luogo dell'attraversamento-risurrezione diventa il luogo della memoria. Pietre del memoriale → ricordare le opere compiute di Dio come fondamento dell'ubbidienza futura (Rm 6:3–4; Lc 22:19). Per la missione: prima di avanzare, dai un nome e metti per iscritto ciò che Dio ha già fatto per te: risorse provvedute, porte aperte, persone salvate. Non lasciare che lo slancio corra più veloce della memoria.
+2. **La circoncisione della nazione (5:2–9).** La generazione nata nel deserto non era mai stata circoncisa. Prima di combattere una sola battaglia, bisogna trattare la carne. Circoncisione della carne → la nostra posizione in Cristo nei luoghi celesti diventa realtà vissuta; il «corpo della carne» è già stato reciso in Cristo (Col 2:11; Gal 5:24). Per la missione: un terreno nuovo mette sempre in luce vecchi schemi della carne: autosufficienza, controllo, timore degli uomini. Questi si affrontano sulla soglia, non nel mezzo della battaglia.
+3. **«Oggi ho rotolato via da voi l'infamia dell'Egitto» (5:9).** È da qui che il luogo prende il nome. Ghilgal (גִּלְגָּל) viene dalla radice _gālal_, «rotolare». Il nome non è casuale; è il titolo dell'opera compiuta di tutto questo momento. L'infamia dell'Egitto rotolata via → la tua vergogna e la tua identità di prima vengono rimosse dall'atto di Dio, non dal tuo sforzo (Is 54:4; 2 Cor 5:17). Per la missione: i fallimenti passati, le false partenze o un'idea ristretta di ciò che Dio può fare attraverso di te vengono rotolati via. Non puoi portare, e non porti, il nome dell'Egitto nell'opera di Canaan.
+4. **La Pasqua celebrata (5:10).** La prima Pasqua dal Sinai, ora dentro il paese stesso. La Pasqua celebrata nel paese → la croce di Gesù che portiamo in un luogo di promessa, non solo di liberazione (1 Cor 5:7; 11:26). Per la missione: il vangelo stesso, non la strategia o la personalità, deve restare il centro costante dell'opera, mantenuto vivo anche mentre entri in un territorio nuovo!`},
+  en:{title:"Your Gilgal", body:`The first significant spiritual event after the Jordan crossing is Gilgal — and specifically, what happened there before Israel ever draws a sword against Jericho, before Israel could fight for the land, was that God had to finish dealing with Egypt in them — Gilgal is where your identity is settled before ministry ever begins. Gilgal in the Hebrew means "to roll away". Gilgal is a picture for us of resurrection, where the stone of blockage and bondage is rolled away and Christ comes forth and is revealed!
+
+Here are 4 realities of what Gilgal means for us in our calling and the next steps Jesus, our Joshua, has for us!
+
+1. **Israel's encampment and memorial (4:19–20).** The twelve stones taken from the Jordan's midst are set up here. The place of resurrection-crossing becomes the place of remembrance. Memorial stones → Remembering God's finished acts as the foundation for future obedience (Rom 6:3–4, Luke 22:19). For the mission: before advancing, name and record what God has already done for you — funding secured, doors opened, people saved. Don't let momentum outrun memory.
+2. **Circumcision of the nation (5:2–9).** The generation born in the wilderness had never been circumcised. Before one battle is fought, the flesh must be dealt with. Circumcision of the flesh → Our position in Christ in heavenly places is made reality functionally; the "body of the flesh" is already cut off in Christ (Col 2:11, Gal 5:24). For the mission: new ground always exposes old flesh-patterns — self-reliance, control, fear of man. These get dealt with at the threshold, not mid-battle.
+3. **"Today I have rolled away the reproach of Egypt" (5:9).** This is where the place gets its name. Gilgal (גִּלְגָּל) comes from the root _gālal_ — "to roll." The naming is not incidental; it's the finished work headline of the whole moment. "Reproach of Egypt" rolled away → Your shame and former identity is removed by God's act, not self-effort (Isa 54:4, 2 Cor 5:17). For the mission: past failures, false starts, or a shrunken sense of what God can do through you — is rolled away. You cannot and do not carry Egypt's name into Canaan's work.
+4. **Passover kept (5:10).** The first Passover since Sinai, is now inside the land itself. Passover kept in the land → The cross of Jesus we bear in a place of promise, not just deliverance (1 Cor 5:7, 11:26). For the mission: the gospel itself — not strategy or personality — must be the recurring center of the work, kept fresh even as you move into new territory!`}}
+,
+{ id:"manna-2026-09-08", date:"2026-09-08", place:{it:"Cracovia, Polonia",en:"Kraków, Poland"},
+  it:{title:"Sistemi o Grazia", body:`_Non siamo chiamati dentro i sistemi, ma fuori dal sistema e dentro la grazia._
+
+Abbiamo guidato a lungo dalla Sicilia a Cracovia, ed ecco alcuni principi su cui ho avuto tempo di meditare e che ho annotato.
+
+- Viviamo in un mondo di sistemi senza Dio.
+- Questi sistemi formano un unico sistema, il sistema del mondo, il «kosmos».
+- Il sistema si basa sulla prestazione, non sulla grazia.
+- Il sistema crea i suoi seguaci, esige conformità.
+- Il sistema crea governi, economia, costruzioni sociali, famiglie, culture, mode, decorazioni e religioni.
+- Il sistema porta sempre con sé la creazione del proprio codice etico.
+- Quest'etica diventa il modo in cui le persone giudicano gli altri, dentro o fuori dal sistema.
+- Il sistema ha un vangelo: «lavora e prospera, lavora di più e prospera di più».
+- Il sistema è esclusivamente transazionale.
+- Il sistema nutre e ricompensa i suoi seguaci con beni e proprietà.
+- Il sistema punisce chi non lo segue, con l'esclusione e la perdita.
+- I maledetti del sistema sono quelli che hanno bisogno.
+- Il sistema non può guarire le persone e i loro problemi. Può solo conformarle, lasciandole con un dolore irrisolto.
+- Il sistema è come un animale selvatico: sembra addomesticato e docile, ma non ci si può fidare; all'improvviso si rivolterà e divorerà i suoi figli.
+- Il sistema è un ordine spirituale e morale con un principe, i cui valori e la cui struttura sono opposti a Dio.
+- Il sistema e il suo principe stanno passando. Muoiono insieme ai loro seguaci.
+
+## Siamo chiamati fuori dal sistema e dentro la Grazia
+
+Dio è il Dio della Grazia, Gesù è l'incarnazione della Grazia, noi siamo i portatori dell'immagine della Grazia.
+
+- La Grazia non è un sistema ma un organismo vivente, un'economia di favore, benedizione e frutto illimitato.
+- La Grazia cresce inarrestabile e non muore. Non ha bisogno di alcuna risorsa del sistema per prosperare.
+- La Grazia crea.
+- Se non stiamo attenti, il sistema entra nella nostra anima e poi nella chiesa: un organismo di persone si trasforma allora in un'organizzazione che gestisce persone.
+- Noi e i nostri ministeri ci fermiamo, ci cristallizziamo e cominciamo a morire quando ci appoggiamo al sistema delle cose e non all'amore e alla freschezza inattesa della Grazia.
+- Ci è comandato di non conformarci a questo sistema del mondo.
+- Non siamo di questo sistema del mondo. Siamo chiamati fuori da esso e dentro la grazia.
+- Il vangelo di questo mondo, «lavora e prospera, lavora di più e prospera di più», non è compatibile con il Vangelo della Grazia.
+- Il vangelo del sistema non può coesistere nel mio ministero con la teologia della Grazia: «Fai questo e la tua chiesa crescerà».
+- I benedetti fra noi per Grazia sono quelli che hanno bisogno. Il bisogno è il requisito per il favore di Dio.
+- La Grazia dà una ricompensa illimitata agli umili ed esclude soltanto i superbi.
+- La Grazia cerca i luoghi più bassi per riempirli fino al colmo di diletto. Ma solo gratuitamente.
+- Noi e la nostra chiesa siamo spiritualmente più sani quando usciamo dal sistema, dalla sua sicurezza e dal suo ordine, ed entriamo nella spontaneità della Grazia, vivendo con il Vangelo.`},
+  en:{title:"Systems vs. Grace", body:`_We are not called into systems but out of the system and into grace._
+
+We've done a lot of driving from Sicily to Krakow and here are some principles I have had time to meditate on and jot down.
+
+- We live in a world of systems without God.
+- These systems make up one system, the world system, the "kosmos".
+- The system is based on performance - not grace.
+- The system makes its followers, it demands conformity.
+- The system creates government, economy, social constructs, families, cultures, fashion, decorations and religions.
+- The system always carries with it the creation of its own code of ethics.
+- These ethics become a way people judge others in the system or not in the system.
+- The system has a gospel: "work and thrive, work more and thrive more"
+- The system is solely transactional.
+- The system feeds and rewards its followers with possessions and real estate.
+- The system punishes those who do not follow it, with exclusion and loss.
+- The cursed of the system are those with needs.
+- The system can't heal people and their problems. It can only conform them leaving them with unresolved pain.
+- The system is like a wild animal, it seems tamed and docile, but cannot be trusted, it will unexpectedly turn on and devour its children.
+- The system is a spiritual and moral order with a ruler, whose values and structure is opposed to God.
+- The system and its ruler is fading away. Dying with its followers.
+
+## We are called out of the system and into Grace
+
+God is the God of Grace, Jesus is the embodiment of Grace, we are the image-bearers of Grace.
+
+- Grace is not a system but a living organism, an economy of favor, blessing and unlimited fruit.
+- Grace is growing unstoppable and not dying. It does not need any resources from the system to prosper.
+- Grace creates.
+- If we are not careful the system gets into our souls and then into the church - an organism of people then turns into an organization running people.
+- We and our ministries stall, crystalize, and begin to die when we lean on the system of things and not the love and the unexpected freshness of Grace.
+- We are commanded not to be conformed to this world system.
+- We are not of this world system. We are called out of it and into grace.
+- The gospel of this world "work and thrive, work more and thrive more" is not compatible with the Gospel of Grace.
+- The gospel of the system cannot coexist in my ministry with the theology of Grace: "Do this and your church will grow"
+- The blessed of us by Grace are those of us with need. Need is the requirement of favor with God.
+- Grace gives unlimited reward to the humble and only excludes the proud.
+- Grace seeks the lowest places to fill them up to the utmost of pleasure. But only for free.
+- We and our church are the healthiest spiritually when we step out of the system and its security and order and into the spontaneity of Grace living with the Gospel.`}},
+
+{ id:"manna-2026-06-08", date:"2026-06-08", place:{it:"Woodlands, Texas",en:"Woodlands, Texas"},
+  it:{title:"Ciò che ogni idolo esige e ciò che Cristo ha già donato", body:`Ogni idolo funziona come un sistema di richieste. Sotto l'oggetto visibile dell'ossessione (denaro, ministero, relazione sentimentale, carriera) operano sempre tre richieste fondamentali. L'idolo esige sacrificio: dagli qualcosa, placalo, guadagnati il risultato. L'idolo esige prestazione: mantieni lo standard, resta sul tapis roulant, dimostra di essere abbastanza. E l'idolo esige identità: consegnagli il senso di te stesso, così che ciò che hai e ciò che fai diventino ciò che sei. Non sono accordi passivi. Sono pretese attive e crescenti sull'anima. La promessa dell'idolo è sicurezza, significato e valore, ma le clausole in piccolo sono sempre le stesse: paga prima, e continua a pagare. La richiesta non arriva mai alla soddisfazione. L'idolo non dice mai basta. E il frutto inevitabile di una richiesta che non può essere soddisfatta non è la pace: è la rabbia, l'esaurimento e un'identità costruita su un terreno che continua a muoversi sotto i tuoi piedi.
+
+Il vangelo non tratta con queste richieste: le recide alla radice. In Cristo, le tre cose che l'idolo usava come leva sono già pienamente donate. La sicurezza non è un numero su un conto in banca o una relazione che regge: è la realtà della nostra posizione, che né la morte né la vita, né alcuna cosa creata, potrà separarti dall'amore di Dio (Rm 8:38–39), e che sei custodito dalla potenza stessa di Dio (1 Pt 1:5). Il significato non si costruisce con i risultati né si riceve con gli applausi: è la realtà stabile che in Cristo tutte le cose sussistono (Col 1:17), e che la tua vita è già nascosta con Cristo in Dio (Col 3:3). Il valore non si guadagna con la prestazione e non viene revocato dal fallimento: sei stato comprato a caro prezzo (1 Cor 6:20), sei un figlio e non uno schiavo, un erede e non un candidato (Gal 4:7). Queste non sono promesse a cui aspirare. Sono fatti di posizione, stabiliti alla croce, ricevuti attraverso l'unione con Cristo. Il conto era già finanziato prima che tu sentissi la richiesta.
+
+Il meccanismo con cui un idolo cattura il cuore è preciso e intenzionale. Satana non comincia con l'amo: comincia con l'esca. L'esca è sempre un desiderio legittimo: il desiderio di sicurezza, di amore, di uno scopo, di importanza. Non sono desideri disordinati. Sono bisogni reali che l'anima è stata creata per vedere soddisfatti. Ma nascosta dentro il desiderio legittimo c'è la pretesa spirituale occulta: l'amo. Il ministero ne è un esempio chiaro. L'esca è la gloria di Dio, una cosa davvero buona e bella. L'amo è il bisogno dell'applauso umano, la compulsione a dare prestazioni per sentirsi accettabili. Nel momento in cui l'amo fa presa, l'accordo cambia. Ciò che era cominciato come un desiderio diventa una spinta. Ciò che era cominciato come un mezzo diventa un padrone. E poiché l'idolo non può davvero dare ciò che ha promesso, perché la promessa è sempre scritta con un inchiostro che svanisce, all'adoratore non resta la soddisfazione, ma una richiesta crescente di sforzarsi di più, dare di più e restare su un tapis roulant che non ha traguardo.
+
+Il vangelo dell'Opera Compiuta non chiede al cuore di smettere di desiderare. Non chiede di sopprimere il desiderio: ne annuncia il compimento. Ciò che il cuore cercava nell'idolo è già stato assicurato, nella nostra posizione, nell'unione con Cristo. L'amo del sacrificio è reciso perché l'unico sacrificio è già stato offerto e accettato, una volta per sempre, rendendo perfetti per sempre quelli che sono santificati (Eb 10:10, 14). Non resta nulla da placare. Non resta nulla da guadagnare. Il tapis roulant si ferma non perché hai corso abbastanza veloce, ma perché un Altro ha terminato interamente la corsa. Un idolo non può essere rimosso con la forza di volontà o con lo sforzo morale: il cuore è un vuoto e sostituirà semplicemente un idolo con un altro. Viene scalzato solo da una bellezza più grande. Thomas Chalmers la chiamava la forza espulsiva di un nuovo affetto: non abbatti l'idolo sforzandoti di più; vedi Cristo più chiaramente, finché l'idolo appare strano e sbiadito al confronto. L'affanno dell'orfano lascia il posto alla certezza serena di un figlio che è già a casa.`},
+  en:{title:"What Every Idol Demands — and What Christ Has Already Given", body:`Every idol operates as a system of demand. Beneath the visible object of obsession — money, ministry, romance, career — three core demands are always running. The idol demands sacrifice: give it something, appease it, earn the outcome. The idol demands performance: maintain the standard, stay on the treadmill, prove you are enough. And the idol demands identity: surrender your sense of self to it, so that what you have and what you do become who you are. These are not passive arrangements. They are active, escalating claims on the soul. The idol's promise is security, meaning, and worth — but the fine print is always the same: pay first, and keep paying. The demand never reaches satisfaction. The idol never says enough. And the inevitable fruit of a demand that cannot be met is not peace — it is anger, burnout, and an identity built on ground that keeps shifting beneath your feet.
+
+The gospel does not negotiate with these demands — it severs them at the root. In Christ, the three things the idol leveraged are already fully given. Security is not a number in a bank account or a relationship that holds — it is the positional reality that neither death nor life, nor anything in creation, shall separate you from the love of God (Rom. 8:38–39), and that you are kept by God's own power (1 Pet. 1:5). Meaning is not constructed through achievement or recognized through applause — it is the fixed reality that in Christ all things hold together (Col. 1:17), and that your life is already hidden with Christ in God (Col. 3:3). Worth is not earned through performance and is not revoked by failure — you were bought with a price (1 Cor. 6:20), you are a son and not a slave, an heir and not a candidate (Gal. 4:7). These are not aspirational promises. They are positional facts, established at the cross, received through union with Christ. The account was funded before you ever felt the demand.
+
+The mechanism by which an idol captures the heart is precise and intentional. Satan does not lead with the hook — he leads with the bait. The bait is always a legitimate desire: the desire for security, for love, for purpose, for significance. These are not disordered wants. They are real needs the soul was designed to have met. But concealed inside the legitimate desire is the hidden spiritual demand — the hook. Ministry is a clear example. The bait is the glory of God, a genuinely good and beautiful thing. The hook is the need for human applause, the compulsion to perform in order to feel acceptable. The moment the hook sets, the arrangement changes. What began as a desire becomes a driver. What began as a means becomes a master. And because the idol cannot actually deliver what it promised — because the promise is always written in disappearing ink — the worshipper is left not with satisfaction but with an escalating demand to perform harder, give more, and stay on a treadmill that has no finish line.
+
+The Finished Work gospel does not ask the heart to stop wanting. It does not call for the suppression of desire — it announces the fulfillment of it. What the heart was reaching for in the idol has already been secured, positionally, in union with Christ. The hook of sacrifice is severed because the one sacrifice has already been made and accepted, once for all, perfecting forever those being sanctified (Heb. 10:10, 14). There is nothing left to appease. There is nothing left to earn. The treadmill stops not because you ran fast enough, but because Another finished the race entirely. An idol cannot be removed by willpower or moral effort — the heart is a vacuum and will simply replace one idol with another. It is displaced only by a greater beauty. Thomas Chalmers called it the expulsive power of a new affection: you do not tear the idol down by trying harder — you see Christ more clearly, until the idol looks strange and dim by comparison. Orphaned striving gives way to the settled certainty of a child already home.`}},
+
+{ id:"manna-2026-05-14", date:"2026-05-14", place:{it:"Woodlands, Texas",en:"Woodlands, Texas"},
+  it:{title:"Come misuriamo ciò che facciamo nell'impiantare chiese?", body:`Se rifiutiamo i parametri aziendali del successo (bilanci, edifici e posti a sedere occupati), come misuriamo ciò che stiamo facendo?
+
+I parametri di Dio sono completamente diversi.
+
+In Zaccaria 2, un giovane esce con una corda per misurare Gerusalemme, per vedere quanto è larga e quanto è lunga. Cerca di quantificarla, di metterle un confine umano. Ma l'angelo in sostanza lo ferma e dice: «Gerusalemme sarà una città senza mura… Io sarò per lei un muro di fuoco tutt'intorno, dice il SIGNORE, e sarò la gloria in mezzo a lei».
+
+L'istinto umano, soprattutto per un missionario che porta il peso di una visione, è misurare le mura: quantificare ciò che possiamo gestire e controllare. Ma il parametro di Dio non è la grandezza delle mura; è il calore del fuoco di Dio e la presenza della Sua gloria. Non lo si può letteralmente misurare con un metro.
+
+E poi guardiamo la Nuova Gerusalemme in Apocalisse 21. L'angelo misura la città con una canna d'oro. E quali sono le misure? È un cubo perfetto. Lunghezza, larghezza e altezza sono esattamente uguali. L'unica altra cosa nella Scrittura a forma di cubo perfetto è il Santo dei Santi nel tabernacolo. Il parametro della nuova città non è la «crescita della chiesa»: il parametro è che l'intera città è diventata il Santo dei Santi. Il parametro è la dimora intima di Dio con l'uomo.
+
+La regola d'oro della misura per il credente oggi è l'Opera Compiuta della Grazia di Dio. Siamo misurati come completi in Lui. È così che dobbiamo misurare noi stessi, misurare il successo e misurare l'Opera di Dio nelle missioni.`},
+  en:{title:"How Do We Measure What We Are Doing in Church Planting?", body:`If we reject the corporate metrics of success—budgets, buildings, and butts in seats—how do we measure what we are doing?
+
+God's metrics are entirely different.
+
+When you look at Zechariah 2, a young man goes out with a measuring line to measure Jerusalem, to see how wide and long it is. He is trying to quantify it, to put a human boundary on it. But the angel essentially stops him and says: "Jerusalem will be a city without walls... For I will be a wall of fire around it, declares the Lord, and I will be the glory in her midst."
+
+The human instinct, especially for a missionary carrying the weight of a vision, is to measure the walls - to quantify what we can manage and control. But God's metric isn't the size of the walls; it's the heat of the fire of God and the presence of His glory. You literally cannot measure that with a tape.
+
+And then you look at the New Jerusalem in Revelation 21. The angel measures the city with a golden measuring rod. And what are the measurements? It's a perfect cube. The length, width, and height are exactly equal. The only other thing in Scripture shaped like a perfect cube is the Holy of Holies in the tabernacle. The metric of the new city isn't "church growth" - the metric is that the entire city has become the Holy of Holies. The metric is the intimate dwelling place of God with man.
+
+The Golden Rule of measurement for the believer today is The Finished Work of the Grace of God. We are measured as complete in Him. That is how we must measure ourselves, measure success, and measure the Work of God in Missions.`}},
+
+{ id:"manna-2026-04-26", date:"2026-04-26", place:{it:"Woodlands, Texas",en:"Woodlands, Texas"},
+  it:{title:"La rabbia è un segnale", body:`Ciò per cui ci arrabbiamo rivela chi e che cosa adoriamo.
+La rabbia non è il problema. È un segnale.
+
+«Adiratevi e non peccate» (Ef 4:26) non ti dice di spegnere le tue emozioni: ti dice di restare in autorità su di esse. La rabbia significa che qualcosa conta. Qualcosa sembra violato, minacciato o fuori posto. Ma il problema non è il sentimento: è ciò che quel sentimento comincia a servire.
+
+La rabbia rivela sempre il cuore.
+
+«Da esso procedono le sorgenti della vita» (Pr 4:23). Quando la rabbia sale, mette a nudo ciò a cui ti stai aggrappando: ciò che ti aspetti, ciò che ritieni di meritare, ciò che stai cercando di proteggere. Se la rabbia è radicata nella verità, si muove verso la chiarezza e la giustizia. Se è radicata nell'io, si muove verso il controllo, l'orgoglio e la reazione. «L'ira dell'uomo non compie la giustizia di Dio» (Gc 1:20).
+
+La rabbia ti mostra per che cosa stai vivendo in quel momento.
+
+Allo stesso tempo, la rabbia è un segnale di confine.
+
+Ti dice che qualcosa non va. Qualcosa va affrontato. Qualcosa ha bisogno di chiarezza. Ma «non peccate» significa che non usi la rabbia per punire le persone, controllare i risultati o abbattere qualcuno. Non violi un altro mentre cerchi di difendere te stesso. Ti assumi la responsabilità di come rispondi.
+
+«La risposta dolce calma il furore, ma la parola dura eccita l'ira» (Pr 15:1).
+
+Nelle relazioni, la rabbia o costruisce o distrugge.
+
+Non resta neutrale. O si muove verso la verità e la riparazione, o si trasforma in accusa, disprezzo, chiusura difensiva o silenzio. Quando la rabbia diventa personale, quando attacca l'identità invece di affrontare la realtà, è già passata nel peccato.
+
+«Sia tolta via da voi ogni amarezza, ogni ira e collera…» (Ef 4:31).
+
+Il confine è questo: la rabbia diventa peccato quando smette di servire la verità e comincia a servire l'io.
+
+Allora, che cosa significa «adirarsi e non peccare»?
+
+Ti fermi.
+Riconosci che cosa sta succedendo dentro di te.
+Non reagisci alla massima intensità.
+Porti il tuo cuore sotto la verità prima di aprire bocca.
+
+«Chi è lento all'ira vale più del prode guerriero» (Pr 16:32).
+
+Poi parli con chiarezza, senza attaccare. Affronti ciò che non va senza abbattere chi è la persona. Cerchi una soluzione, non una vittoria.
+
+E non te la porti dietro.
+
+«Il sole non tramonti sopra la vostra ira, e non date luogo al diavolo» (Ef 4:26–27). La rabbia non risolta non resta contenuta. Si indurisce in amarezza, distorce il tuo modo di pensare e apre la porta alla distruzione, dentro di te e nelle tue relazioni.
+
+La rabbia è come il fuoco.
+
+Al posto giusto, dà luce, calore e protezione.
+Fuori controllo, brucia tutto, anche te.
+
+«Adirarsi e non peccare» significa sentire profondamente senza perdere l'autorità sulla tua anima. Significa lasciare che la rabbia ti informi, ma mai che ti governi. È forza sotto controllo. Verità senza violenza. Convinzione senza distruzione.
+
+La rabbia è un segnale.
+
+Il peccato è ciò che accade quando segui la rabbia senza esaminarla.`},
+  en:{title:"Anger Is a Signal", body:`What we get angry about reveals who and what we worship.
+Anger is not the problem. It's a signal.
+
+"Be angry, and do not sin" (Ephesians 4:26) is not telling you to shut your emotions down—it's telling you to stay in authority over them. Anger means something matters. Something feels violated, threatened, or out of order. But the issue is not the feeling—it's what that feeling begins to serve.
+
+Anger always reveals the heart.
+
+"Out of it spring the issues of life" (Proverbs 4:23). When anger rises, it's exposing what you're holding onto—what you expect, what you feel entitled to, what you're trying to protect. If anger is rooted in truth, it moves toward clarity and righteousness. If it's rooted in self, it moves toward control, pride, and reaction. "The wrath of man does not produce the righteousness of God" (James 1:20).
+
+Anger shows you what you're living for in that moment.
+
+At the same time, anger is a boundary signal.
+
+It's telling you something is not okay. Something needs to be addressed. Something needs clarity. But "do not sin" means you don't use anger to punish people, control outcomes, or tear someone down. You don't violate someone else while trying to defend yourself. You take responsibility for how you respond.
+
+"A soft answer turns away wrath, but a harsh word stirs up anger" (Proverbs 15:1).
+
+In relationships, anger will either build or destroy.
+
+It doesn't stay neutral. It either moves toward truth and repair, or it turns into accusation, contempt, defensiveness, or silence. Once anger becomes personal—once it attacks identity instead of addressing reality—it has crossed into sin.
+
+"Let all bitterness, wrath, anger… be put away from you" (Ephesians 4:31).
+
+The line is this: Anger becomes sin when it stops serving truth and starts serving self.
+
+So what does it look like to "be angry and not sin"?
+
+You pause.
+You recognize what's happening in you.
+You don't react at full intensity.
+You bring your heart under truth before you open your mouth.
+
+"He who is slow to anger is better than the mighty" (Proverbs 16:32).
+
+Then you speak clearly, without attacking. You address what is wrong without tearing down who the person is. You pursue resolution, not victory.
+
+And you don't carry it.
+
+"Do not let the sun go down on your wrath, nor give place to the devil" (Ephesians 4:26–27). Unresolved anger doesn't stay contained. It hardens into bitterness, distorts your thinking, and opens the door to destruction—internally and relationally.
+
+Anger is like fire.
+
+In the right place, it gives light, warmth, and protection.
+Out of control, it burns everything—including you.
+
+To "be angry and not sin" is to feel deeply without losing authority over your soul. It's to let anger inform you, but never rule you. It's strength under control. Truth without violence. Conviction without destruction.
+
+Anger is a signal.
+
+Sin is what happens when you follow anger without examining it.`}},
+
+{ id:"manna-2026-04-03", date:"2026-04-03", place:{it:"Woodlands, Texas",en:"Woodlands, Texas"},
+  it:{title:"Venerdì Santo", body:`> **Luca 22:19–20**
+>
+> **19** E preso il pane, dopo aver reso grazie, lo spezzò e lo diede loro, dicendo: «Questo è il Mio corpo che è dato per voi; fate questo in memoria di Me».
+>
+> **20** Allo stesso modo, dopo la cena, prese il calice, dicendo: «Questo calice è il nuovo patto nel Mio sangue, che è versato per voi».
+
+## La Comunione è partecipazione, non solo memoria
+La parola «memoria» va più in profondità del semplice ricordo mentale. È un rivivere, un partecipare, un rendere presente qui e ora.
+
+## La Comunione è unione con la Sua vita
+«Il calice della benedizione che noi benediciamo, non è forse la comunione del sangue di Cristo?
+Il pane che noi rompiamo, non è forse la comunione del corpo di Cristo?» (1 Cor 10:16)
+
+La parola comunione (_koinonia_) significa:
+- la Sua vita diventa la tua vita
+- la Sua vittoria diventa la tua vittoria
+- la Sua giustizia diventa la tua posizione davanti a Dio
+
+La Comunione è unione con l'opera compiuta.
+
+## L'Ultima Cena riguardava un'identità di nuovo patto
+A quella tavola, tutto cambiò.
+
+Non più:
+- una relazione basata sulla legge
+- un'accettazione basata sulla prestazione
+
+Ma ora:
+- una relazione acquistata con il sangue
+- un'identità basata sulla grazia
+
+«Questo calice è il nuovo patto nel Mio sangue…»
+
+Non ti relazioni con Dio in base a:
+- i tuoi fallimenti
+- i tuoi successi
+- i tuoi sentimenti
+
+Ti relazioni con Lui in base al Suo sangue.
+
+## La Comunione mette al centro di tutto la Persona di Cristo
+Ogni volta che separiamo la dottrina dalla persona di Cristo, abbiamo un idolo.
+
+La Comunione ci protegge da questo errore.
+
+Ci riporta a:
+- non dei principi → ma una Persona
+- non un insegnamento → ma il Maestro
+- non una religione → ma una relazione
+
+«Poiché ogni volta che mangiate questo pane e bevete da questo calice, voi annunciate la morte del Signore, finché Egli venga» (1 Cor 11:26).
+
+Annunciamo Lui, non soltanto ciò che ha fatto.
+
+## La Comunione è dove il cuore arde di nuovo
+Pensa alla via di Emmaus:
+
+«Non ardeva forse il nostro cuore dentro di noi, mentre Egli ci parlava per la via…?» (Lc 24:32)
+
+La Comunione è il luogo dove:
+- la presenza di Dio diventa tangibile
+- si fa esperienza del «profumo» di Cristo
+- il cuore si riaccende
+
+Questa è la comunione.
+
+## La Comunione è riposo, non sforzo
+Alla tavola:
+- l'opera è compiuta
+- il sacrificio è completo
+- l'Agnello è stato accettato
+
+Non vieni per:
+- guadagnare qualcosa
+- aggiustare te stesso
+- dimostrare qualcosa
+
+Vieni per:
+- ricevere
+- riposare
+- dimorare
+
+## Che cosa celebriamo oggi
+Oggi la comunione significa:
+- Cristo è presente con me adesso
+- sono accettato grazie al Suo sangue
+- partecipo della Sua vita e della Sua natura
+- la mia identità è radicata in Lui
+- riposo nella Sua opera compiuta
+
+La Comunione è Cristo che dà Sé stesso a te, e tu che Lo ricevi di nuovo, consapevolmente, per fede: il Suo Corpo spezzato per il peccato e il Suo Sangue per il perdono.
+
+REF: Mt 26:26–28 · Mc 14:22–24 · 1 Cor 11:23–25 · Is 53:12 · Es 24:8 · Ger 31:31–33 · Zc 9:11`},
+  en:{title:"Good Friday", body:`> **Luke 22:19–20**
+>
+> **19** And taking bread, having given thanks, He broke and gave to them, saying, "This is My body being given for you; do this in remembrance of Me."
+>
+> **20** And likewise the cup after the supper, saying, "This cup is the new covenant in My blood, which is being poured out for you."
+
+## Communion is Participation, Not Just Memory
+The word remembrance is deeper than mental recall. It is a reliving, a participation, a bringing into the present in real time.
+
+## Communion is Union with His Life
+"The cup of blessing which we bless, is it not the communion of the blood of Christ?
+The bread which we break, is it not the communion of the body of Christ?" (1 Corinthians 10:16)
+
+The word communion (_koinonia_) means:
+- His life becomes your life
+- His victory becomes your victory
+- His righteousness becomes your standing
+
+Communion is union with the finished work.
+
+## The Last Supper Was About a New Covenant Identity
+At that table, everything changed.
+
+No longer:
+- Law-based relationship
+- Performance-based acceptance
+
+But now:
+- Blood-bought relationship
+- Grace-based identity
+
+"This cup is the new covenant in My blood…"
+
+You are not relating to God based on:
+- Your failures
+- Your successes
+- Your feelings
+
+You are relating to Him based on His blood.
+
+## Communion Centers Everything on the Person of Christ
+Anytime we separate doctrine from the person of Christ we have an idol.
+
+Communion guards us from that error.
+
+It brings us back to:
+- Not principles → but a Person
+- Not teaching → but the Teacher
+- Not religion → but relationship
+
+"For as often as you eat this bread and drink this cup, you proclaim the Lord's death till He comes." (1 Corinthians 11:26)
+
+We proclaim Him, not just what He did.
+
+## Communion is Where the Heart Burns Again
+Think of the road to Emmaus:
+
+"Did not our heart burn within us while He talked with us on the road…?" (Luke 24:32)
+
+Communion is where:
+- The presence of God becomes tangible
+- The "fragrance" of Christ is experienced
+- The heart is reignited
+
+That is communion.
+
+## Communion is Rest — Not Striving
+At the table:
+- The work is finished
+- The sacrifice is complete
+- The Lamb has been accepted
+
+You are not coming to:
+- Earn anything
+- Fix yourself
+- Prove anything
+
+You are coming to:
+- Receive
+- Rest
+- Abide
+
+## What We Are Celebrating Today
+Today, communion means:
+- Christ is present with me now
+- I am accepted because of His blood
+- I share in His life and nature
+- My identity is rooted in Him
+- I rest in His finished work
+
+Communion is Christ giving Himself to you—and you receiving Him again consciously, by faith, His Body broken for sin and His Blood for forgiveness.
+
+REF: Matt 26:26–28 · Mark 14:22–24 · 1 Cor 11:23–25 · Isa 53:12 · Exod 24:8 · Jer 31:31–33 · Zech 9:11`}},
+
+{ id:"manna-2026-03-31", date:"2026-03-31", place:{it:"Woodlands, Texas",en:"Woodlands, Texas"},
+  it:{title:"Ricevi il Re", body:`> Luca 19:28–40
+
+Stiamo sempre incoronando qualcosa che diventa un'autorità nella nostra anima, e che influisce sul nostro cuore, sulla nostra mente e sulle nostre emozioni.
+
+La Domenica delle Palme segna il momento in cui Gesù entra a Gerusalemme come Re, pochi giorni prima della Sua crocifissione. Nell'antichità, quando un re tornava vittorioso dalla battaglia, la gente festeggiava stendendo a terra i mantelli e agitando rami.
+
+## Ricevi il Re
+La Domenica delle Palme è una dichiarazione pubblica: «Benedetto il Re che viene nel nome del SIGNORE; pace in cielo e gloria nei luoghi altissimi». Il Re viene, e la domanda non è se nella tua vita ci sarà un re, ma quale re regnerà.
+
+## Nota che cosa hai incoronato
+Usa queste affermazioni come uno specchio:
+- «Qualunque cosa per cui vivi, la servi».
+- «Non puoi vivere senza significato. E ciò che dà significato alla tua vita diventa la tua autorità».
+- «E ciò che servi o ti renderà libero, o ti opprimerà».
+
+Dai un nome alla cosa che più spesso decide il tuo clima emotivo (pace o ansia; libertà o pressione). Forse è proprio ciò che, di fatto, hai incoronato.
+
+Metti alla prova gli idoli della cultura del nostro mondo:
+- **Potere / controllo:** dove stai cercando di sentirti al sicuro attraverso il controllo?
+- **Approvazione / amore:** dove ti aspetti che siano le persone a dirti che vali?
+- **Comodità:** dove eviti le difficoltà per mantenere la vita gestibile?
+- **Controllo dell'immagine / reputazione:** dove senti la pressione di essere visto come degno?
+
+## Ci deve essere un Re nella nostra vita
+Devi vivere per qualcosa. Il significato non è facoltativo. Perciò qualcosa occuperà sempre il posto di massima importanza nella tua vita.
+
+## Come conosciamo Lui come Re?
+1. Gesù deve spezzare, di fatto, tutti gli dèi in cui (senza saperlo) confidiamo, creando situazioni molto scomode che dimostrano che questi dèi ci deludono, o che noi deludiamo loro.
+2. Quando la nostra fiducia in questi idoli si spezza, perché non ci danno un VERO controllo, approvazione, comodità e identità, scopriamo che Gesù è il Re di cui possiamo fidarci.
+3. Sperimentiamo la pace celeste in ogni area della vita in cui incoroniamo Gesù come Re, prendendo la nostra croce e seguendoLo attraverso la risurrezione.
+
+## Ritorna a Gesù come Re
+«Se Lui è Re, può trasformare la tua vita». Regalità significa autorità, guida e trasformazione, non un semplice consiglio.`},
+  en:{title:"Receive the King", body:`> Luke 19:28–40
+
+We are always crowning something that becomes an authority in our soul, affecting our heart, mind and emotions.
+
+Palm Sunday marks the moment when Jesus enters Jerusalem as King, just days before His crucifixion. In ancient times, when a king returned victorious from battle, people would celebrate by laying down garments and waving branches.
+
+## Receive the King
+Palm Sunday is a public declaration: "Blessed is the King who comes in the name of the LORD; peace in heaven and glory in the highest." The King comes, and the question is not whether there will be a king in your life, but which king will rule.
+
+## Notice what you have crowned
+Use these diagnostic statements as a mirror:
+- "Whatever you live for, you serve."
+- "You cannot live without meaning. And whatever gives your life meaning becomes your authority."
+- "And whatever you serve will either free you—or oppress you."
+
+Name the thing that most often sets your emotional weather (peace vs. anxiety; freedom vs. pressure). That may be what is functionally crowned.
+
+Test the idols of our world culture:
+- **Power / Control:** Where are you trying to stay safe through control?
+- **Approval / Love:** Where are you looking to people to tell you that you are valuable?
+- **Comfort:** Where are you avoiding difficulty to keep life manageable?
+- **Control of Image / Reputation:** Where do you feel pressure to be seen as worthy?
+
+## There must be a King in our life
+You must live for something. Meaning is not optional. Therefore, something will always occupy the place of ultimate importance in your life.
+
+## How do we know Him as King?
+1. Jesus has to functionally break all the gods we (unknowingly) trust by creating very uncomfortable situations to prove that these gods fail us or we fail them.
+2. When our trust is broken in these idols as they do not give us REAL control, approval, comfort, and identity; we discover that Jesus is the King we can trust.
+3. We experience heavenly peace in every area of our life we crown Jesus King through taking up our cross and following Him through resurrection.
+
+## Return to Jesus as King
+"If He is King, He can transform your life." Kingship means authority, leadership, and transformation—not mere advice.`}},
+
+{ id:"manna-2025-11-27", date:"2025-11-27", place:null,
+  it:{title:"Quando la gratitudine sorge dopo la tempesta: il ringraziamento di Noè", body:`L'evento della storia biblica più vicino al cuore del Ringraziamento è il momento in cui Noè e la sua famiglia uscirono dall'arca, tornarono a posare i piedi sulla terra asciutta e offrirono un sacrificio di gratitudine al SIGNORE che li aveva portati attraverso la tempesta.
+
+Quando pensiamo all'arca di Noè, spesso immaginiamo una barca di legno sballottata dalle acque in tempesta. Ma nella Scrittura l'arca è descritta con il linguaggio di un santuario: un luogo santo dove Dio stesso preserva la vita attraverso il giudizio. La stessa parola usata per l'arca di Noè è usata per l'Arca del Patto. Entrambe sono contenitori sacri. Entrambe sono avvolte dal linguaggio dell'espiazione. Entrambe sono luoghi in cui Dio protegge il Suo popolo.
+
+L'arca non è una storia di abilità umana, ma di riparo divino. Non c'erano remi, né vele, né timone, né strategia. Noè non poteva guidare l'arca più di quanto noi possiamo guidare le tempeste che entrano nella nostra vita. L'unica direzione sull'arca era la presenza di Dio. L'unica sicurezza era la Sua copertura. E quando fu il momento, Dio stesso chiuse la porta. Dio stesso fece ritirare le acque. Dio stesso fece posare l'arca su un monte.
+
+L'arca ci insegna qualcosa di semplice e potente:
+
+> Dio ha sempre preparato una via per custodire il Suo popolo alla Sua presenza, anche quando il mondo crolla intorno a loro.
+
+Come l'arca portò Noè al sicuro attraverso il giudizio, così Cristo, il nostro vero santuario, porta noi. Quando le nostre forze vengono meno e le onde si alzano, non dipendiamo dalla nostra capacità di tenere la rotta. Riposiamo in Colui che copre, preserva e ci conduce al sicuro in un giorno nuovo.
+
+Possa questa verità acquietare oggi il tuo cuore:
+
+> Quando Dio è il tuo santuario, la tempesta non può decidere il tuo futuro.`},
+  en:{title:"When Gratitude Rises After the Storm: Noah's Thanksgiving", body:`The closest event in biblical history to the heart of Thanksgiving is that moment when Noah and his family stepped out of the ark, stood on dry ground again, and offered a sacrifice of gratitude to the Lord who carried them through the storm.
+
+When we think of Noah's ark, we often picture a wooden boat tossed on stormy waters. But in Scripture, the ark is described in the language of a sanctuary—a holy place where God Himself preserves life through judgment. The same word used for Noah's ark is used for the Ark of the Covenant. Both are sacred containers. Both are covered with the language of atonement. Both are places where God protects His people.
+
+The ark is not a story about human skill, but about divine shelter. There were no oars, no sails, no steering, no strategy. Noah could not guide the ark any more than we can guide the storms that come into our lives. The only direction on the ark was God's presence. The only safety was His covering. And when the time was right, God Himself shut the door. God Himself lifted the waters. God Himself rested the ark on a mountain.
+
+The ark teaches us something simple and powerful:
+
+> God has always made a way to keep His people in His presence, even when the world collapses around them.
+
+Just as the ark carried Noah safely through judgment, so Christ—our true sanctuary—carries us. When our strength fails and the waves rise, we do not depend on our own ability to steer. We rest in the One who covers, preserves, and brings us safely into a new day.
+
+May this truth quiet your heart today:
+
+> When God is your sanctuary, the storm cannot decide your future.`}}
+];
+POSTS.sort((a,b) => b.date.localeCompare(a.date));
+
+const UI = {
+  it:{series:"Manna per Oggi", lede:"Una parola dalla Scrittura per il cammino di ogni giorno.", credit:"Riflessioni di P. Christian Moore.", verse:"«Io vi raccomando a Dio e alla parola della sua grazia, che è in grado di edificarvi e di darvi l'eredità in mezzo a tutti i santificati.»", verseRef:"Atti 20:32",
+      back:"Tutti i devozionali", by:"P. Christian Moore", prev:"Precedente", next:"Successivo", refs:"RIF.", missing:"Devozionale non trovato.",
+      foot:"<strong>Chiesa EverGrace</strong> · Missione Sicilia · Messina", looks:"Anteprima stile", waTitle:"Restiamo in contatto", waText:"Inquadra il codice per entrare nel nostro gruppo WhatsApp e ricevere più informazioni.", waLink:"Sei sul telefono? Apri il gruppo →", bookKicker:"Un libretto per te", bookTitle:"Lascia semplicemente che Dio ti ami", bookDesc:"Un breve libretto sull'amore di Dio, che ci ha amati quando eravamo ancora peccatori.", bookCta:"Leggi il libretto →", bookCredit:"Titolo originale: Just Let God Love You, © 1996 Grace Publications, ministero di Greater Grace World Outreach. Traduzione italiana di Chiesa EverGrace.", bookOrig:"Originale inglese (PDF)", waAlt:"Codice QR WhatsApp di Chiesa EverGrace", count:n=>n+" devozionali", locale:"it-IT"},
+  en:{series:"Manna for Today", lede:"A word from Scripture for the daily walk.", credit:"Reflections by P. Christian Moore.", verse:"“I commend you to God and to the word of His grace, which is able to build you up and give you an inheritance among all those who are sanctified.”", verseRef:"Acts 20:32",
+      back:"All devotionals", by:"P. Christian Moore", prev:"Previous", next:"Next", refs:"REF", missing:"Devotional not found.",
+      foot:"<strong>Chiesa EverGrace</strong> · Missione Sicilia · Messina", looks:"Style preview", waTitle:"Stay in touch", waText:"Scan the code to join our WhatsApp group for more information.", waLink:"On your phone? Open the group →", bookKicker:"A booklet for you", bookTitle:"Just Let God Love You", bookDesc:"A short booklet on the love of God, who loved us while we were still sinners.", bookCta:"Read the booklet →", bookCredit:"Original title: Just Let God Love You, © 1996 Grace Publications, a ministry of Greater Grace World Outreach. Italian translation by Chiesa EverGrace.", bookOrig:"English original (PDF)", waAlt:"Chiesa EverGrace WhatsApp QR code", count:n=>n+" devotionals", locale:"en-GB"}
+};
+
+let lang = "it";
+try { const s = localStorage.getItem("manna-lang"); if (s === "en" || s === "it") lang = s; } catch(e) {}
+
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const inline = s => esc(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[\s(«"])_(.+?)_(?=$|[\s).,;:!?»"])/g,"$1<em>$2</em>");
+
+function render(md){
+  const out = []; let refs = "";
+  for (const block of md.trim().split(/\n\s*\n/)) {
+    const lines = block.split("\n");
+    if (lines[0].startsWith("REF:")) { refs = inline(block.slice(4).trim()); continue; }
+    if (lines[0].startsWith("### ")) { out.push("<h4>"+inline(lines[0].slice(4))+"</h4>"); lines.shift(); if (!lines.length) continue; }
+    if (lines[0].startsWith("## ")) { out.push("<h3>"+inline(lines[0].slice(3))+"</h3>"); lines.shift(); if (!lines.length) continue; }
+    if (lines.every(l => l.startsWith(">"))) {
+      const html = lines.map(l => l.replace(/^>\s?/,"")).join("\n").split(/\n\n+/).map(p => p.trim()).filter(Boolean)
+        .map(p => "<p>"+p.split("\n").map(inline).join("<br>")+"</p>").join("");
+      out.push("<blockquote>"+html+"</blockquote>"); continue;
+    }
+    const firstList = lines.findIndex(l => /^(- |\d+\. )/.test(l));
+    if (firstList > 0) out.push("<p>"+lines.slice(0,firstList).map(inline).join("<br>")+"</p>");
+    if (firstList >= 0) {
+      const items = lines.slice(firstList);
+      if (/^\d+\. /.test(items[0])) {
+        let html = "<ol>", open = false;
+        for (const l of items) {
+          if (/^\s+- /.test(l)) { if (!open) { html += "<ul>"; open = true; } html += "<li>"+inline(l.replace(/^\s+- /,""))+"</li>"; }
+          else { if (open) { html += "</ul>"; open = false; } html += (html.endsWith("<ol>")?"":"</li>") + "<li>"+inline(l.replace(/^\d+\. /,"")); }
+        }
+        if (open) html += "</ul>";
+        out.push(html+"</li></ol>");
+      } else {
+        out.push("<ul>"+items.map(l=>"<li>"+inline(l.replace(/^- /,""))+"</li>").join("")+"</ul>");
+      }
+      continue;
+    }
+    out.push("<p>"+lines.map(inline).join("<br>")+"</p>");
+  }
+  return {html: out.join(""), refs};
+}
+
+function fmtDate(iso){
+  return new Date(iso+"T12:00:00Z").toLocaleDateString(UI[lang].locale,{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"});
+}
+function excerpt(md){
+  const plain = md.replace(/^## .*$/gm,"").replace(/^>.*$/gm,"").replace(/\*\*|_/g,"").replace(/^(- |\s+- |\d+\. )/gm,"").replace(/REF:.*$/m,"");
+  return plain.replace(/\s+/g," ").trim().slice(0,220);
+}
+
+const view = document.getElementById("view");
+const LOGO = document.getElementById("brandLogo").src;
+const WHATSAPP = { qr: "data:image/png;base64,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", link: "https://chat.whatsapp.com/C10IutuesfqBChnIAslSEq" };
+const LOOKS = [["persiane","Persiane"],["pietra","Pietra e Stretto"],["sera","Sera a Messina"]];
+const look = "pietra";
+
+function showIndex(){
+  const t = UI[lang];
+  document.title = "Manna per Oggi";
+  view.innerHTML = `<header class="mast"><div class="mast-in"><div class="mast-text"><p class="kicker">Chiesa EverGrace · Messina</p><h1>${t.series.replace(/(Oggi|Today)$/,"<em>$1</em>")}</h1><p class="lede">${esc(t.lede)}</p><p class="credit">${esc(t.credit)}</p><p class="verse">${esc(t.verse)}<span class="verse-ref">${esc(t.verseRef)}</span></p></div></div><div class="persiana" aria-hidden="true"></div></header>
+  <ul class="list">${POSTS.map(p => `<li><a class="entry" href="#${p.id}"><div class="when">${fmtDate(p.date)}${p.place ? `<span>${esc(p.place[lang].split(",")[0])}</span>` : ""}</div><div class="body"><h2>${inline(p[lang].title)}</h2><p>${esc(excerpt(p[lang].body))}</p></div></a></li>`).join("")}</ul>`;
+}
+
+function showPost(id){
+  const t = UI[lang], i = POSTS.findIndex(p => p.id === id);
+  if (i < 0) { view.innerHTML = `<article><p>${t.missing}</p><p><a href="#">${t.back}</a></p></article>`; return; }
+  const p = POSTS[i], r = render(p[lang].body), newer = POSTS[i-1], older = POSTS[i+1];
+  document.title = p[lang].title + " · Manna per Oggi";
+  view.innerHTML = `<article>
+    <p class="eyebrow">${t.series} · ${fmtDate(p.date)}${p.place ? " · "+esc(p.place[lang]) : ""}</p>
+    <h1>${inline(p[lang].title)}</h1>
+    <p class="byline">${t.by}</p>
+    <div class="slats" aria-hidden="true"></div>
+    <div class="text">${r.html}</div>
+    ${r.refs ? `<p class="refs"><b>${t.refs}</b>${r.refs}</p>` : ""}
+    <nav class="pager">
+      ${older ? `<a href="#${older.id}"><small>← ${t.prev}</small><span>${inline(older[lang].title)}</span></a>` : ""}
+      ${newer ? `<a class="next" href="#${newer.id}"><small>${t.next} →</small><span>${inline(newer[lang].title)}</span></a>` : ""}
+    </nav>
+    <p class="backlink"><a href="#">← ${t.back}</a></p>
+  </article>`;
+}
+
+const BOOKLET = "## Introduzione\n\nQual è la forza che potrebbe guarirci più di qualsiasi altra cosa al mondo? Facciamo di tutto per essere guariti fisicamente. Facciamo di tutto per stare bene. Eppure la più grande forza di guarigione è così poco compresa.\n\nIl primo bisogno nella vita di ognuno è questo: essere amati da Dio. Sai qual è il secondo bisogno? Te lo dico io: essere amati da Dio. E ti dico anche qual è il terzo: essere amati da Dio.\n\nSono stato abbastanza chiaro?\n\n> «In questo sta l’amore: non che noi abbiamo amato Dio, ma che egli ha amato noi, e ha mandato suo Figlio per essere il sacrificio propiziatorio per i nostri peccati» (1 Giovanni 4:10).\n>\n> «Noi amiamo perché egli ci ha amati per primo» (1 Giovanni 4:19).\n\nVoglio che tu sappia che l’amore di Dio è venuto per primo: perciò il primo bisogno, per ogni tipo di guarigione, è essere amato da Dio così come sei. Dio ci ama esattamente come siamo, e continua ad amarci esattamente come siamo. L’amore di Dio, inoltre, non esige mai un cambiamento: piuttosto, lo produce.\n\nSe riesci a cogliere ciò che viene comunicato in queste pagine, il suo amore produrrà cambiamenti straordinari nella tua vita personale, nelle tue amicizie, nel tuo matrimonio e nella tua famiglia.\n\n## Capitolo primo · Mentre eravamo ancora peccatori\n\n> «Infatti, mentre noi eravamo ancora senza forza, Cristo, a suo tempo, è morto per gli empi. Difficilmente uno morirebbe per un giusto; ma forse per una persona buona qualcuno avrebbe il coraggio di morire; Dio invece mostra la grandezza del proprio amore per noi in questo: che, mentre eravamo ancora peccatori, Cristo è morto per noi» (Romani 5:6-8).\n\nGesù Cristo ha dimostrato il suo amore per noi morendo al nostro posto. Fermati un istante a immaginarlo. Non solo ci ha amati: ha fatto qualcosa. Noi non abbiamo fatto nulla. Non ci siamo ravveduti per indurre Dio ad amarci. Ci ha amati senza il nostro ravvedimento. Sto forse insinuando che possiamo vivere nel peccato? No, non è questo. Sto dicendo che l’amore di Dio produce un cambiamento, ma non lo esige mai.\n\nLasciati amare da Dio così come sei. Non cercare di amare Dio. Non cercare di amare gli altri. Nel momento stesso in cui ci provi, fallirai. Lasciati semplicemente amare da Dio. Ricevi un amore che non può mai venirti meno, un amore che non cambierà mai nei tuoi confronti.\n\n### Egli riposa nel suo amore\n\n> «Il Signore, il tuo Dio, è in mezzo a te, come un potente che salva; egli si rallegrerà con gran gioia per causa tua, si acqueterà nel suo amore, esulterà per causa tua con grida di gioia» (Sofonia 3:17).\n\nGesù Cristo ha versato il suo sangue ed è morto sulla croce per pagare i nostri peccati. È stato sepolto, è risorto ed è salito al cielo. Per questo, ora Dio riposa per sempre nel suo amore verso di noi. Ecco perché Romani 9:16 ci dice che il suo amore «non dipende né da chi vuole né da chi corre, ma da Dio che fa misericordia».\n\nGiovanni 1:12 dice: «A tutti quelli che l’hanno ricevuto egli ha dato il diritto di diventare figli di Dio: a quelli, cioè, che credono nel suo nome». Egli ci ha generati per sua volontà «mediante la parola di verità» (Giacomo 1:18).\n\n### Relazioni malate rese sane\n\nLascia che sia molto pratico. Come affronto una relazione malata? Preoccupandomene? Condannandomi? Sentendomi in colpa? Facendo bella figura nella mia carne (Galati 6:12)? No. Quando una relazione è malata, lascio semplicemente che la Parola di Dio sia vera e lascio che lui mi ami.\n\nSe fallisco, lascio che Dio mi ami. Non ho la forza di cambiare: lascio che sia Dio a cambiarmi. Il suo amore fallisce? No. Cambierà? No, non cambierà.\n\n## Capitolo secondo · Così come sei\n\nDi recente mi ha telefonato un uomo. Si trova in condizioni molto gravi: è risultato positivo al virus che causa l’AIDS. Nell’arco di quindici anni è caduto tre volte nella sua debolezza. La terza volta ha contratto l’HIV, e ora vuole morire. Provava una vergogna enorme quando lo ha detto a sua moglie.\n\nChe cosa può fare? Odia già ciò che ha fatto. In questo momento, quest’uomo ha bisogno di lasciare che Dio lo ami tanto quanto prima di sapere di avere l’HIV.\n\nLasciare che Dio ci ami non produce sregolatezza. Al contrario, ci insegna a rinunciare all’empietà e a vivere in tranquillità, con la Parola di Dio che abita abbondantemente nel nostro cuore.\n\nLa cosa più bella è lasciare che Dio ti ami così come sei. Ho un motivo per ripetere questa frase: lasciare che Dio ti ami è l’unico modo in cui la memoria e l’anima possono essere guarite. L’unico modo in cui l’immagine di sé e gli atteggiamenti possono cambiare è lasciare che Dio ti ami. Il motivo per cui certi uomini non riescono ad amare come si deve la propria moglie è semplicissimo: non capiscono come lasciarsi amare da Dio.\n\n### Conformi all’immagine del Figlio\n\n> «Or sappiamo che tutte le cose cooperano al bene di quelli che amano Dio, i quali sono chiamati secondo il suo disegno. Perché quelli che ha preconosciuti, li ha anche predestinati a essere conformi all’immagine del Figlio suo, affinché egli sia il primogenito fra molti fratelli; e quelli che ha predestinati, li ha pure chiamati; e quelli che ha chiamati, li ha pure giustificati; e quelli che ha giustificati, li ha pure glorificati» (Romani 8:28-30).\n\nNella sua prescienza, Dio sapeva che con la mia volontà avrei scelto di credere in suo Figlio. Sono stato giustificato, santificato e glorificato perché Dio è sempre stato dalla mia parte. Ed egli riposa nel suo amore verso di me, perché i miei peccati sono stati pagati dal Figlio.\n\nMi telefonò una persona di un’altra chiesa. Mi disse: «Ti ho attaccato, ti ho odiato e ho combattuto contro Dio. Ho ventinove anni, sto morendo e voglio ravvedermi».\n\nGli risposi: «L’unica cosa che mi interessa è che tu lasci che Dio ti ami».\n\nLui disse: «Ho l’AIDS. Sto per morire».\n\n«Lasciati semplicemente amare, lascia che Dio ti ami», gli dissi. «Nello stato in cui ti trovi, lasciati soltanto amare».\n\nAveva sbagliato, ma l’unica cosa di cui aveva bisogno era essere amato da Dio. Andai a trovarlo ogni giorno e continuai a ripetergli: «Lascia che Dio ti ami». Nel giro di dodici settimane quell’uomo uscì dall’ospedale e fu battezzato nella chiesa che in passato aveva odiato. Dio lo cambiò. I pensieri, le emozioni e le decisioni di quest’uomo cominciarono a esprimersi secondo la Parola di Dio. Il suo cuore fu cambiato, poi la sua anima, poi la sua mente. Cominciò ad amare la moglie con cui aveva combattuto per anni, e cominciò ad amare le sue due figlie. E mentre cominciava ad amare la chiesa, cominciò ad amare i perduti.\n\nIl punto decisivo, per quest’uomo, era che non amava se stesso. Dentro di sé non riusciva ad amarsi, e non credeva che Dio lo amasse. In chiesa testimoniò che il suo corpo era stato guarito. Ecco che cosa può fare l’amore nella volontà di Dio. Il Signore non esigette un cambiamento: lo produsse con il suo amore.\n\nPiù lascio che Dio mi ami senza mettermi sotto processo, più lascio che Dio mi ami senza paura di fallire, più lascio che Dio mi ami senza essere risentito e adirato verso gli altri, più ogni cosa nella mia vita viene guarita. Nella volontà sovrana di Dio sarò guarito, qualunque sia il problema. Il mio cuore, la mia anima e le mie emozioni saranno guariti semplicemente lasciando che Dio mi ami.\n\n## Capitolo terzo · L’amore fa nascere nuovi inizi\n\nUna bambina di dodici anni venne da me a parlarmi della situazione terribile che viveva in casa. I genitori erano raramente presenti; uno dei due se ne andava nei fine settimana. C’erano urla e litigi. C’era l’alcolismo. Mi disse: «Ho paura di tornare a casa perché non so che cosa fare. Lei è il mio pastore: potrebbe venire a casa nostra?».\n\nAndai a casa loro. In modo davvero singolare, la bambina disse a suo padre: «Voglio che tu ascolti il pastore». Così cominciai a parlargli. «Sa che migliaia di anni fa Gesù sapeva che oggi io sarei stato qui come servo di Dio?». E aggiunsi: «Signore, se potessi mettere in parole quanto Dio la ama in questo preciso momento, lo farei. Se potessi esprimere il suo amore a parole e lei riuscisse in qualche modo a crederci, in questa casa le cose cambierebbero».\n\nMi raccontò quanto la famiglia fosse disfunzionale e distruttiva. «È vero», dissi. «Ma prima di tutto voglio che lei si lasci amare da Dio, senza condanna. Non le chiederò nemmeno di cambiare le sue abitudini con l’alcol. Lasci semplicemente che Dio la ami». Lì, davanti a me, pianse come un bambino.\n\nQuella sera, dopo il culto, uscimmo insieme e quell’uomo accettò Gesù Cristo. Non bevve mai più. In seguito anche sua moglie accettò il Salvatore. Furono battezzati insieme, e quella bambina di dodici anni visse il giorno più bello della sua vita. La famiglia si fece una fotografia e me la regalò. Che testimonianza di ciò che può fare il lasciarsi amare da Dio!\n\n### Dimenticare il passato\n\nNon andai in quella casa per discutere di quanto quel padre fosse cattivo. Sul piano genetico, psicologico ed emotivo avremmo potuto trovare ogni sorta di spiegazione per come stavano le cose. Ma andai lì per dirgli che Dio aveva creato quell’uomo a propria immagine e per raccontargli quanto Dio fosse innamorato di lui in quel momento. Non ci fu alcuna discussione sui peccati. Lasciai che fosse l’amore di Dio a produrre il ravvedimento. Il papà di quella bambina fu cambiato e ricevette un inizio completamente nuovo.\n\nL’amore di Dio produsse una nuova immagine di sé.\nL’amore di Dio produsse una nuova consapevolezza.\nL’amore di Dio produsse fede.\nL’amore di Dio produsse speranza.\nL’amore di Dio rivelò misericordia.\nL’amore di Dio rivelò grazia.\n\nQuei genitori resero personale il suo amore. Lo interiorizzarono. L’amore di Dio fu impartito loro e divenne parte di loro. C’è da stupirsi che 1 Corinzi 13:8 dica che l’amore non verrà mai meno?\n\n### Condotti alla luce\n\n> «Io sopporterò l’indignazione del Signore, perché ho peccato contro di lui, finché egli difenda la mia causa e mi faccia giustizia; egli mi condurrà alla luce e io contemplerò la sua giustizia» (Michea 7:9).\n\nIl profeta Michea era abbattuto quando scrisse queste parole. Aveva peccato, ma comprendeva l’amore di Dio per lui. Sapeva che Dio era proprio lì, in basso, insieme a lui. Michea sapeva che sarebbe tornato indietro grazie alla luce dell’amore, e che avrebbe ricevuto il perdono.\n\nL’amore di Dio garantisce che Dio ti ama così come sei, come un peccatore senza forza. Ti giustifica mentre sei empio (Romani 4:5). Ti rende giusto a prescindere dalla legge e dalle opere (Romani 4:6). Ti santifica. Per mezzo del suo amore, Gesù è fatto per te «giustizia, santificazione e redenzione» (1 Corinzi 1:30). L’amore di Dio garantisce che non ti sarà mai più imputato un altro peccato. Garantisce anche che, se continuerai nel peccato, l’amore di Dio ti disciplinerà a motivo dell’amore, non al di fuori di esso. La disciplina viene per proteggere, per dare la mente di Cristo e, in ultima analisi, per benedire.\n\n## Capitolo quarto · Nell’amore di Dio non ci sono «se»\n\n> «Il Signore mi è apparso da lontano: “Io ti amo di un amore eterno; perciò ti ho attirata a me con bontà”» (Geremia 31:3).\n\nQuando Dio disse queste parole, la nazione d’Israele stava adorando gli idoli. Non disse: «Ti amerò se ti metterai in riga». Non disse: «Ti amerò se smetterai di adorare gli idoli».\n\nNo, Dio disse: «Io ti amo di un amore eterno». Ci sono tanti «se» nelle nostre relazioni — tanti «se» che ostacolano la guarigione mentale ed emotiva e che a volte bloccano perfino quella fisica. Ma Dio non dice: «Ti amerò se…». Dice: «Ti ho amato, anche mentre eri “là fuori”».\n\nIl padre non amava forse il figlio prodigo mentre era “là fuori”, in un paese lontano, tanto quanto quando era a casa? Sì, lo amava. L’amore del padre non cambiò mentre il prodigo viveva nel peccato. Quell’amore aspettò soltanto, con pazienza, di poter dare grazia a suo figlio. Quando la sua volontà decise che era ora di tornare a casa, così com’era, il prodigo ricevette perdono e purificazione. Il padre gli diede un anello, una veste, calzari nuovi e una festa di bentornato. Uccisero il vitello ingrassato per la celebrazione, e tutto questo accadde perché il figlio tornò a casa così com’era (Luca 15:11-24).\n\nPensa a tutto ciò che è accaduto nella società. Considera le profondità del peccato di oggi. Considera la terribile disfunzione nelle famiglie e nelle persone. Con tutto quello che succede, la cosa di cui il genere umano ha più bisogno è capire quanto Dio ci ama. Il grande problema non è affrontare il peccato. Affronta il fatto di quanto Dio ti ama, e sarà l’amore di Dio a occuparsi del peccato. L’amore di Dio produrrà il cambiamento.\n\n### Sparso nel cuore\n\n> «E la speranza non delude, perché l’amore di Dio è stato sparso nei nostri cuori mediante lo Spirito Santo che ci è stato dato» (Romani 5:5).\n\nLo Spirito Santo sparge l’amore di Dio nel cuore, e l’amore è il frutto dello Spirito. Quando ricevo il suo amore, occupandomi soltanto del fatto che lui mi ama, allora è la disposizione di Dio a prendere il sopravvento. Entra il suo temperamento. Forse non me ne rendo nemmeno conto, ma lo sto ricevendo, mentre la sua natura entra in me e comincia a comunicare e ad avere comunione con me. E la natura di Dio non pecca.\n\n### Cambiare rotta\n\n> «Nei quali un tempo camminaste seguendo l’andazzo di questo mondo, seguendo il principe della potenza dell’aria, di quello spirito che opera oggi negli uomini ribelli. Nel numero dei quali anche noi tutti vivevamo un tempo, secondo i desideri della nostra carne, ubbidendo alle voglie della carne e dei nostri pensieri; ed eravamo per natura figli d’ira, come gli altri.\n>\n> «Ma Dio, che è ricco in misericordia, per il grande amore con il quale ci ha amati, anche quando eravamo morti nei peccati, ci ha vivificati con Cristo (è per grazia che siete stati salvati), e ci ha risuscitati con lui e con lui ci ha fatti sedere nei luoghi celesti in Cristo Gesù» (Efesini 2:2-6).\n\nNon importa in che cosa stai camminando. In passato tutti noi camminavamo seguendo l’andazzo di questo mondo. Eravamo tutti controllati dal principe della potenza dell’aria, come figli della disubbidienza. Ma Dio, ricco di grazia e ricco di misericordia, ha un grande amore «con il quale ci ha amati» (Efesini 2:4). Ed è per mezzo di quell’amore che vengono i cambiamenti.\n\nPer ogni credente, l’amore di Dio era già lì, pronto per noi. È il conoscere quanto eravamo amati che ci ha portati a essere salvati per grazia, mediante la fede in Gesù Cristo. Egli è entrato nella nostra vita, e l’amore del Padre, del Figlio e dello Spirito Santo è diventato qualcosa di interiore e di personale.\n\nOnde di amore possono scorrere ogni giorno attraverso le cellule del tuo corpo. Non è emozione umana: è amore divino.\n\n«Non ho fatto la cosa giusta», dici.\n\nAccetta semplicemente l’amore di Dio per ciò che hai sbagliato.\n\n«Non mi sento spirituale».\n\nAccetta l’amore anche se non senti nulla.\n\nRicevi soltanto il suo amore, e produrrà non solo amore, ma anche gioia, pace, sopportazione, pazienza, bontà divina, benevolenza, fedeltà, mansuetudine e autocontrollo.\n\n### Il giogo leggero dell’amore\n\n> «Venite a me, voi tutti che siete affaticati e oppressi, e io vi darò riposo. Prendete su di voi il mio giogo e imparate da me, perché io sono mansueto e umile di cuore; e voi troverete riposo alle anime vostre; poiché il mio giogo è dolce e il mio carico è leggero» (Matteo 11:28-30).\n\nSai qual è il suo giogo? È l’amore. Quando prendo su di me il suo giogo, sto semplicemente scegliendo di prendere su di me il suo amore. «In questo sta l’amore: non che noi abbiamo amato Dio, ma che egli ha amato noi, e ha mandato suo Figlio per essere il sacrificio propiziatorio per i nostri peccati… Noi amiamo perché egli ci ha amati per primo» (1 Giovanni 4:10, 19). Non c’è da stupirsi che il suo giogo sia dolce. Non c’è da stupirsi che imparare da lui produca riposo per la mia anima. Il Padre riposa nel suo amore (Sofonia 3:17). Io prendo il giogo. Lascio che Gesù mi ami così come sono. E allora è lui a produrre in me quel cambiamento, grazie alla potenza dell’amore, alla dinamica dell’amore, alla fede dell’amore, alla grazia dell’amore e alla presenza dell’amore. Finalmente il cambiamento arriva, e io sono guarito.\n\n### Prima ama te stesso\n\nC’è un ordine nell’amore di Dio. Non devo amare per primi gli altri: devo amare prima me stesso. Non posso nemmeno amare Dio se non amo me stesso. Devo lasciare che Dio mi ami. È così che funziona. Primo: lascio che Dio mi ami. Secondo: amo me stesso. Terzo: amo Dio. E infine sono pienamente libero di amare te e tutti gli altri — perfino i miei nemici.\n\nQuando ami te stesso, nasce una nuova immagine di te, una nuova consapevolezza di te. Ricevi un nuovo senso di essere speciale, un nuovo senso di essere reso giusto davanti a Dio grazie alla santificazione mediante il sangue di Cristo. Non c’è più nulla tra te e Dio. Non c’è più nulla tra te e chiunque altro. Sei amato e ami nella potenza dello Spirito Santo. Non sto parlando di sentimentalismo o di carnalità: sto parlando di ciò che la Bibbia dice sull’amore di Dio per noi mentre siamo ancora peccatori.\n\nC’è da stupirsi che Davide abbia detto che le compassioni del Signore sono grandi (2 Samuele 24:14)? C’è da stupirsi che Pietro lo abbia chiamato «il Dio di ogni grazia» (1 Pietro 5:10)? Paolo lo ha chiamato «il Padre misericordioso e Dio di ogni consolazione» (2 Corinzi 1:3).\n\n«Abraamo», chiamò Dio. «Non mi parli da tredici anni, ma io ti amo».\n\n«Giacobbe. Te ne sei andato e sei stato lontano da me per vent’anni. Ma io ti amo ancora e ti userò» (Genesi 32).\n\n«Gedeone. Ti stai nascondendo e non vuoi essere usato», dice. «Ma io ti amo proprio dove sei. Calmerò le tue paure e porterò una grande vittoria» (Giudici 6).\n\n«Sansone. Hai sbagliato con Dalila. Ma io ti amo. Ora riprenditi la tua forza e distruggi i tuoi nemici» (Giudici 16).\n\n«Pietro. Mi hai rinnegato e mentre lo facevi hai perfino imprecato. Pubblicamente mi hai abbandonato, ma io ti amo. Predicherai questo grande messaggio alla folla dopo che lo Spirito Santo sarà venuto su di te» (Atti 1).\n\n«Paolo. Hai ucciso dei cristiani. Hai assistito alla lapidazione di Stefano. Eppure ti ho amato. Ti ho salvato e ti userò potentemente tra i pagani» (Atti 22).\n\nIn Giovanni 13:1 la Bibbia dice che «li amò sino alla fine». Che cosa significa? Sino alla fine? Significa che nulla cambiò l’amore di Gesù Cristo per i suoi discepoli. Si allontanarono. Lo rinnegarono. Lo abbandonarono quando aveva più bisogno di loro, ma questo non cambiò il suo amore. Li amò sino alla fine — e così amerà te e me sino alla fine.\n\n## Conclusione\n\n> «E ho questa fiducia: che colui che ha cominciato in voi un’opera buona, la condurrà a compimento fino al giorno di Cristo Gesù» (Filippesi 1:6).\n\nSe sei intrappolato nel peccato, lascia che Dio ti ami lì dove sei, e lascia che produca nella tua vita un cambiamento puro. Si tratta soltanto di rispondere al suo amore, tutto qui. La mia unica speranza è che queste parole ti abbiano spinto a lasciarti amare da lui e ad andare avanti.\n\nDio è amore. Egli perdona ogni cosa. Io sono stato perdonato, tu sei stato perdonato. Siamo stati lavati, purificati mediante la fede. Il suo amore non viene mai meno, e non manca mai di cambiarci. E oltre a questo, il suo amore non mancherà mai di cambiare gli altri attraverso di noi. È la forza più dinamica che ci sia in questo mondo: lasciamola dunque libera di agire!";
+const BOOKLET_EN_PDF = "https://drcarlhstevens.com/wp-content/uploads/2022/08/Just-Let-God-Love-You.pdf";
+
+function showBooklet(){
+  const t = UI[lang], r = render(BOOKLET);
+  document.title = "Lascia semplicemente che Dio ti ami · Manna per Oggi";
+  view.innerHTML = `<article>
+    <p class="eyebrow">${t.bookKicker} · Pastore Carl H. Stevens</p>
+    <h1>${lang === "en" ? "Just Let God Love You" : "Lascia semplicemente che Dio ti ami"}</h1>
+    <p class="byline">${lang === "en" ? "The first need of every human life" : "Il primo bisogno di ogni vita umana"}</p>
+    <div class="slats" aria-hidden="true"></div>
+    ${lang === "en" ? `<p class="booklet-note">This booklet is shown below in its Italian translation. <a href="${BOOKLET_EN_PDF}" target="_blank" rel="noopener">Read the original English (PDF) →</a></p>` : ""}
+    <div class="text" lang="it">${r.html}</div>
+    <p class="credit-line">${t.bookCredit} <a href="${BOOKLET_EN_PDF}" target="_blank" rel="noopener">${t.bookOrig}</a></p>
+    <p class="backlink"><a href="#">← ${t.back}</a></p>
+  </article>`;
+}
+
+function route(){
+  const id = location.hash.replace(/^#/,"");
+  document.documentElement.lang = lang;
+  for (const b of document.querySelectorAll(".lang button")) b.setAttribute("aria-pressed", String(b.dataset.l === lang));
+  document.documentElement.dataset.look = look;
+  const book = `<a class="book" href="#libretto"><span class="book-spine" aria-hidden="true"></span><span><small>${UI[lang].bookKicker}</small><b>${UI[lang].bookTitle}</b><span class="book-by">Pastor Carl H. Stevens</span><span class="book-desc">${UI[lang].bookDesc}</span><span class="book-cta">${UI[lang].bookCta}</span></span></a>`;
+  const wa = WHATSAPP.qr ? `<div class="wa"><img src="${WHATSAPP.qr}" alt="${UI[lang].waAlt}"><div><b>${UI[lang].waTitle}</b><p>${UI[lang].waText}</p><a class="wa-link" href="${WHATSAPP.link}" target="_blank" rel="noopener">${UI[lang].waLink}</a></div></div>` : "";
+  document.getElementById("foot").innerHTML = `<div class="foot-cards">${book}${wa}</div>` + `<div class="foot-brand"><img src="${LOGO}" alt=""><span>${UI[lang].foot}</span></div>`;
+  id === "libretto" ? showBooklet() : id ? showPost(id) : showIndex();
+}
+
+for (const b of document.querySelectorAll(".lang button")) b.addEventListener("click", () => {
+  lang = b.dataset.l; try { localStorage.setItem("manna-lang", lang); } catch(e) {}
+  route();
+});
+window.addEventListener("hashchange", () => { route(); window.scrollTo(0,0); });
+document.documentElement.dataset.look = look;
+route();
+</script>
+
+
+</body>
+</html>
