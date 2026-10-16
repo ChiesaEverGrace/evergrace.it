@@ -6,7 +6,7 @@
     instagram: "https://www.instagram.com/chiesaevergrace/",
     facebook:  "",
     youtube:   "https://www.youtube.com/@ChiesaEverGrace",
-    whatsapp:  "https://wa.me/18325857297"
+    whatsapp:  "https://wa.me/qr/6ZCZTGIAJGUNC1?s=p"
   };
 
   // Email is assembled at run time so harvesters don't find it in the source.
