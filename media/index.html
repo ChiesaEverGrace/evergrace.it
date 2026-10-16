@@ -85,6 +85,11 @@ article h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,5.5vw
 .cards h3{font-family:var(--display);font-weight:400;font-size:21px;color:var(--accent);margin:0 0 .4em}
 .cards p{margin:0;font-size:16px;line-height:1.6;color:var(--muted)}
 .cards .more{margin-top:12px;font-size:14px}
+.player{margin:0 0 26px}
+.player .frame{position:relative;width:100%;aspect-ratio:16/9;background:var(--panel);border-radius:10px;overflow:hidden}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player p.cap{font-family:var(--sans);font-size:13px;color:var(--muted);margin:10px 0 0}
+.player p.cap a{color:var(--accent);text-underline-offset:3px}
 .soon{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:12px;display:inline-block}
 
 .book{display:flex;gap:16px;align-items:stretch;padding:16px 18px 16px 16px;background:var(--panel);border-radius:10px;text-decoration:none;color:var(--muted)}
@@ -155,6 +160,10 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
         <p class="eyebrow">Da ascoltare</p>
         <h2>Predicazioni</h2>
         <div class="slats" aria-hidden="true"></div>
+        <div class="player" data-player hidden>
+          <div class="frame"><iframe data-embed title="Ultima predicazione" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          <p class="cap">L'ultima predicazione dal nostro canale YouTube. <a data-href="youtube" target="_blank" rel="noopener">Guarda tutte le predicazioni →</a></p>
+        </div>
         <ul class="cards">
           <li data-link="youtube">
             <h3>Il nostro canale YouTube</h3>
@@ -233,6 +242,10 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
         <p class="eyebrow">Listen</p>
         <h2>Preaching</h2>
         <div class="slats" aria-hidden="true"></div>
+        <div class="player" data-player hidden>
+          <div class="frame"><iframe data-embed title="Latest message" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          <p class="cap">The latest message from our YouTube channel. <a data-href="youtube" target="_blank" rel="noopener">Watch all the messages →</a></p>
+        </div>
         <ul class="cards">
           <li data-link="youtube">
             <h3>Our YouTube channel</h3>
@@ -318,6 +331,12 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
     facebook:  "",   // e.g. https://www.facebook.com/chiesaevergrace
     whatsapp:  ""    // e.g. https://chat.whatsapp.com/XXXXXXXX
   };
+
+  /* The sermon player. Set CHANNEL_ID to the channel's UC... id and the player
+     always shows the newest upload on its own — nothing to change each week.
+     Set LATEST_VIDEO to a single video id to pin one message instead. */
+  var CHANNEL_ID   = "";   // e.g. UCxxxxxxxxxxxxxxxxxxxxxx
+  var LATEST_VIDEO = "";   // e.g. dQw4w9WgXcQ — overrides CHANNEL_ID when set
   // Hide the "first messages from 25 October" note once sermons are up.
   var SHOW_COMING_SOON = true;
 
@@ -333,10 +352,27 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
   });
   if (!SHOW_COMING_SOON) document.querySelectorAll("[data-soon]").forEach(function(el){ el.dataset.empty = "1"; });
 
+  // Pinned video, else the channel's uploads playlist (UC... becomes UU...), else no player.
+  var src = LATEST_VIDEO
+    ? "https://www.youtube-nocookie.com/embed/" + LATEST_VIDEO + "?rel=0"
+    : (/^UC[\w-]{20,}$/.test(CHANNEL_ID)
+        ? "https://www.youtube-nocookie.com/embed/videoseries?list=UU" + CHANNEL_ID.slice(2) + "&rel=0"
+        : "");
+  if (src) {
+    document.querySelectorAll("[data-embed]").forEach(function(f){ f.src = src; });
+    document.querySelectorAll("[data-player]").forEach(function(el){ el.removeAttribute("hidden"); el.dataset.shown = "1"; });
+    document.querySelectorAll("[data-soon]").forEach(function(el){ el.dataset.empty = "1"; });
+  } else {
+    document.querySelectorAll("[data-player]").forEach(function(el){ el.dataset.empty = "1"; });
+  }
+
   function apply(){
     document.documentElement.lang = lang;
     document.title = (lang === "en" ? "Media" : "Media") + " · Chiesa EverGrace";
     document.querySelectorAll("[data-lang]").forEach(function(el){ el.hidden = el.dataset.lang !== lang; });
+    document.querySelectorAll("[data-player][data-shown]").forEach(function(el){
+      el.hidden = el.closest("[data-lang]").dataset.lang !== lang;
+    });
     document.querySelectorAll("[data-empty]").forEach(function(el){ el.hidden = true; });
     document.querySelectorAll(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.l === lang)); });
   }
