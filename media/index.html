@@ -337,6 +337,9 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
      Set LATEST_VIDEO to a single video id to pin one message instead. */
   var CHANNEL_ID   = "UCowixXtUBTg0D1Am0CIA0KA";   // @ChiesaEverGrace
   var LATEST_VIDEO = "";   // e.g. dQw4w9WgXcQ — overrides CHANNEL_ID when set
+  /* The channel has no public videos yet, and an empty uploads playlist renders
+     as a YouTube error box. Flip this to true once the first sermon is posted. */
+  var PLAYER_LIVE  = false;
   // Hide the "first messages from 25 October" note once sermons are up.
   var SHOW_COMING_SOON = true;
 
@@ -353,7 +356,8 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
   if (!SHOW_COMING_SOON) document.querySelectorAll("[data-soon]").forEach(function(el){ el.dataset.empty = "1"; });
 
   // Pinned video, else the channel's uploads playlist (UC... becomes UU...), else no player.
-  var src = LATEST_VIDEO
+  var src = !PLAYER_LIVE ? ""
+    : LATEST_VIDEO
     ? "https://www.youtube-nocookie.com/embed/" + LATEST_VIDEO + "?rel=0"
     : (/^UC[\w-]{20,}$/.test(CHANNEL_ID)
         ? "https://www.youtube-nocookie.com/embed/videoseries?list=UU" + CHANNEL_ID.slice(2) + "&rel=0"
