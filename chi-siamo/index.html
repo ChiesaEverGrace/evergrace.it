@@ -245,7 +245,7 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
             <dt>Lingue</dt>
             <dd>Italiano e inglese</dd>
             <dt>Scrivici</dt>
-            <dd><a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a></dd>
+            <dd><a data-mail="text"></a></dd>
           </dl>
         </div>
         <div class="text" style="margin-top:22px">
@@ -362,7 +362,7 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
             <dt>Languages</dt>
             <dd>Italian and English</dd>
             <dt>Write to us</dt>
-            <dd><a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a></dd>
+            <dd><a data-mail="text"></a></dd>
           </dl>
         </div>
         <div class="text" style="margin-top:22px">
@@ -377,7 +377,7 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
       <a href="/">Home</a>
       <a href="/media">Media</a>
       <a href="https://manna.evergrace.it/">Manna per Oggi</a>
-      <a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a>
+      <a data-mail="text"></a>
     </p>
     <div class="foot-brand">
       <img src="https://manna.evergrace.it/logo.png" alt="">
@@ -404,6 +404,19 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
     });
   });
   apply();
+})();
+</script>
+
+<script>
+/* The address is assembled at run time, so it never appears in the page source
+   for harvesters to scrape. Edit the parts below if the address ever changes. */
+(function(){
+  var user = ["ci","ao"].join(""), host = ["ever","grace"].join("") + "." + "it";
+  var addr = user + String.fromCharCode(64) + host;
+  document.querySelectorAll("[data-mail]").forEach(function(el){
+    el.setAttribute("href", "mailto:" + addr);
+    if (el.dataset.mail === "text") el.textContent = addr;
+  });
 })();
 </script>
 

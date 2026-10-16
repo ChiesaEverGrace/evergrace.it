@@ -232,7 +232,7 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
         <dt data-t="whereDt1"></dt><dd data-t="whereDd1"></dd>
         <dt data-t="whereDt2"></dt><dd>Cinema Apollo, Via Cesare Battisti 99, 98123 Messina (ME)</dd>
         <dt data-t="whereDt3"></dt><dd data-t="whereDd3"></dd>
-        <dt data-t="whereDt4"></dt><dd><a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a></dd>
+        <dt data-t="whereDt4"></dt><dd><a data-mail="text"></a></dd>
       </dl>
       <ul class="social">
         <li><a href="https://maps.google.com/?q=Cinema+Apollo,+Via+Cesare+Battisti+99,+98123+Messina" target="_blank" rel="noopener" data-t="mapBtn"></a></li>
@@ -268,7 +268,7 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
       <div>
         <h3 data-t="fc3"></h3>
         <ul>
-          <li><a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a></li>
+          <li><a data-mail="text"></a></li>
           <li data-link="instagram"><a data-href="instagram" target="_blank" rel="noopener">Instagram</a></li>
           <li data-link="facebook"><a data-href="facebook" target="_blank" rel="noopener">Facebook</a></li>
         </ul>
@@ -417,6 +417,19 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
     });
   });
   apply();
+})();
+</script>
+
+<script>
+/* The address is assembled at run time, so it never appears in the page source
+   for harvesters to scrape. Edit the parts below if the address ever changes. */
+(function(){
+  var user = ["ci","ao"].join(""), host = ["ever","grace"].join("") + "." + "it";
+  var addr = user + String.fromCharCode(64) + host;
+  document.querySelectorAll("[data-mail]").forEach(function(el){
+    el.setAttribute("href", "mailto:" + addr);
+    if (el.dataset.mail === "text") el.textContent = addr;
+  });
 })();
 </script>
 
