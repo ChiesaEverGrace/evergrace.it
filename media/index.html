@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Media · Chiesa EverGrace</title>
+<meta name="description" content="Media — predicazioni, devozionali e social di Chiesa EverGrace, Messina. La fede viene dall'ascolto. Preaching, devotionals and social from Chiesa EverGrace.">
+<link rel="icon" type="image/png" sizes="32x32" href="https://manna.evergrace.it/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="https://manna.evergrace.it/logo.png">
+<link rel="apple-touch-icon" href="https://manna.evergrace.it/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chiesa EverGrace">
+<meta property="og:title" content="Media · Chiesa EverGrace">
+<meta property="og:description" content="La fede viene dall'ascolto. Predicazioni, devozionali e social di Chiesa EverGrace, Messina.">
+<meta property="og:url" content="https://evergrace.it/media">
+<meta property="og:image" content="https://manna.evergrace.it/og-image.png">
+<meta property="og:locale" content="it_IT">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#F3EFE7; --panel:#E8E1D3; --ink:#23272A; --muted:#6C6F72; --rule:#D9D2C4;
+  --accent:#2B5870; --accent2:#2F5B48; --on-accent:#F3EFE7; --grain:.07;
+  --display:"Marcellus","Trajan Pro",Georgia,serif;
+  --serif:"Lora",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#161B1F; --panel:#1E252A; --ink:#E7E3DB; --muted:#9A9FA4; --rule:#313A41;
+  --accent:#89B5CD; --accent2:#7DB197; --on-accent:#10181D; --grain:.04; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;position:relative}
+img{max-width:100%}
+[hidden]{display:none!important}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:var(--grain);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .2 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{position:relative;max-width:720px;margin:0 auto;padding-inline:20px;padding-block:20px 56px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:52px;height:52px;border-radius:50%;display:block}
+.brand span{font-family:var(--display);font-size:20px;letter-spacing:.02em}
+.lang{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;font-family:var(--sans);font-size:13px;letter-spacing:.08em}
+.lang button{font:inherit;background:none;border:0;color:var(--muted);padding:6px 14px;cursor:pointer;min-height:36px}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.nav{margin-top:16px;display:flex;flex-wrap:wrap;gap:4px 20px;font-family:var(--sans);font-size:14px;letter-spacing:.04em}
+.nav a{color:var(--muted);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--accent)}
+.nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+
+.mast{margin-top:20px;background:var(--panel);border-radius:999px 999px 0 0 / 150px 150px 0 0;overflow:hidden}
+.mast-in{display:flex;align-items:center;gap:20px;padding:72px 36px 36px;flex-wrap:wrap;justify-content:center;text-align:center;flex-direction:column}
+.mast-logo{width:132px;height:132px;border-radius:50%;flex:none;box-shadow:0 0 0 6px var(--paper),0 0 0 7px var(--rule)}
+.mast-text{flex:1 1 300px;min-width:0}
+.kicker{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0}
+.mast h1{font-family:var(--display);font-weight:400;font-size:clamp(38px,7.5vw,56px);line-height:1.05;margin:10px 0 0;text-wrap:balance}
+.mast h1 em{font-style:normal;color:var(--accent2)}
+.mast .lede{margin:16px auto 0;color:var(--muted);font-size:17px;max-width:32em}
+.verse{font-style:italic;color:var(--muted);font-size:16px;margin:14px 0 0}
+.verse-ref{display:block;font-style:normal;font-family:var(--sans);font-size:13px;letter-spacing:.06em;margin-top:4px}
+.persiana{height:10px;background:var(--accent)}
+
+article{padding-top:40px}
+section+section{margin-top:52px}
+.eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0}
+article h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,5.5vw,38px);line-height:1.12;margin:0 0 10px;text-wrap:balance}
+.slats{height:3px;margin:0 0 28px;background:var(--accent);max-width:120px}
+.text p{margin:0 0 1.1em}
+.more{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--accent);text-underline-offset:4px;display:inline-block}
+
+.cards{display:grid;gap:18px;margin:0;padding:0;list-style:none}
+@media (min-width:620px){.cards{grid-template-columns:1fr 1fr}}
+.cards li{background:var(--panel);border-radius:10px;padding:20px 22px;display:flex;flex-direction:column}
+.cards h3{font-family:var(--display);font-weight:400;font-size:21px;color:var(--accent);margin:0 0 .4em}
+.cards p{margin:0;font-size:16px;line-height:1.6;color:var(--muted)}
+.cards .more{margin-top:12px;font-size:14px}
+.soon{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:12px;display:inline-block}
+
+.book{display:flex;gap:16px;align-items:stretch;padding:16px 18px 16px 16px;background:var(--panel);border-radius:10px;text-decoration:none;color:var(--muted)}
+.book-spine{flex:none;width:58px;border-radius:3px 6px 6px 3px;background:var(--accent);box-shadow:inset 6px 0 0 color-mix(in srgb,var(--accent) 70%,#000)}
+.book small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.book b{display:block;font-family:var(--display);font-weight:400;font-size:19px;color:var(--ink);line-height:1.2;margin-top:2px}
+.book-by,.book-desc{display:block;font-family:var(--sans);font-size:13px;line-height:1.45}
+.book-desc{margin-top:6px}
+.book-cta{display:inline-block;margin-top:8px;font-family:var(--sans);font-size:13px;font-weight:500;color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.book:hover b{color:var(--accent)}
+
+.social{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.social a{display:inline-block;font-family:var(--sans);font-size:14px;border:1px solid var(--rule);border-radius:999px;padding:9px 18px;text-decoration:none;color:var(--ink);min-height:40px}
+.social a:hover{border-color:var(--accent);color:var(--accent)}
+
+@media (max-width:520px){.mast-in{padding:48px 22px 28px;gap:16px}.mast-logo{width:96px;height:96px}}
+
+footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:13px;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.foot-brand{display:flex;align-items:center;gap:10px}
+.foot-brand img{width:28px;height:28px;border-radius:50%}
+.foot-brand strong{font-weight:500;color:var(--ink)}
+.foot-links a{color:var(--accent);margin:0 8px;text-underline-offset:3px}
+@media (prefers-reduced-motion:no-preference){article,.mast{animation:in .35s ease-out}@keyframes in{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="/" aria-label="Chiesa EverGrace">
+      <img src="https://manna.evergrace.it/logo.png" alt="Logo Chiesa EverGrace">
+      <span>Chiesa EverGrace</span>
+    </a>
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button data-l="it">IT</button><button data-l="en">EN</button>
+    </div>
+  </div>
+
+  <nav class="nav" data-lang="it">
+    <a href="/">Home</a>
+    <a href="/chi-siamo">Chi siamo</a>
+    <a href="/media" aria-current="page">Media</a>
+    <a href="https://manna.evergrace.it/">Manna per Oggi</a>
+  </nav>
+  <nav class="nav" data-lang="en" hidden>
+    <a href="/">Home</a>
+    <a href="/chi-siamo">About us</a>
+    <a href="/media" aria-current="page">Media</a>
+    <a href="https://manna.evergrace.it/">Manna per Oggi</a>
+  </nav>
+
+  <!-- ===================== ITALIANO ===================== -->
+  <div data-lang="it">
+    <header class="mast">
+      <div class="mast-in">
+        <img class="mast-logo" src="https://manna.evergrace.it/logo.png" alt="">
+        <div class="mast-text">
+          <p class="kicker">Chiesa EverGrace · Messina</p>
+          <h1>La fede viene <em>dall'ascolto</em></h1>
+          <p class="lede">Predicazioni, devozionali e la vita della chiesa — da ascoltare, leggere e seguire durante la settimana.</p>
+          <p class="verse">«La fede viene da ciò che si ascolta, e ciò che si ascolta viene dalla parola di Cristo.»<span class="verse-ref">Romani 10:17</span></p>
+        </div>
+      </div>
+      <div class="persiana" aria-hidden="true"></div>
+    </header>
+
+    <article>
+      <section>
+        <p class="eyebrow">Da ascoltare</p>
+        <h2>Predicazioni</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <ul class="cards">
+          <li data-link="youtube">
+            <h3>Il nostro canale YouTube</h3>
+            <p>Le predicazioni della domenica, in italiano e in inglese, caricate dopo ogni culto.</p>
+            <a class="more" data-href="youtube" target="_blank" rel="noopener">Vai al canale →</a>
+            <span class="soon" data-soon>Le prime predicazioni dal 25 ottobre</span>
+          </li>
+          <li>
+            <h3>Manna per Oggi</h3>
+            <p>Un breve devozionale quotidiano, in italiano e in inglese: due minuti al mattino, da leggere sul telefono.</p>
+            <a class="more" href="https://manna.evergrace.it/">Leggi il devozionale →</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="eyebrow">Da leggere</p>
+        <h2>Un libretto per te</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <a class="book" href="https://manna.evergrace.it/#libretto">
+          <span class="book-spine" aria-hidden="true"></span>
+          <span>
+            <small>Un libretto per te</small>
+            <b>Lascia semplicemente che Dio ti ami</b>
+            <span class="book-by">Pastore Carl H. Stevens</span>
+            <span class="book-desc">Un breve libretto sull'amore di Dio, che ci ha amati mentre eravamo ancora peccatori.</span>
+            <span class="book-cta">Leggi il libretto →</span>
+          </span>
+        </a>
+      </section>
+
+      <section>
+        <p class="eyebrow">Da seguire</p>
+        <h2>Dove trovarci</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <div class="text">
+          <p>Foto, brevi pensieri e aggiornamenti sulla vita della chiesa, settimana dopo settimana.</p>
+        </div>
+        <ul class="social">
+          <li data-link="instagram"><a data-href="instagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li data-link="facebook"><a data-href="facebook" target="_blank" rel="noopener">Facebook</a></li>
+          <li data-link="youtube"><a data-href="youtube" target="_blank" rel="noopener">YouTube</a></li>
+          <li data-link="whatsapp"><a data-href="whatsapp" target="_blank" rel="noopener">Gruppo WhatsApp</a></li>
+          <li><a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="eyebrow">Vieni a trovarci</p>
+        <h2>Domenica alle 10:30</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <div class="text">
+          <p>Cinema Apollo, Via Cesare Battisti 99, Messina. Dal 25 ottobre 2026, ogni domenica.</p>
+          <p><a class="more" href="/">Tutti i dettagli →</a></p>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div data-lang="en" hidden>
+    <header class="mast">
+      <div class="mast-in">
+        <img class="mast-logo" src="https://manna.evergrace.it/logo.png" alt="">
+        <div class="mast-text">
+          <p class="kicker">Chiesa EverGrace · Messina</p>
+          <h1>Faith comes <em>by hearing</em></h1>
+          <p class="lede">Preaching, devotionals and the life of the church — to listen to, to read, and to follow through the week.</p>
+          <p class="verse">“Faith comes by hearing, and hearing by the word of Christ.”<span class="verse-ref">Romans 10:17</span></p>
+        </div>
+      </div>
+      <div class="persiana" aria-hidden="true"></div>
+    </header>
+
+    <article>
+      <section>
+        <p class="eyebrow">Listen</p>
+        <h2>Preaching</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <ul class="cards">
+          <li data-link="youtube">
+            <h3>Our YouTube channel</h3>
+            <p>Sunday messages, in Italian and English, posted after each service.</p>
+            <a class="more" data-href="youtube" target="_blank" rel="noopener">Go to the channel →</a>
+            <span class="soon" data-soon>First messages from 25 October</span>
+          </li>
+          <li>
+            <h3>Manna per Oggi</h3>
+            <p>A short daily devotional in Italian and English — two minutes in the morning, made for the phone.</p>
+            <a class="more" href="https://manna.evergrace.it/">Read the devotional →</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="eyebrow">Read</p>
+        <h2>A booklet for you</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <a class="book" href="https://manna.evergrace.it/#libretto">
+          <span class="book-spine" aria-hidden="true"></span>
+          <span>
+            <small>A booklet for you</small>
+            <b>Just Let God Love You</b>
+            <span class="book-by">Pastor Carl H. Stevens</span>
+            <span class="book-desc">A short booklet on the love of God, who loved us while we were still sinners.</span>
+            <span class="book-cta">Read the booklet →</span>
+          </span>
+        </a>
+      </section>
+
+      <section>
+        <p class="eyebrow">Follow</p>
+        <h2>Where to find us</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <div class="text">
+          <p>Photos, short thoughts and news from the life of the church, week by week.</p>
+        </div>
+        <ul class="social">
+          <li data-link="instagram"><a data-href="instagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li data-link="facebook"><a data-href="facebook" target="_blank" rel="noopener">Facebook</a></li>
+          <li data-link="youtube"><a data-href="youtube" target="_blank" rel="noopener">YouTube</a></li>
+          <li data-link="whatsapp"><a data-href="whatsapp" target="_blank" rel="noopener">WhatsApp group</a></li>
+          <li><a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="eyebrow">Come and visit</p>
+        <h2>Sundays at 10:30</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <div class="text">
+          <p>Cinema Apollo, Via Cesare Battisti 99, Messina. From 25 October 2026, every Sunday.</p>
+          <p><a class="more" href="/">All the details →</a></p>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <footer>
+    <p class="foot-links" style="margin:0">
+      <a href="/" data-lang="it">Home</a><a href="/" data-lang="en" hidden>Home</a>
+      <a href="/chi-siamo" data-lang="it">Chi siamo</a><a href="/chi-siamo" data-lang="en" hidden>About us</a>
+      <a href="https://manna.evergrace.it/">Manna per Oggi</a>
+      <a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a>
+    </p>
+    <div class="foot-brand">
+      <img src="https://manna.evergrace.it/logo.png" alt="">
+      <span><strong>Chiesa EverGrace</strong> · Missione Sicilia · Messina<br><em data-lang="it" style="font-style:italic;color:var(--accent)">La grazia cambia tutto.</em><em data-lang="en" hidden style="font-style:italic;color:var(--accent)">Grace Changes Everything.</em></span>
+    </div>
+  </footer>
+</div>
+
+<script>
+(function(){
+  /* ------------------------------------------------------------------
+     THE ONLY PART TO EDIT: paste the real addresses between the quotes.
+     Anything left empty hides itself — no dead links on the page.
+     ------------------------------------------------------------------ */
+  var LINKS = {
+    youtube:   "",   // e.g. https://www.youtube.com/@chiesaevergrace
+    instagram: "",   // e.g. https://www.instagram.com/chiesaevergrace/
+    facebook:  "",   // e.g. https://www.facebook.com/chiesaevergrace
+    whatsapp:  ""    // e.g. https://chat.whatsapp.com/XXXXXXXX
+  };
+  // Hide the "first messages from 25 October" note once sermons are up.
+  var SHOW_COMING_SOON = true;
+
+  var lang = "it";
+  try { var s = localStorage.getItem("manna-lang"); if (s === "en" || s === "it") lang = s; } catch(e) {}
+
+  document.querySelectorAll("[data-href]").forEach(function(a){
+    var url = LINKS[a.dataset.href];
+    if (url) a.href = url;
+  });
+  document.querySelectorAll("[data-link]").forEach(function(el){
+    if (!LINKS[el.dataset.link]) el.dataset.empty = "1";
+  });
+  if (!SHOW_COMING_SOON) document.querySelectorAll("[data-soon]").forEach(function(el){ el.dataset.empty = "1"; });
+
+  function apply(){
+    document.documentElement.lang = lang;
+    document.title = (lang === "en" ? "Media" : "Media") + " · Chiesa EverGrace";
+    document.querySelectorAll("[data-lang]").forEach(function(el){ el.hidden = el.dataset.lang !== lang; });
+    document.querySelectorAll("[data-empty]").forEach(function(el){ el.hidden = true; });
+    document.querySelectorAll(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.l === lang)); });
+  }
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click", function(){
+      lang = b.dataset.l;
+      try { localStorage.setItem("manna-lang", lang); } catch(e) {}
+      apply(); window.scrollTo(0,0);
+    });
+  });
+  apply();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Chi siamo · Chiesa EverGrace</title>
+<meta name="description" content="Chi siamo — Chiesa EverGrace, Messina. Una chiesa cristiana non confessionale, in italiano e in inglese. About us: who we are and what we believe.">
+<link rel="icon" type="image/png" sizes="32x32" href="https://manna.evergrace.it/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="https://manna.evergrace.it/logo.png">
+<link rel="apple-touch-icon" href="https://manna.evergrace.it/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chiesa EverGrace">
+<meta property="og:title" content="Chi siamo · Chiesa EverGrace">
+<meta property="og:description" content="Una chiesa cristiana non confessionale a Messina, in italiano e in inglese.">
+<meta property="og:url" content="https://evergrace.it/chi-siamo">
+<meta property="og:image" content="https://manna.evergrace.it/og-image.png">
+<meta property="og:locale" content="it_IT">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+/* Same structure as manna.evergrace.it: one reading column on stucco, a facade masthead,
+   a band of shutter slats. Default look: "Pietra e Stretto" (limestone + the blue of the Strait). */
+:root{
+  --paper:#F3EFE7; --panel:#E8E1D3; --ink:#23272A; --muted:#6C6F72; --rule:#D9D2C4;
+  --accent:#2B5870; --accent2:#2F5B48; --on-accent:#F3EFE7; --grain:.07;
+  --display:"Marcellus","Trajan Pro",Georgia,serif;
+  --serif:"Lora",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#161B1F; --panel:#1E252A; --ink:#E7E3DB; --muted:#9A9FA4; --rule:#313A41;
+  --accent:#89B5CD; --accent2:#7DB197; --on-accent:#10181D; --grain:.04; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#161B1F; --panel:#1E252A; --ink:#E7E3DB; --muted:#9A9FA4; --rule:#313A41;
+  --accent:#89B5CD; --accent2:#7DB197; --on-accent:#10181D; --grain:.04; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;position:relative}
+img{max-width:100%}
+[hidden]{display:none!important}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:var(--grain);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .2 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{position:relative;max-width:720px;margin:0 auto;padding-inline:20px;padding-block:20px 56px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:52px;height:52px;border-radius:50%;display:block}
+.brand span{font-family:var(--display);font-size:20px;letter-spacing:.02em}
+.lang{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;font-family:var(--sans);font-size:13px;letter-spacing:.08em}
+.lang button{font:inherit;background:none;border:0;color:var(--muted);padding:6px 14px;cursor:pointer;min-height:36px}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.nav{margin-top:16px;display:flex;flex-wrap:wrap;gap:4px 20px;font-family:var(--sans);font-size:14px;letter-spacing:.04em}
+.nav a{color:var(--muted);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--accent)}
+.nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+
+.mast{margin-top:20px;background:var(--panel);border-radius:999px 999px 0 0 / 150px 150px 0 0;overflow:hidden}
+.mast-in{display:flex;align-items:center;gap:20px;padding:72px 36px 36px;flex-wrap:wrap;justify-content:center;text-align:center;flex-direction:column}
+.mast-logo{width:132px;height:132px;border-radius:50%;flex:none;box-shadow:0 0 0 6px var(--paper),0 0 0 7px var(--rule)}
+.mast-text{flex:1 1 300px;min-width:0}
+.kicker{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0}
+.mast h1{font-family:var(--display);font-weight:400;font-size:clamp(42px,8.5vw,62px);line-height:1.02;margin:10px 0 0;text-wrap:balance}
+.mast h1 em{font-style:normal;color:var(--accent2)}
+.mast .lede{margin:16px auto 0;color:var(--muted);font-size:17px;max-width:34em}
+.verse{font-style:italic;color:var(--muted);font-size:16px;margin:14px 0 0}
+.verse-ref{display:block;font-style:normal;font-family:var(--sans);font-size:13px;letter-spacing:.06em;margin-top:4px}
+.persiana{height:10px;background:var(--accent)}
+
+article{padding-top:40px}
+.eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0}
+article h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,5.5vw,38px);line-height:1.12;margin:0 0 10px;text-wrap:balance}
+.slats{height:3px;margin:0 0 32px;background:var(--accent);max-width:120px}
+.text p{margin:0 0 1.1em}
+.text blockquote{margin:0 0 1.4em;padding:16px 20px;background:var(--panel);border-left:3px solid var(--accent);font-style:italic}
+.text blockquote p{margin:0}
+.text h3{font-family:var(--display);font-weight:400;font-size:24px;color:var(--accent);margin:1.8em 0 .5em}
+.text h4{font-family:var(--sans);font-weight:500;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:1.8em 0 .5em}
+.text strong{font-weight:600}
+.refs{font-family:var(--sans);font-size:14px;color:var(--muted);margin-top:4px}
+
+section+section{margin-top:52px}
+.marks{display:grid;gap:18px;margin:0;padding:0;list-style:none}
+@media (min-width:620px){.marks{grid-template-columns:1fr 1fr}}
+.marks li{background:var(--panel);border-radius:10px;padding:20px 22px}
+.marks h3{font-family:var(--display);font-weight:400;font-size:21px;color:var(--accent);margin:0 0 .4em}
+.marks p{margin:0;font-size:16px;line-height:1.6;color:var(--muted)}
+
+.beliefs{margin:0;padding:0}
+.beliefs dt{font-family:var(--sans);font-weight:500;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-top:1.8em}
+.beliefs dd{margin:.5em 0 0}
+
+.visit{background:var(--panel);border-radius:10px;padding:24px 26px;margin-top:28px}
+.visit h3{font-family:var(--display);font-weight:400;font-size:22px;color:var(--accent);margin:0 0 .5em}
+.visit dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0;font-size:16px}
+.visit dt{font-family:var(--sans);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:5px}
+.visit dd{margin:0}
+.visit a{color:var(--accent);text-underline-offset:3px}
+@media (max-width:520px){
+  .visit dl{grid-template-columns:1fr;gap:2px}
+  .visit dd+dt{margin-top:12px}
+  .mast-in{padding:48px 22px 28px;gap:16px}
+  .mast-logo{width:96px;height:96px}
+}
+
+footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:13px;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.foot-brand{display:flex;align-items:center;gap:10px}
+.foot-brand img{width:28px;height:28px;border-radius:50%}
+.foot-brand strong{font-weight:500;color:var(--ink)}
+.foot-links a{color:var(--accent);margin:0 8px;text-underline-offset:3px}
+@media (prefers-reduced-motion:no-preference){article,.mast{animation:in .35s ease-out}@keyframes in{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="/" aria-label="Chiesa EverGrace">
+      <img src="https://manna.evergrace.it/logo.png" alt="Logo Chiesa EverGrace">
+      <span>Chiesa EverGrace</span>
+    </a>
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button data-l="it">IT</button><button data-l="en">EN</button>
+    </div>
+  </div>
+
+  <nav class="nav" data-lang="it">
+    <a href="/">Home</a>
+    <a href="/chi-siamo" aria-current="page">Chi siamo</a>
+    <a href="/media">Media</a>
+    <a href="https://manna.evergrace.it/">Manna per Oggi</a>
+  </nav>
+  <nav class="nav" data-lang="en" hidden>
+    <a href="/">Home</a>
+    <a href="/chi-siamo" aria-current="page">About us</a>
+    <a href="/media">Media</a>
+    <a href="https://manna.evergrace.it/">Manna per Oggi</a>
+  </nav>
+
+  <!-- ===================== ITALIANO ===================== -->
+  <div data-lang="it">
+    <header class="mast">
+      <div class="mast-in">
+        <img class="mast-logo" src="https://manna.evergrace.it/logo.png" alt="">
+        <div class="mast-text">
+          <p class="kicker">Chiesa EverGrace · Messina</p>
+          <h1>Chi <em>siamo</em></h1>
+          <p class="lede">Una chiesa cristiana non confessionale nel cuore di Messina, in italiano e in inglese.</p>
+        </div>
+      </div>
+      <div class="persiana" aria-hidden="true"></div>
+    </header>
+
+    <article>
+      <section>
+        <p class="eyebrow">La nostra chiesa</p>
+        <h2>Una porta aperta a Messina</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <div class="text">
+          <p>Chiesa EverGrace è una giovane chiesa cristiana a Messina. Siamo non confessionali.</p>
+          <p>Ci raduniamo in italiano e in inglese, perché la nostra comunità è fatta di siciliani e di stranieri che qui hanno trovato casa. Vieni così come sei.</p>
+          <p>Crediamo che la fede nasca dall'ascolto della parola della grazia, e che Dio cambi ancora oggi la vita delle persone — non per un momento, ma per sempre.</p>
+        </div>
+      </section>
+
+      <section>
+        <p class="eyebrow">Cosa troverai</p>
+        <h2>Quattro cose che ci stanno a cuore</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <ul class="marks">
+          <li>
+            <h3>Una comunione che ispira</h3>
+            <p>Lo si avverte appena entri dalla porta: un legame, una presenza. Quando il popolo di Dio si raduna, l'unità che viviamo insieme edifica e incoraggia. Lo adoriamo in spirito e verità, e insegnando la sua parola di grazia avanziamo nella verità e nella vera libertà. In questa comunione siamo trasformati, e ne usciamo ispirati per una vita di missione.</p>
+          </li>
+          <li>
+            <h3>Una carità concreta</h3>
+            <p>Qui l'amore di Dio si può toccare. Quando uno è nel bisogno, lo sentiamo tutti. L'amore di Cristo trabocca da ogni membro fino a coprire i bisogni e a consolare la chiesa.</p>
+          </li>
+          <li>
+            <h3>Vite cambiate</h3>
+            <p>La trasformazione è inevitabile quando una persona incontra l'amore di Dio e la parola della grazia: un cambiamento che non è temporaneo, ma duraturo, risanante e profondo.</p>
+          </li>
+          <li>
+            <h3>Uno scopo eterno</h3>
+            <p>Siamo chiamati a uno scopo più grande di noi, più grande delle nostre preferenze e dei nostri limiti. È uno scopo centrato sul vangelo, che ci porta dal vicino fino ai confini del mondo, dove non avremmo mai immaginato di andare. Lì scopriamo la potenza, l'amore, il perdono e la grazia di Dio.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="eyebrow">Siamo persuasi</p>
+        <h2>Cosa crediamo</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <dl class="beliefs text">
+          <dt>La Bibbia</dt>
+          <dd>Tutta la Scrittura contenuta nell'Antico e nel Nuovo Testamento è ispirata da Dio, parola per parola, in ogni sua parte e senza errore. È la guida autorevole per ogni comprensione, vita e ministero cristiano.</dd>
+
+          <dt>Dio</dt>
+          <dd>C'è un solo Dio, eternamente esistente in tre persone: Dio Padre, Dio Figlio e Dio Spirito Santo. Ciascuna è infinita, eterna e onnipotente.</dd>
+
+          <dt>Gesù Cristo</dt>
+          <dd>Crediamo che Gesù Cristo, il Figlio, sia pienamente Dio e pienamente uomo. Fu concepito dallo Spirito Santo, nacque dalla vergine Maria e visse una vita senza peccato. Morì, versando il suo sangue nella sua morte sostitutiva per i peccatori; fu sepolto, risuscitò dalla tomba, salì al cielo e ora siede alla destra del Padre.</dd>
+
+          <dt>Lo Spirito Santo</dt>
+          <dd>Lo Spirito Santo, che è Signore e dà la vita, convince il mondo di peccato, di giustizia e di giudizio, e unisce l'uomo a Gesù Cristo mediante la fede. Crediamo che lo Spirito Santo sigilli ogni credente e abiti in lui. La pienezza dello Spirito non è una promessa incondizionata per ogni credente; l'inabitazione sì.</dd>
+
+          <dt>L'uomo</dt>
+          <dd>L'uomo fu creato a immagine e somiglianza di Dio. Fu per sua libera scelta che disobbedì a Dio, incorrendo nella morte fisica e spirituale, cioè nella separazione da Dio. Ogni essere umano nasce con una natura peccaminosa: è peccatore per natura e ha bisogno di una salvezza che venga da Dio.</dd>
+
+          <dt>La salvezza</dt>
+          <dd>La salvezza è un dono di Dio, compiuto dalla morte sostitutiva di Cristo: tutti coloro che credono in lui sono giustificati dal suo sangue versato. Poiché la salvezza è data per grazia, la salvezza del credente è eternamente sicura.</dd>
+
+          <dt>Il battesimo dello Spirito</dt>
+          <dd>Il battesimo dello Spirito Santo è mandato su tutti coloro che credono in Gesù Cristo e avviene in ogni credente nel momento della salvezza. Può seguire un continuo riempimento. Ogni dono dato dallo Spirito Santo serve all'edificazione del corpo di Cristo ed è presente ancora oggi.</dd>
+
+          <dt>Il grande mandato</dt>
+          <dd>Crediamo che l'adempimento del grande mandato sia responsabilità di ogni credente.</dd>
+
+          <dt>La Chiesa</dt>
+          <dd>La Chiesa è il corpo e la sposa di Cristo. È dedicata all'adorazione e al servizio di Dio e all'osservanza del battesimo e della Cena del Signore. Il suo compito primario, in ogni epoca, è insegnare a tutte le nazioni e fare discepoli mediante la predicazione e l'insegnamento della Parola di Dio.</dd>
+
+          <dt>L'eternità</dt>
+          <dd>Cristo tornerà per rapire la sua Chiesa. Subito dopo seguirà il periodo della tribolazione. Al suo termine, Cristo tornerà sulla terra e stabilirà il suo regno per mille anni. Il giudizio del grande trono bianco per i non salvati, insieme a Satana gettato nello stagno di fuoco, aprirà la via a un nuovo cielo e a una nuova terra. Questa è la consumazione di tutte le cose.</dd>
+
+          <dt>Il matrimonio</dt>
+          <dd>Crediamo che Dio crei ogni persona, in modo meraviglioso e immutabile, maschio o femmina, e che questi due sessi distinti e complementari riflettano insieme l'immagine e la natura di Dio (Genesi 1:26-27). Crediamo che la parola «matrimonio» abbia un solo significato: l'unione di un uomo e una donna in un vincolo unico ed esclusivo, come la Scrittura indica (Genesi 2:18-25). Crediamo che Dio abbia voluto l'intimità sessuale soltanto all'interno del matrimonio tra un uomo e una donna (1 Corinzi 6:18; 7:2-5; Ebrei 13:4), e che ogni forma di immoralità sessuale sia peccato, dannosa per l'uomo e offensiva a Dio (Matteo 15:18-20; 1 Corinzi 6:9-10).</dd>
+        </dl>
+      </section>
+
+      <section>
+        <p class="eyebrow">Vieni a trovarci</p>
+        <h2>Ci vediamo domenica</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <div class="text">
+          <p>Il culto dura circa un'ora e mezza: canti, una predicazione dalla Bibbia e caffè insieme alla fine. Si parla italiano e inglese. I bambini sono i benvenuti.</p>
+        </div>
+        <div class="visit">
+          <h3>Culto domenicale</h3>
+          <dl>
+            <dt>Quando</dt>
+            <dd>Ogni domenica alle 10:30 — dal 25 ottobre 2026</dd>
+            <dt>Dove</dt>
+            <dd>Cinema Apollo, Via Cesare Battisti 99, 98123 Messina (ME)</dd>
+            <dt>Lingue</dt>
+            <dd>Italiano e inglese</dd>
+            <dt>Scrivici</dt>
+            <dd><a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a></dd>
+          </dl>
+        </div>
+        <div class="text" style="margin-top:22px">
+          <p>Durante la settimana ci troviamo anche nelle case per studiare insieme la Bibbia: scrivici e ti diciamo dove e quando.</p>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div data-lang="en" hidden>
+    <header class="mast">
+      <div class="mast-in">
+        <img class="mast-logo" src="https://manna.evergrace.it/logo.png" alt="">
+        <div class="mast-text">
+          <p class="kicker">Chiesa EverGrace · Messina</p>
+          <h1>About <em>us</em></h1>
+          <p class="lede">A non-denominational Christian church in the heart of Messina, in Italian and in English.</p>
+        </div>
+      </div>
+      <div class="persiana" aria-hidden="true"></div>
+    </header>
+
+    <article>
+      <section>
+        <p class="eyebrow">Our church</p>
+        <h2>An open door in Messina</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <div class="text">
+          <p>Chiesa EverGrace is a young Christian church in Messina. We are non-denominational.</p>
+          <p>We gather in Italian and in English, because our community is made up of Sicilians and of foreigners who have made their home here. Come as you are.</p>
+          <p>We hold that faith comes by hearing the word of grace, and that God still changes people's lives today — not for a moment, but for good.</p>
+        </div>
+      </section>
+
+      <section>
+        <p class="eyebrow">What you'll find</p>
+        <h2>Four things we care about</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <ul class="marks">
+          <li>
+            <h3>Inspiring fellowship</h3>
+            <p>You can discern it when you walk in the door — a connection, a presence. As God's people gather, the unity we experience together builds us up and encourages us. We exalt him in spirit and in truth, and by teaching his word of grace we advance into truth and true liberty. We are transformed in this fellowship, and it sends us out inspired for a life of mission.</p>
+          </li>
+          <li>
+            <h3>Tangible charity</h3>
+            <p>You can touch the love of God here. When one is in need, we all feel it. Christ's love overflows each member to meet the needs and comfort of the church.</p>
+          </li>
+          <li>
+            <h3>Changed lives</h3>
+            <p>Transformation is inevitable when people experience the love of God and the word of grace — a change that is not temporary, but lasting, healing and dramatic.</p>
+          </li>
+          <li>
+            <h3>Eternal purpose</h3>
+            <p>We are called into a purpose bigger than us, bigger than our preferences and our limitations. It is a gospel-centred purpose that takes us across the street and around the world, places we would never have dreamed of. There we discover God's power, love, forgiveness and grace.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="eyebrow">We are persuaded</p>
+        <h2>What we believe</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <dl class="beliefs text">
+          <dt>About the Bible</dt>
+          <dd>All scripture contained in the Old and New Testaments is verbally, plenarily and inerrantly inspired by God. It is the authoritative guide for all Christian understanding, life and ministry.</dd>
+
+          <dt>About God</dt>
+          <dd>There is but one God, eternally existent in three persons: God the Father, God the Son and God the Holy Spirit. Each is infinite, eternal and almighty.</dd>
+
+          <dt>About Jesus Christ</dt>
+          <dd>We believe that Jesus Christ, the Son, is fully God and fully man. He was conceived by the Holy Spirit, born of the virgin Mary, and he lived a sinless life. He died, shedding his blood in his substitutionary death for sinners, then was buried, arose from the grave, ascended into heaven, and is now seated at the right hand of the Father.</dd>
+
+          <dt>About the Holy Spirit</dt>
+          <dd>The Holy Spirit, who is Lord and giver of life, convicts the world of sin, righteousness and judgment, and unites man to Jesus Christ by faith. We believe the Holy Spirit seals and indwells all believers. The filling of the Holy Spirit is not an unconditional promise to all believers; the indwelling is.</dd>
+
+          <dt>About man</dt>
+          <dd>Man was created in the image and likeness of God. It was by man's free volition that he disobeyed God, incurring physical and spiritual death — separation from God. Each human being is born with a sin nature, and so is a sinner by nature and in need of a divine salvation.</dd>
+
+          <dt>About salvation</dt>
+          <dd>Salvation is a gift from God, accomplished by Christ's substitutionary death; all who believe in him are justified by the shedding of his blood. Because salvation is given by grace, the believer's salvation is eternally secure.</dd>
+
+          <dt>About the baptism</dt>
+          <dd>The baptism of the Holy Spirit is sent upon all who believe in Jesus Christ, and takes place in each believer at the moment of salvation. Continual infilling may follow. Each gift given by the Holy Spirit is for the edification of the body of Christ, and is still present today.</dd>
+
+          <dt>About the great commission</dt>
+          <dd>We believe that the fulfilment of the great commission is the responsibility of all believers.</dd>
+
+          <dt>About the Church</dt>
+          <dd>The Church is the body and the bride of Christ. It is dedicated to the worship and service of God and the observance of baptism and the Lord's supper. The primary task of the Church in all ages is to teach all nations and to make disciples through the preaching and teaching of the Word of God.</dd>
+
+          <dt>About eternity</dt>
+          <dd>Christ will return to rapture his Church. Immediately following this event will be the tribulation period. Concluding this, Christ will come again to the earth and establish his rule for a thousand-year period. The great white throne judgment of the unsaved, coupled with Satan being cast into the lake of fire, will then allow Christ to establish a new heaven and a new earth. This is the consummation of all things.</dd>
+
+          <dt>About marriage</dt>
+          <dd>We believe that God wonderfully and immutably creates each person as male or female, and that these two distinct, complementary genders together reflect the image and nature of God (Genesis 1:26-27). We believe that the term “marriage” has only one meaning: the uniting of one man and one woman in a single, exclusive union, as delineated in scripture (Genesis 2:18-25). We believe that God intends sexual intimacy to occur only between a man and a woman who are married to each other (1 Corinthians 6:18; 7:2-5; Hebrews 13:4), and that any form of sexual immorality is sinful, harmful to man and offensive to God (Matthew 15:18-20; 1 Corinthians 6:9-10).</dd>
+        </dl>
+      </section>
+
+      <section>
+        <p class="eyebrow">Come and visit</p>
+        <h2>See you Sunday</h2>
+        <div class="slats" aria-hidden="true"></div>
+        <div class="text">
+          <p>The service runs about an hour and a half: singing, a message from the Bible, and coffee together afterwards. Italian and English are both spoken. Children are welcome.</p>
+        </div>
+        <div class="visit">
+          <h3>Sunday service</h3>
+          <dl>
+            <dt>When</dt>
+            <dd>Every Sunday at 10:30 — from 25 October 2026</dd>
+            <dt>Where</dt>
+            <dd>Cinema Apollo, Via Cesare Battisti 99, 98123 Messina (ME)</dd>
+            <dt>Languages</dt>
+            <dd>Italian and English</dd>
+            <dt>Write to us</dt>
+            <dd><a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a></dd>
+          </dl>
+        </div>
+        <div class="text" style="margin-top:22px">
+          <p>During the week we also meet in homes to study the Bible together — write to us and we'll tell you where and when.</p>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <footer>
+    <p class="foot-links" style="margin:0">
+      <a href="/">Home</a>
+      <a href="/media">Media</a>
+      <a href="https://manna.evergrace.it/">Manna per Oggi</a>
+      <a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a>
+    </p>
+    <div class="foot-brand">
+      <img src="https://manna.evergrace.it/logo.png" alt="">
+      <span><strong>Chiesa EverGrace</strong> · Missione Sicilia · Messina<br><em data-lang="it" style="font-style:italic;color:var(--accent)">La grazia cambia tutto.</em><em data-lang="en" hidden style="font-style:italic;color:var(--accent)">Grace Changes Everything.</em></span>
+    </div>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var lang = "it";
+  try { var s = localStorage.getItem("manna-lang"); if (s === "en" || s === "it") lang = s; } catch(e) {}
+  function apply(){
+    document.documentElement.lang = lang;
+    document.title = (lang === "en" ? "About us" : "Chi siamo") + " · Chiesa EverGrace";
+    document.querySelectorAll("[data-lang]").forEach(function(el){ el.hidden = el.dataset.lang !== lang; });
+    document.querySelectorAll(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.l === lang)); });
+  }
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click", function(){
+      lang = b.dataset.l;
+      try { localStorage.setItem("manna-lang", lang); } catch(e) {}
+      apply(); window.scrollTo(0,0);
+    });
+  });
+  apply();
+})();
+</script>
+
+</body>
+</html>

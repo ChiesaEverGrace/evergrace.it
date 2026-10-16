@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Chiesa EverGrace · Messina</title>
+<meta name="description" content="Chiesa EverGrace — una chiesa cristiana a Messina, in italiano e in inglese. Domenica alle 10:30, Cinema Apollo. A Christian church in Messina, in Italian and English.">
+<link rel="icon" type="image/png" sizes="32x32" href="https://manna.evergrace.it/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="https://manna.evergrace.it/logo.png">
+<link rel="apple-touch-icon" href="https://manna.evergrace.it/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chiesa EverGrace">
+<meta property="og:title" content="Chiesa EverGrace · Messina">
+<meta property="og:description" content="La grazia cambia tutto. Domenica alle 10:30 — Cinema Apollo, Messina.">
+<meta property="og:url" content="https://evergrace.it/">
+<meta property="og:image" content="https://manna.evergrace.it/og-image.png">
+<meta property="og:locale" content="it_IT">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#F3EFE7; --panel:#E8E1D3; --ink:#23272A; --muted:#6C6F72; --rule:#D9D2C4;
+  --accent:#2B5870; --accent2:#2F5B48; --on-accent:#F3EFE7; --grain:.07;
+  --display:"Marcellus","Trajan Pro",Georgia,serif;
+  --serif:"Lora",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  /* Drop a photo of the church or the Strait in here when you have one:
+     --hero-photo: url("/hero.jpg");  */
+  --hero-photo: none;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#161B1F; --panel:#1E252A; --ink:#E7E3DB; --muted:#9A9FA4; --rule:#313A41;
+  --accent:#89B5CD; --accent2:#7DB197; --on-accent:#10181D; --grain:.04; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden}
+img{max-width:100%}
+[hidden]{display:none!important}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:2;opacity:var(--grain);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .2 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:860px;margin:0 auto;padding-inline:20px}
+
+/* ---- Header: logo, menu, language, one prominent button (GGWO puts GIVE here) ---- */
+.bar{position:relative;z-index:3;border-bottom:1px solid var(--rule);background:var(--paper)}
+.bar-in{max-width:860px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;margin-right:auto}
+.brand img{width:46px;height:46px;border-radius:50%;display:block}
+.brand b{font-family:var(--display);font-weight:400;font-size:19px;letter-spacing:.02em;display:block;line-height:1.15}
+.brand small{font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.menu{display:flex;flex-wrap:wrap;gap:2px 20px;font-family:var(--sans);font-size:14px;letter-spacing:.03em}
+.menu a{color:var(--muted);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.menu a:hover{color:var(--accent)}
+.menu a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+.lang{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;font-family:var(--sans);font-size:12px;letter-spacing:.08em}
+.lang button{font:inherit;background:none;border:0;color:var(--muted);padding:6px 12px;cursor:pointer;min-height:34px}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.cta{font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;background:var(--accent2);color:#F3EFE7;text-decoration:none;padding:11px 20px;border-radius:999px;min-height:40px;display:inline-flex;align-items:center}
+.cta:hover{filter:brightness(1.08)}
+
+/* ---- Hero: full-width banner, overlaid title, call to action ---- */
+.hero{position:relative;isolation:isolate;background:
+  linear-gradient(180deg,rgba(15,29,36,.72),rgba(15,29,36,.86)), var(--hero-photo),
+  radial-gradient(120% 90% at 50% 0%, #2B5870 0%, #1B3443 55%, #16242C 100%);
+  background-size:cover;background-position:center;color:#F3EFE7;text-align:center}
+.hero-in{max-width:860px;margin:0 auto;padding:72px 20px 64px}
+.hero img{width:120px;height:120px;border-radius:50%;box-shadow:0 0 0 5px rgba(243,239,231,.14)}
+.hero .kicker{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#C8D7DF;margin:20px 0 0}
+.hero h1{font-family:var(--display);font-weight:400;font-size:clamp(36px,7vw,58px);line-height:1.06;margin:14px 0 0;text-wrap:balance}
+.hero h1 em{font-style:normal;color:#9FC7B2}
+.hero p.sub{margin:16px auto 0;max-width:30em;font-size:17px;color:#D8E2E7}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.btn{font-family:var(--sans);font-size:14px;font-weight:500;letter-spacing:.06em;text-decoration:none;padding:13px 24px;border-radius:999px;min-height:46px;display:inline-flex;align-items:center;border:1px solid transparent}
+.btn-solid{background:#F3EFE7;color:#1B3443}
+.btn-ghost{border-color:rgba(243,239,231,.45);color:#F3EFE7}
+.btn:hover{filter:brightness(1.06)}
+.count{margin:0;background:var(--accent2);color:#F3EFE7;font-family:var(--sans);font-size:14px;letter-spacing:.05em;text-align:center;padding:13px 20px}
+.count b{font-weight:500}
+
+/* ---- Quick-link tiles ---- */
+section{padding-block:52px}
+section+section{border-top:1px solid var(--rule)}
+.eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(26px,4.8vw,34px);line-height:1.15;margin:0 0 24px;text-wrap:balance}
+.tiles{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+@media (min-width:560px){.tiles{grid-template-columns:1fr 1fr}}
+.tiles a{display:block;background:var(--panel);border-radius:10px;padding:20px 22px;text-decoration:none;border-left:3px solid var(--accent)}
+.tiles b{display:block;font-family:var(--display);font-weight:400;font-size:21px;color:var(--ink)}
+.tiles span{display:block;font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--muted);margin-top:4px}
+.tiles a:hover b{color:var(--accent)}
+
+/* ---- Video row ---- */
+.vids{display:grid;gap:14px;margin:0 0 22px;padding:0;list-style:none}
+.vids a{display:flex;gap:16px;align-items:center;background:var(--panel);border-radius:10px;padding:14px 16px;text-decoration:none}
+.thumb{flex:none;width:96px;aspect-ratio:16/9;border-radius:6px;background:var(--accent);display:grid;place-items:center;color:#F3EFE7;font-size:20px}
+.vids b{font-family:var(--display);font-weight:400;font-size:19px;line-height:1.25;display:block}
+.vids small{font-family:var(--sans);font-size:13px;color:var(--muted);display:block;margin-top:2px}
+.vids a:hover b{color:var(--accent)}
+.empty{background:var(--panel);border-radius:10px;padding:20px 22px;font-family:var(--sans);font-size:15px;color:var(--muted);margin:0 0 22px}
+
+/* ---- Week / events ---- */
+.week{list-style:none;margin:0;padding:0}
+.week li{display:grid;grid-template-columns:8.5em 1fr;gap:4px 22px;padding-block:18px;border-bottom:1px solid var(--rule)}
+.week li:first-child{border-top:1px solid var(--rule)}
+.week .when{font-family:var(--sans);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);padding-top:6px}
+.week b{font-family:var(--display);font-weight:400;font-size:20px;display:block}
+.week span{font-size:16px;color:var(--muted);display:block}
+@media (max-width:520px){.week li{grid-template-columns:1fr}.week .when{padding-top:0}}
+
+/* ---- Mission ---- */
+.mission{display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+.mission-txt{flex:1 1 320px;min-width:0}
+.mission p{margin:0 0 1em}
+.mission img{width:140px;height:140px;border-radius:50%;flex:none;box-shadow:0 0 0 6px var(--panel)}
+.more{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--accent);text-underline-offset:4px;display:inline-block}
+
+/* ---- Location ---- */
+.where{background:var(--panel);border-radius:10px;padding:24px 26px}
+.where dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0;font-size:16px}
+.where dt{font-family:var(--sans);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:5px}
+.where dd{margin:0}
+.where a{color:var(--accent);text-underline-offset:3px}
+@media (max-width:520px){.where dl{grid-template-columns:1fr;gap:2px}.where dd+dt{margin-top:12px}}
+.social{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:20px 0 0;list-style:none}
+.social a{display:inline-block;font-family:var(--sans);font-size:14px;border:1px solid var(--rule);border-radius:999px;padding:9px 18px;text-decoration:none;color:var(--ink);min-height:40px;background:var(--paper)}
+.social a:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ---- Footer ---- */
+footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
+.foot-in{max-width:860px;margin:0 auto;padding:44px 20px 36px;display:grid;gap:28px}
+@media (min-width:620px){.foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}}
+.foot-cols h3{font-family:var(--sans);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.foot-cols ul{list-style:none;margin:0 0 22px;padding:0;font-family:var(--sans);font-size:15px}
+.foot-cols li{margin-bottom:7px}
+.foot-cols a{color:var(--muted);text-decoration:none}
+.foot-cols a:hover{color:var(--accent)}
+.foot-brand{display:flex;align-items:center;gap:12px;border-top:1px solid var(--rule);padding-top:22px;font-family:var(--sans);font-size:13px;color:var(--muted)}
+.foot-brand img{width:34px;height:34px;border-radius:50%}
+.foot-brand strong{font-weight:500;color:var(--ink)}
+@media (prefers-reduced-motion:no-preference){.hero-in,section{animation:in .4s ease-out}@keyframes in{from{opacity:.45;transform:translateY(5px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<div class="bar">
+  <div class="bar-in">
+    <a class="brand" href="/">
+      <img src="https://manna.evergrace.it/logo.png" alt="Logo Chiesa EverGrace">
+      <span><b>Chiesa EverGrace</b><small>Messina</small></span>
+    </a>
+    <nav class="menu">
+      <a href="/" aria-current="page" data-t="navHome"></a>
+      <a href="/chi-siamo" data-t="navAbout"></a>
+      <a href="/media" data-t="navMedia"></a>
+      <a href="https://manna.evergrace.it/">Manna per Oggi</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button data-l="it">IT</button><button data-l="en">EN</button>
+    </div>
+    <a class="cta" href="#domenica" data-t="ctaTop"></a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-in">
+    <img src="https://manna.evergrace.it/logo.png" alt="">
+    <p class="kicker" data-t="heroKicker"></p>
+    <h1 data-th="heroTitle"></h1>
+    <p class="sub" data-t="heroSub"></p>
+    <div class="hero-btns">
+      <a class="btn btn-solid" href="#domenica" data-t="heroBtn1"></a>
+      <a class="btn btn-ghost" href="/chi-siamo" data-t="heroBtn2"></a>
+    </div>
+  </div>
+</header>
+<p class="count" data-count hidden></p>
+
+<main>
+  <!-- ============ QUICK TILES ============ -->
+  <section class="wrap">
+    <h2 data-t="tilesH"></h2>
+    <ul class="tiles">
+      <li><a href="#domenica"><b data-t="tile1b"></b><span data-t="tile1s"></span></a></li>
+      <li><a href="/chi-siamo"><b data-t="tile2b"></b><span data-t="tile2s"></span></a></li>
+      <li><a href="https://manna.evergrace.it/"><b data-t="tile3b"></b><span data-t="tile3s"></span></a></li>
+      <li><a href="/media"><b data-t="tile4b"></b><span data-t="tile4s"></span></a></li>
+    </ul>
+  </section>
+
+  <!-- ============ LATEST VIDEO ============ -->
+  <section class="wrap">
+    <p class="eyebrow" data-t="vidEyebrow"></p>
+    <h2 data-t="vidH"></h2>
+    <ul class="vids" id="vidList"></ul>
+    <p class="empty" id="vidEmpty" data-t="vidEmpty"></p>
+    <a class="more" id="vidSub" target="_blank" rel="noopener" data-t="vidSubscribe" hidden></a>
+  </section>
+
+  <!-- ============ THE WEEK ============ -->
+  <section class="wrap" id="domenica">
+    <p class="eyebrow" data-t="weekEyebrow"></p>
+    <h2 data-t="weekH"></h2>
+    <ul class="week">
+      <li><span class="when" data-t="w1when"></span><span><b data-t="w1b"></b><span data-t="w1s"></span></span></li>
+      <li><span class="when" data-t="w2when"></span><span><b data-t="w2b"></b><span data-t="w2s"></span></span></li>
+    </ul>
+  </section>
+
+  <!-- ============ MISSION ============ -->
+  <section class="wrap">
+    <div class="mission">
+      <div class="mission-txt">
+        <p class="eyebrow" data-t="missEyebrow"></p>
+        <h2 data-t="missH"></h2>
+        <p data-t="missP1"></p>
+        <p data-t="missP2"></p>
+        <a class="more" href="/chi-siamo" data-t="missBtn"></a>
+      </div>
+      <img src="https://manna.evergrace.it/logo.png" alt="">
+    </div>
+  </section>
+
+  <!-- ============ LOCATION & CONTACT ============ -->
+  <section class="wrap">
+    <p class="eyebrow" data-t="whereEyebrow"></p>
+    <h2 data-t="whereH"></h2>
+    <div class="where">
+      <dl>
+        <dt data-t="whereDt1"></dt><dd data-t="whereDd1"></dd>
+        <dt data-t="whereDt2"></dt><dd>Cinema Apollo, Via Cesare Battisti 99, 98123 Messina (ME)</dd>
+        <dt data-t="whereDt3"></dt><dd data-t="whereDd3"></dd>
+        <dt data-t="whereDt4"></dt><dd><a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a></dd>
+      </dl>
+      <ul class="social">
+        <li><a href="https://maps.google.com/?q=Cinema+Apollo,+Via+Cesare+Battisti+99,+98123+Messina" target="_blank" rel="noopener" data-t="mapBtn"></a></li>
+        <li data-link="instagram"><a data-href="instagram" target="_blank" rel="noopener">Instagram</a></li>
+        <li data-link="facebook"><a data-href="facebook" target="_blank" rel="noopener">Facebook</a></li>
+        <li data-link="youtube"><a data-href="youtube" target="_blank" rel="noopener">YouTube</a></li>
+        <li data-link="whatsapp"><a data-href="whatsapp" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="foot-in">
+    <div class="foot-cols">
+      <div>
+        <h3 data-t="fc1"></h3>
+        <ul>
+          <li><a href="/chi-siamo" data-t="navAbout"></a></li>
+          <li><a href="/chi-siamo#credo" data-t="fc1a"></a></li>
+          <li><a href="#domenica" data-t="fc1b"></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-t="fc2"></h3>
+        <ul>
+          <li><a href="/media" data-t="navMedia"></a></li>
+          <li><a href="https://manna.evergrace.it/">Manna per Oggi</a></li>
+          <li><a href="https://manna.evergrace.it/#libretto" data-t="fc2a"></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-t="fc3"></h3>
+        <ul>
+          <li><a href="mailto:ciao@evergrace.it">ciao@evergrace.it</a></li>
+          <li data-link="instagram"><a data-href="instagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li data-link="facebook"><a data-href="facebook" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-brand">
+      <img src="https://manna.evergrace.it/logo.png" alt="">
+      <span><strong>Chiesa EverGrace</strong> · Missione Sicilia · Messina<br><em style="font-style:italic;color:var(--accent)" data-t="tagline"></em><br><span data-t="copy"></span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* ----------------------------------------------------------------
+     EDIT HERE. Empty links hide themselves, so nothing dead shows.
+     ---------------------------------------------------------------- */
+  var LINKS = {
+    youtube:   "",   // e.g. https://www.youtube.com/@chiesaevergrace
+    instagram: "",
+    facebook:  "",
+    whatsapp:  ""
+  };
+  // Latest messages. Add {id:"YOUTUBE_ID", it:"Titolo", en:"Title", when:"26 ottobre 2026"}.
+  var VIDEOS = [];
+  var FIRST_SERVICE = "2026-10-25T10:30:00+02:00";
+
+  var T = {
+    it: {
+      navHome:"Home", navAbout:"Chi siamo", navMedia:"Media", ctaTop:"Vieni domenica",
+      heroKicker:"Chiesa cristiana · Messina · Sicilia",
+      heroTitle:"La grazia<br><em>cambia tutto.</em>",
+      heroSub:"Bilingue, italiano e inglese. Ogni domenica alle 10:30, al Cinema Apollo di Messina.",
+      heroBtn1:"Dove e quando", heroBtn2:"Chi siamo",
+      tilesH:"Inizia da qui",
+      tile1b:"Domenica", tile1s:"Orario, indirizzo e come arrivare al Cinema Apollo.",
+      tile2b:"Chi siamo", tile2s:"Chi siamo, cosa crediamo e perché siamo a Messina.",
+      tile3b:"Manna per Oggi", tile3s:"Il devozionale quotidiano, due minuti al mattino.",
+      tile4b:"Media", tile4s:"Predicazioni, letture e dove seguirci.",
+      vidEyebrow:"Da ascoltare", vidH:"Le ultime predicazioni",
+      vidEmpty:"Le prime predicazioni saranno qui dopo il culto del 25 ottobre. Nel frattempo, il devozionale quotidiano è già online.",
+      vidSubscribe:"Iscriviti al canale →",
+      weekEyebrow:"La settimana", weekH:"Quando ci troviamo",
+      w1when:"Domenica", w1b:"Culto · 10:30",
+      w1s:"Cinema Apollo, Via Cesare Battisti 99, Messina. Canti, una predicazione dalla Bibbia e caffè insieme alla fine. Dal 25 ottobre 2026.",
+      w2when:"In settimana", w2b:"Studio biblico nelle case",
+      w2s:"Ci troviamo nelle case per leggere insieme la Bibbia, attorno a un tavolo, senza formalità. Scrivici e ti diciamo dove e quando.",
+      missEyebrow:"La nostra missione", missH:"Perché siamo qui",
+      missP1:"Chiesa EverGrace è una giovane chiesa cristiana non confessionale a Messina, fatta di siciliani e di stranieri che qui hanno trovato casa.",
+      missP2:"Crediamo che la fede nasca dall'ascolto della parola della grazia, e che Dio cambi ancora oggi la vita delle persone — non per un momento, ma per sempre.",
+      missBtn:"Cosa crediamo →",
+      whereEyebrow:"Dove siamo", whereH:"Vieni a trovarci",
+      whereDt1:"Quando", whereDd1:"Ogni domenica alle 10:30 — dal 25 ottobre 2026",
+      whereDt2:"Dove", whereDt3:"Lingue", whereDd3:"Italiano e inglese",
+      whereDt4:"Scrivici", mapBtn:"Apri la mappa",
+      fc1:"La chiesa", fc1a:"Cosa crediamo", fc1b:"Culto domenicale",
+      fc2:"Media", fc2a:"Il libretto",
+      fc3:"Contatti",
+      tagline:"La grazia cambia tutto.",
+      copy:"© 2026 Chiesa EverGrace"
+    },
+    en: {
+      navHome:"Home", navAbout:"About us", navMedia:"Media", ctaTop:"Join us Sunday",
+      heroKicker:"Christian church · Messina · Sicily",
+      heroTitle:"Grace Changes<br><em>Everything.</em>",
+      heroSub:"Bilingual, Italian and English. Every Sunday at 10:30, at the Cinema Apollo in Messina.",
+      heroBtn1:"Where and when", heroBtn2:"About us",
+      tilesH:"Start here",
+      tile1b:"Sunday", tile1s:"Time, address and how to find the Cinema Apollo.",
+      tile2b:"About us", tile2s:"Who we are, what we believe, and why we're in Messina.",
+      tile3b:"Manna per Oggi", tile3s:"The daily devotional — two minutes in the morning.",
+      tile4b:"Media", tile4s:"Preaching, reading, and where to follow along.",
+      vidEyebrow:"Listen", vidH:"Latest messages",
+      vidEmpty:"The first messages will be here after the service on 25 October. In the meantime, the daily devotional is already online.",
+      vidSubscribe:"Subscribe to the channel →",
+      weekEyebrow:"The week", weekH:"When we meet",
+      w1when:"Sunday", w1b:"Service · 10:30",
+      w1s:"Cinema Apollo, Via Cesare Battisti 99, Messina. Singing, a message from the Bible, and coffee together afterwards. From 25 October 2026.",
+      w2when:"Midweek", w2b:"Bible study in homes",
+      w2s:"We meet in homes to read the Bible together, around a table, with no formality. Write to us and we'll tell you where and when.",
+      missEyebrow:"Our mission", missH:"Why we're here",
+      missP1:"Chiesa EverGrace is a young, non-denominational Christian church in Messina, made up of Sicilians and of foreigners who have made their home here.",
+      missP2:"We hold that faith comes by hearing the word of grace, and that God still changes people's lives today — not for a moment, but for good.",
+      missBtn:"What we believe →",
+      whereEyebrow:"Where we are", whereH:"Come and visit",
+      whereDt1:"When", whereDd1:"Every Sunday at 10:30 — from 25 October 2026",
+      whereDt2:"Where", whereDt3:"Languages", whereDd3:"Italian and English",
+      whereDt4:"Write to us", mapBtn:"Open the map",
+      fc1:"The church", fc1a:"What we believe", fc1b:"Sunday service",
+      fc2:"Media", fc2a:"The booklet",
+      fc3:"Contact",
+      tagline:"Grace Changes Everything.",
+      copy:"© 2026 Chiesa EverGrace"
+    }
+  };
+
+  var lang = "it";
+  try { var s = localStorage.getItem("manna-lang"); if (s === "en" || s === "it") lang = s; } catch(e) {}
+
+  // Wire up the social links; hide whatever has no address yet.
+  document.querySelectorAll("[data-href]").forEach(function(a){ if (LINKS[a.dataset.href]) a.href = LINKS[a.dataset.href]; });
+  document.querySelectorAll("[data-link]").forEach(function(el){ if (!LINKS[el.dataset.link]) el.dataset.empty = "1"; });
+
+  function videos(){
+    var list = document.getElementById("vidList"), empty = document.getElementById("vidEmpty"), sub = document.getElementById("vidSub");
+    list.innerHTML = VIDEOS.map(function(v){
+      return '<li><a href="https://www.youtube.com/watch?v=' + v.id + '" target="_blank" rel="noopener">' +
+             '<span class="thumb" aria-hidden="true">▶</span>' +
+             '<span><b>' + (v[lang] || v.it) + '</b><small>' + (v.when || "") + '</small></span></a></li>';
+    }).join("");
+    empty.hidden = VIDEOS.length > 0;
+    sub.hidden = !LINKS.youtube;
+    if (LINKS.youtube) sub.href = LINKS.youtube;
+  }
+
+  function countdown(){
+    var el = document.querySelector("[data-count]");
+    var days = Math.ceil((new Date(FIRST_SERVICE) - new Date()) / 86400000);
+    if (days < 0) { el.hidden = true; return; }
+    var txt = lang === "en"
+      ? (days === 0 ? "Our first service is <b>today</b> · 10:30 · Cinema Apollo"
+        : days === 1 ? "Our first service is <b>tomorrow</b> · 10:30 · Cinema Apollo"
+        : "<b>" + days + " days</b> until our first service · Sunday 25 October, 10:30")
+      : (days === 0 ? "<b>Oggi</b> il nostro primo culto · 10:30 · Cinema Apollo"
+        : days === 1 ? "<b>Domani</b> il nostro primo culto · 10:30 · Cinema Apollo"
+        : "Mancano <b>" + days + " giorni</b> al nostro primo culto · domenica 25 ottobre, 10:30");
+    el.innerHTML = txt; el.hidden = false;
+  }
+
+  function apply(){
+    var t = T[lang];
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-t]").forEach(function(el){ if (t[el.dataset.t]) el.textContent = t[el.dataset.t]; });
+    document.querySelectorAll("[data-th]").forEach(function(el){ if (t[el.dataset.th]) el.innerHTML = t[el.dataset.th]; });
+    document.querySelectorAll(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.l === lang)); });
+    document.querySelectorAll("[data-empty]").forEach(function(el){ el.hidden = true; });
+    videos(); countdown();
+  }
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click", function(){
+      lang = b.dataset.l;
+      try { localStorage.setItem("manna-lang", lang); } catch(e) {}
+      apply();
+    });
+  });
+  apply();
+})();
+</script>
+
+</body>
+</html>
