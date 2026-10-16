@@ -3,7 +3,7 @@
    Leave it empty and that icon stays hidden, so there are never dead links. */
 (function () {
   var LINKS = {
-    instagram: "",
+    instagram: "https://www.instagram.com/chiesaevergrace/",
     facebook:  "",
     youtube:   "https://www.youtube.com/@ChiesaEverGrace",
     whatsapp:  ""
