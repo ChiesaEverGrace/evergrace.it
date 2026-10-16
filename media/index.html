@@ -112,6 +112,9 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
 .foot-brand img{width:28px;height:28px;border-radius:50%}
 .foot-brand strong{font-weight:500;color:var(--ink)}
 .foot-links a{color:var(--accent);margin:0 8px;text-underline-offset:3px}
+.social-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0}
+.social-row .soc{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--rule);border-radius:50%;color:var(--muted);text-decoration:none}
+.social-row .soc:hover{color:var(--accent);border-color:var(--accent)}
 @media (prefers-reduced-motion:no-preference){article,.mast{animation:in .35s ease-out}@keyframes in{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
 </style>
 </head>
@@ -312,6 +315,7 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
       <a href="/manna/">Manna per Oggi</a>
       <a data-mail="text"></a>
     </p>
+    <div class="social-row"></div>
     <div class="foot-brand">
       <img src="/logo.png" alt="">
       <span><strong>Chiesa EverGrace</strong> · Missione Sicilia · Messina<br><a data-lang="it" href="https://www.ggwo.org/" target="_blank" rel="noopener" style="color:var(--muted);text-underline-offset:3px">Chiesa EverGrace è affiliata a Greater Grace</a><a data-lang="en" hidden href="https://www.ggwo.org/" target="_blank" rel="noopener" style="color:var(--muted);text-underline-offset:3px">Chiesa EverGrace is an affiliate of Greater Grace</a></span>
@@ -319,18 +323,14 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
   </footer>
 </div>
 
+<script src="/social.js"></script>
 <script>
 (function(){
   /* ------------------------------------------------------------------
      THE ONLY PART TO EDIT: paste the real addresses between the quotes.
      Anything left empty hides itself — no dead links on the page.
      ------------------------------------------------------------------ */
-  var LINKS = {
-    youtube:   "https://www.youtube.com/@ChiesaEverGrace",
-    instagram: "",   // e.g. https://www.instagram.com/chiesaevergrace/
-    facebook:  "",   // e.g. https://www.facebook.com/chiesaevergrace
-    whatsapp:  ""    // e.g. https://chat.whatsapp.com/XXXXXXXX
-  };
+  var LINKS = (window.EG && window.EG.links) || {};
 
   /* The sermon player. Set CHANNEL_ID to the channel's UC... id and the player
      always shows the newest upload on its own — nothing to change each week.

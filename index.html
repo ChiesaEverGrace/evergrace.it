@@ -146,6 +146,9 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
 .foot-brand{display:flex;align-items:center;gap:12px;border-top:1px solid var(--rule);padding-top:22px;font-family:var(--sans);font-size:13px;color:var(--muted)}
 .foot-brand img{width:34px;height:34px;border-radius:50%}
 .foot-brand strong{font-weight:500;color:var(--ink)}
+.social-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0}
+.social-row .soc{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--rule);border-radius:50%;color:var(--muted);text-decoration:none}
+.social-row .soc:hover{color:var(--accent);border-color:var(--accent)}
 @media (prefers-reduced-motion:no-preference){.hero-in,section{animation:in .4s ease-out}@keyframes in{from{opacity:.45;transform:translateY(5px)}to{opacity:1;transform:none}}}
 </style>
 </head>
@@ -280,6 +283,7 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
         </ul>
       </div>
     </div>
+    <div class="social-row"></div>
     <div class="foot-brand">
       <img src="/logo.png" alt="">
       <span><strong>Chiesa EverGrace</strong> · Missione Sicilia · Messina<br><span data-t="copy"></span><br><a href="https://www.ggwo.org/" target="_blank" rel="noopener" data-t="affil" style="color:var(--muted);text-underline-offset:3px"></a></span>
@@ -287,17 +291,13 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
   </div>
 </footer>
 
+<script src="/social.js"></script>
 <script>
 (function(){
   /* ----------------------------------------------------------------
      EDIT HERE. Empty links hide themselves, so nothing dead shows.
      ---------------------------------------------------------------- */
-  var LINKS = {
-    youtube:   "https://www.youtube.com/@ChiesaEverGrace",
-    instagram: "",
-    facebook:  "",
-    whatsapp:  ""
-  };
+  var LINKS = (window.EG && window.EG.links) || {};
   // Latest messages. Add {id:"YOUTUBE_ID", it:"Titolo", en:"Title", when:"26 ottobre 2026"}.
   var VIDEOS = [];
   var FIRST_SERVICE = "2026-10-25T10:30:00+02:00";

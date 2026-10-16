@@ -62,6 +62,9 @@ a{color:inherit}
 .lang button{font:inherit;background:none;border:0;color:var(--muted);padding:6px 14px;cursor:pointer;min-height:36px}
 .lang button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
 
+.social-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0}
+.social-row .soc{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--rule);border-radius:50%;color:var(--muted);text-decoration:none}
+.social-row .soc:hover{color:var(--accent);border-color:var(--accent)}
 .sitenav{margin-top:16px;display:flex;flex-wrap:wrap;gap:4px 20px;font-family:var(--sans);font-size:14px;letter-spacing:.04em}
 .sitenav a{color:var(--muted);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
 .sitenav a:hover{color:var(--accent)}
@@ -169,6 +172,7 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
   <footer id="foot"></footer>
 </div>
 
+<script src="/social.js"></script>
 <script>
 const POSTS = [
 { id:"manna-2026-10-09", date:"2026-10-09", place:{it:"Villafranca, Sicilia",en:"Villafranca, Sicily"},
@@ -1320,8 +1324,9 @@ function route(){
   document.documentElement.dataset.look = look;
   const book = `<a class="book" href="#libretto"><span class="book-spine" aria-hidden="true"></span><span><small>${UI[lang].bookKicker}</small><b>${UI[lang].bookTitle}</b><span class="book-by">Pastor Carl H. Stevens</span><span class="book-desc">${UI[lang].bookDesc}</span><span class="book-cta">${UI[lang].bookCta}</span></span></a>`;
   const wa = WHATSAPP.qr ? `<div class="wa"><img src="${WHATSAPP.qr}" alt="${UI[lang].waAlt}"><div><b>${UI[lang].waTitle}</b><p>${UI[lang].waText}</p><a class="wa-link" href="${WHATSAPP.link}" target="_blank" rel="noopener">${UI[lang].waLink}</a></div></div>` : "";
-  document.getElementById("foot").innerHTML = `<div class="foot-cards">${book}${wa}</div>` + `<div class="foot-brand"><img src="${LOGO}" alt=""><span>${UI[lang].foot}</span></div>`;
+  document.getElementById("foot").innerHTML = `<div class="foot-cards">${book}${wa}</div>` + `<div class="social-row"></div>` + `<div class="foot-brand"><img src="${LOGO}" alt=""><span>${UI[lang].foot}</span></div>`;
   id === "libretto" ? showBooklet() : id ? showPost(id) : showIndex();
+  if (window.EG && window.EG.renderSocial) window.EG.renderSocial();
 }
 
 for (const b of document.querySelectorAll(".lang button")) b.addEventListener("click", () => {
