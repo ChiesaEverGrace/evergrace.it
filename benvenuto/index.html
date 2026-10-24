@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Prima volta qui? · Chiesa EverGrace</title>
+<meta name="description" content="First time at Chiesa EverGrace, Messina? Tell us about yourself and how we can pray for you. Biglietto di benvenuto — Chiesa cristiana evangelica a Messina.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chiesa EverGrace">
+<meta property="og:title" content="Prima volta qui? · Chiesa EverGrace">
+<meta property="og:description" content="Benvenuto a Chiesa EverGrace, Messina. Compila il biglietto di benvenuto.">
+<meta property="og:url" content="https://evergrace.it/benvenuto">
+<meta property="og:image" content="https://evergrace.it/og-image.png">
+<meta property="og:locale" content="it_IT">
+<link rel="canonical" href="https://evergrace.it/benvenuto">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#F3EFE7; --panel:#E8E1D3; --ink:#23272A; --muted:#6C6F72; --rule:#D9D2C4;
+  --accent:#2B5870; --accent2:#2F5B48; --on-accent:#F3EFE7; --grain:.07;
+  --display:"Marcellus","Trajan Pro",Georgia,serif;
+  --serif:"Lora",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#161B1F; --panel:#1E252A; --ink:#E7E3DB; --muted:#9A9FA4; --rule:#313A41;
+  --accent:#89B5CD; --accent2:#7DB197; --on-accent:#10181D; --grain:.04; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;position:relative}
+img{max-width:100%}
+[hidden]{display:none!important}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:2;opacity:var(--grain);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+.bar{position:relative;z-index:3;border-bottom:1px solid var(--rule);background:var(--paper)}
+.bar-in{max-width:860px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;margin-right:auto}
+.brand img{width:46px;height:46px;border-radius:50%;display:block}
+.brand b{font-family:var(--display);font-weight:400;font-size:19px;letter-spacing:.02em;display:block;line-height:1.15}
+.menu{display:flex;flex-wrap:wrap;gap:2px 20px;font-family:var(--sans);font-size:14px;letter-spacing:.03em}
+.menu a{color:var(--muted);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.menu a:hover{color:var(--accent)}
+.menu a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+.lang{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;font-family:var(--sans);font-size:12px;letter-spacing:.08em}
+.lang button{font:inherit;background:none;border:0;color:var(--muted);padding:6px 12px;cursor:pointer;min-height:34px}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 64px}
+
+.mast{margin-top:20px;background:var(--panel);border-radius:999px 999px 0 0 / 150px 150px 0 0;overflow:hidden}
+.mast-in{padding:56px 36px 40px;text-align:center}
+.kicker{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0}
+.mast h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,6.5vw,48px);line-height:1.06;margin:12px 0 0;text-wrap:balance}
+.mast h1 em{font-style:normal;color:var(--accent2)}
+.mast p{margin:16px auto 0;color:var(--muted);font-size:17px;max-width:34em}
+.persiana{height:10px;background:var(--accent)}
+
+.intro{padding-top:36px}
+.intro p{margin:0 0 1.1em}
+.slats{height:3px;margin:0 0 28px;background:var(--accent);max-width:120px}
+
+form{margin-top:10px}
+fieldset{border:0;padding:0;margin:0 0 30px}
+legend,.flabel{font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);padding:0;margin-bottom:12px;display:block}
+.field{margin-bottom:20px}
+input[type="text"],input[type="email"],input[type="tel"],textarea{
+  width:100%;font:inherit;font-size:17px;color:var(--ink);background:var(--paper);
+  border:1px solid var(--rule);border-radius:8px;padding:12px 14px;min-height:50px}
+textarea{min-height:120px;resize:vertical;line-height:1.6}
+input:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.hint{font-family:var(--sans);font-size:14px;color:var(--muted);margin:6px 0 0}
+
+.opts{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+@media (min-width:560px){.opts.two{grid-template-columns:1fr 1fr}}
+.opt{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border-radius:9px;padding:13px 15px;cursor:pointer;border:1px solid transparent}
+.opt:hover{border-color:var(--rule)}
+.opt input{margin:3px 0 0;width:20px;height:20px;accent-color:var(--accent);flex:none}
+.opt span{font-size:16px;line-height:1.45}
+.opt:has(input:checked){border-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,var(--panel))}
+
+.send{font-family:var(--sans);font-size:15px;font-weight:500;letter-spacing:.06em;background:var(--accent2);color:#F3EFE7;border:0;border-radius:999px;padding:15px 34px;min-height:52px;cursor:pointer}
+.send:hover{filter:brightness(1.08)}
+.send[disabled]{opacity:.6;cursor:default}
+.formnote{font-family:var(--sans);font-size:14px;color:var(--muted);margin:14px 0 0}
+.err{font-family:var(--sans);font-size:15px;color:#A9573A;background:color-mix(in srgb,#A9573A 12%,var(--paper));border-radius:8px;padding:12px 15px;margin:16px 0 0}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+footer{background:var(--panel);border-top:1px solid var(--rule)}
+.foot-in{max-width:860px;margin:0 auto;padding:36px 20px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;font-family:var(--sans);font-size:13px;color:var(--muted)}
+.foot-in a{color:var(--accent);margin:0 8px;text-underline-offset:3px}
+.social-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0}
+.social-row .soc{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--rule);border-radius:50%;color:var(--muted);text-decoration:none;background:var(--paper)}
+.social-row .soc:hover{color:var(--accent);border-color:var(--accent)}
+.foot-brand{display:flex;align-items:center;gap:10px}
+.foot-brand img{width:28px;height:28px;border-radius:50%}
+.foot-brand strong{font-weight:500;color:var(--ink)}
+@media (max-width:520px){.mast-in{padding:44px 20px 30px}}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="bar-in">
+    <a class="brand" href="/"><img src="/logo.png" alt="Logo Chiesa EverGrace"><span><b>Chiesa EverGrace</b></span></a>
+    <nav class="menu">
+      <a href="/"><span data-t="navHome"></span></a>
+      <a href="/benvenuto" aria-current="page"><span data-t="navFirst"></span></a>
+      <a href="/chi-siamo"><span data-t="navAbout"></span></a>
+      <a href="/media">Media</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button data-l="it">IT</button><button data-l="en">EN</button>
+    </div>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="mast-in">
+    <p class="kicker" data-t="kicker"></p>
+    <h1 data-th="title"></h1>
+    <p data-t="lede"></p>
+  </div>
+  <div class="persiana" aria-hidden="true"></div>
+</header>
+
+<div class="wrap">
+  <section class="intro">
+    <div class="slats" aria-hidden="true"></div>
+    <p data-t="intro1"></p>
+    <p data-t="intro2"></p>
+  </section>
+
+  <form id="card" novalidate>
+    <!-- Bots fill this in; people never see it. -->
+    <div class="hp" aria-hidden="true"><label>Non compilare<input type="text" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
+
+    <fieldset>
+      <legend data-t="legContact"></legend>
+      <div class="field">
+        <label class="flabel" for="nome" data-t="fName"></label>
+        <input id="nome" name="Nome" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label class="flabel" for="email" data-t="fEmail"></label>
+        <input id="email" name="Email" type="email" autocomplete="email" inputmode="email">
+      </div>
+      <div class="field">
+        <label class="flabel" for="tel" data-t="fPhone"></label>
+        <input id="tel" name="Telefono" type="tel" autocomplete="tel" inputmode="tel">
+        <p class="hint" data-t="fPhoneHint"></p>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend data-t="legHow"></legend>
+      <ul class="opts two">
+        <li><label class="opt"><input type="radio" name="Contatto preferito" value="Email"><span data-t="howEmail"></span></label></li>
+        <li><label class="opt"><input type="radio" name="Contatto preferito" value="Telefonata"><span data-t="howCall"></span></label></li>
+        <li><label class="opt"><input type="radio" name="Contatto preferito" value="WhatsApp"><span>WhatsApp</span></label></li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend data-t="legMore"></legend>
+      <ul class="opts" id="interests"></ul>
+    </fieldset>
+
+    <fieldset>
+      <legend data-t="legPray"></legend>
+      <label class="flabel" for="pray" style="position:absolute;left:-9999px">Preghiera</label>
+      <textarea id="pray" name="Preghiera" data-ph="prayPh"></textarea>
+    </fieldset>
+
+    <button class="send" type="submit" data-t="send"></button>
+    <p class="formnote" data-t="privacy"></p>
+    <div class="err" id="err" hidden></div>
+  </form>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <p style="margin:0">
+      <a href="/"><span data-t="navHome"></span></a>
+      <a href="/chi-siamo"><span data-t="navAbout"></span></a>
+      <a href="/manna/">Manna per Oggi</a>
+    </p>
+    <div class="social-row"></div>
+    <div class="foot-brand">
+      <img src="/logo.png" alt="">
+      <span><strong>Chiesa EverGrace</strong> · Missione Sicilia · Messina<br>
+      <a href="https://www.ggwo.org/" target="_blank" rel="noopener" data-t="affil" style="color:var(--muted)"></a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/social.js?v=5"></script>
+<script>
+(function(){
+  /* ------------------------------------------------------------------
+     WHERE THE CARD IS SENT.
+     Paste the Web3Forms access key between the quotes and every card
+     arrives as an email. Until then the form opens a pre-filled email
+     in the visitor's own mail app instead, so nothing is ever lost.
+     ------------------------------------------------------------------ */
+  var ACCESS_KEY = "";
+
+  var T = {
+    it: {
+      navHome:"Home", navFirst:"Prima volta qui?", navAbout:"Chi siamo",
+      kicker:"Benvenuto a Chiesa EverGrace",
+      title:"È la tua <em>prima volta</em> qui?",
+      lede:"Siamo felici di averti con noi. Raccontaci qualcosa di te — ti rispondiamo noi.",
+      intro1:"Grazie di cuore per essere qui con noi alla Chiesa EverGrace. Siamo felici di averti con noi!",
+      intro2:"Se desideri conoscere meglio la fede cristiana o far parte della nostra famiglia di chiesa, compila questo biglietto di benvenuto. Lo leggiamo noi, e nessun altro.",
+      legContact:"I tuoi contatti",
+      fName:"Nome", fEmail:"Email", fPhone:"Telefono",
+      fPhoneHint:"Lascia almeno un recapito, così possiamo risponderti.",
+      legHow:"Come preferisci essere contattato/a?",
+      howEmail:"Email", howCall:"Telefonata",
+      legMore:"Mi piacerebbe saperne di più su:",
+      legPray:"Come possiamo pregare per te?",
+      prayPh:"Scrivi liberamente. Pregheremo per te questa settimana.",
+      send:"Invia il biglietto",
+      privacy:"Usiamo questi dati solo per risponderti. Non li condividiamo con nessuno.",
+      errSend:"Non siamo riusciti a inviare il biglietto. Riprova, oppure scrivici direttamente.",
+      errName:"Scrivi il tuo nome, così sappiamo come chiamarti.",
+      errReach:"Lascia un'email o un numero di telefono, così possiamo risponderti.",
+      sending:"Invio in corso…",
+      affil:"Chiesa EverGrace è affiliata a Greater Grace",
+      interests:[
+        "Cosa significa seguire Gesù",
+        "Vorrei che pregaste per me",
+        "Famiglie e bambini",
+        "Studio biblico in casa",
+        "Evangelizzazione a Messina",
+        "Gruppi di comunità (giovani, coppie, donne, uomini ecc.)"
+      ]
+    },
+    en: {
+      navHome:"Home", navFirst:"First time here?", navAbout:"About us",
+      kicker:"Welcome to Chiesa EverGrace",
+      title:"Is this your <em>first time</em> here?",
+      lede:"We're glad you're with us. Tell us a little about yourself — we'll get back to you ourselves.",
+      intro1:"Thank you for being here with us at Chiesa EverGrace. We're glad to have you!",
+      intro2:"If you'd like to know more about the Christian faith, or to be part of our church family, fill in this welcome card. We read it, and no one else.",
+      legContact:"Your details",
+      fName:"Name", fEmail:"Email", fPhone:"Phone",
+      fPhoneHint:"Leave at least one way to reach you, so we can write back.",
+      legHow:"How would you rather we reach you?",
+      howEmail:"Email", howCall:"Phone call",
+      legMore:"I'd like to know more about:",
+      legPray:"How can we pray for you?",
+      prayPh:"Write freely. We'll pray for you this week.",
+      send:"Send the card",
+      privacy:"We use these details only to reply to you. We don't share them with anyone.",
+      errSend:"We couldn't send your card. Please try again, or write to us directly.",
+      errName:"Please tell us your name, so we know what to call you.",
+      errReach:"Please leave an email or a phone number, so we can write back.",
+      sending:"Sending…",
+      affil:"Chiesa EverGrace is an affiliate of Greater Grace",
+      interests:[
+        "What it means to follow Jesus",
+        "I'd like you to pray for me",
+        "Families and children",
+        "Bible study in homes",
+        "Outreach in Messina",
+        "Community groups (young people, couples, women, men…)"
+      ]
+    }
+  };
+
+  var lang = "it";
+  try { var s = localStorage.getItem("manna-lang"); if (s === "en" || s === "it") lang = s; } catch(e) {}
+
+  var form = document.getElementById("card"),
+      errBox = document.getElementById("err"),
+      list = document.getElementById("interests");
+
+  function interests(){
+    // The value sent is always the Italian wording, so the email reads the
+    // same whichever language the visitor filled the card in.
+    list.innerHTML = T.it.interests.map(function(itVal, i){
+      return '<li><label class="opt"><input type="checkbox" name="Interessi" value="' +
+             itVal.replace(/"/g,"&quot;") + '"><span>' + T[lang].interests[i] + '</span></label></li>';
+    }).join("");
+  }
+
+  function apply(){
+    var t = T[lang];
+    document.documentElement.lang = lang;
+    document.title = t.navFirst + " · Chiesa EverGrace";
+    document.querySelectorAll("[data-t]").forEach(function(el){ if (t[el.dataset.t]) el.textContent = t[el.dataset.t]; });
+    document.querySelectorAll("[data-th]").forEach(function(el){ if (t[el.dataset.th]) el.innerHTML = t[el.dataset.th]; });
+    document.querySelectorAll("[data-ph]").forEach(function(el){ if (t[el.dataset.ph]) el.placeholder = t[el.dataset.ph]; });
+    document.querySelectorAll(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.l === lang)); });
+    interests();
+  }
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click", function(){
+      lang = b.dataset.l;
+      try { localStorage.setItem("manna-lang", lang); } catch(e) {}
+      apply();
+    });
+  });
+  apply();
+
+  function collect(){
+    var d = new FormData(form), out = {};
+    d.forEach(function(v, k){
+      if (!String(v).trim()) return;
+      out[k] = out[k] ? out[k] + ", " + v : v;
+    });
+    return out;
+  }
+
+  form.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    errBox.hidden = true;
+    var t = T[lang], data = collect();
+
+    if (form.botcheck.value) return;                       // a bot filled the hidden field
+    if (!data["Nome"]) { fail(t.errName); return; }
+    if (!data["Email"] && !data["Telefono"]) { fail(t.errReach); return; }
+
+    var btn = form.querySelector(".send");
+    btn.disabled = true; btn.textContent = t.sending;
+
+    if (!ACCESS_KEY) { mailFallback(data); return; }
+
+    data.access_key = ACCESS_KEY;
+    data.subject = "Biglietto di benvenuto — " + data["Nome"];
+    data.from_name = "Chiesa EverGrace";
+    data["Lingua del modulo"] = lang === "en" ? "English" : "Italiano";
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(data)
+    }).then(function(r){ return r.json(); })
+      .then(function(j){
+        if (j && j.success) { location.href = "/grazie?n=" + encodeURIComponent(data["Nome"]); }
+        else { fail(t.errSend); }
+      })
+      .catch(function(){ fail(t.errSend); });
+
+    function fail(msg){
+      errBox.textContent = msg; errBox.hidden = false;
+      btn.disabled = false; btn.textContent = t.send;
+      errBox.scrollIntoView({ block:"center", behavior:"smooth" });
+    }
+  });
+
+  function fail(msg){
+    var btn = form.querySelector(".send");
+    errBox.textContent = msg; errBox.hidden = false;
+    btn.disabled = false; btn.textContent = T[lang].send;
+    errBox.scrollIntoView({ block:"center", behavior:"smooth" });
+  }
+
+  // No access key yet: hand the card to the visitor's own mail app.
+  function mailFallback(data){
+    var body = Object.keys(data).filter(function(k){ return k !== "botcheck"; })
+      .map(function(k){ return k + ": " + data[k]; }).join("\n");
+    var to = (window.EG && window.EG.email) || "";
+    location.href = "mailto:" + to +
+      "?subject=" + encodeURIComponent("Biglietto di benvenuto — " + data["Nome"]) +
+      "&body=" + encodeURIComponent(body);
+    setTimeout(function(){ location.href = "/grazie?n=" + encodeURIComponent(data["Nome"]); }, 1200);
+  }
+})();
+</script>
+
+</body>
+</html>

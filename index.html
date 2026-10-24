@@ -149,6 +149,16 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
 .social-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0}
 .social-row .soc{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--rule);border-radius:50%;color:var(--muted);text-decoration:none}
 .social-row .soc:hover{color:var(--accent);border-color:var(--accent)}
+.firstcall{display:flex;gap:22px;align-items:center;flex-wrap:wrap;background:var(--panel);
+  border-radius:12px;padding:24px 26px;border-left:4px solid var(--accent2);text-decoration:none}
+.firstcall-txt{flex:1 1 300px;min-width:0}
+.firstcall small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.firstcall b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(23px,4vw,29px);line-height:1.2;color:var(--ink)}
+.firstcall p{margin:8px 0 0;font-family:var(--sans);font-size:15px;line-height:1.55;color:var(--muted)}
+.firstcall .go{flex:none;font-family:var(--sans);font-size:14px;font-weight:500;letter-spacing:.06em;
+  background:var(--accent2);color:#F3EFE7;border-radius:999px;padding:13px 24px;min-height:48px;display:inline-flex;align-items:center}
+.firstcall:hover b{color:var(--accent)}
+.firstcall:hover .go{filter:brightness(1.08)}
 @media (prefers-reduced-motion:no-preference){.hero-in,section{animation:in .4s ease-out}@keyframes in{from{opacity:.45;transform:translateY(5px)}to{opacity:1;transform:none}}}
 </style>
 </head>
@@ -163,6 +173,7 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
     </a>
     <nav class="menu">
       <a href="/" aria-current="page" data-t="navHome"></a>
+      <a href="/benvenuto" data-t="navFirst"></a>
       <a href="/chi-siamo" data-t="navAbout"></a>
       <a href="/media" data-t="navMedia"></a>
       <a href="/manna/">Manna per Oggi</a>
@@ -189,6 +200,18 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
 <p class="count" data-count hidden></p>
 
 <main>
+  <!-- ============ FIRST-TIME CALLOUT ============ -->
+  <section class="wrap">
+    <a class="firstcall" href="/benvenuto">
+      <span class="firstcall-txt">
+        <small data-t="fcKicker"></small>
+        <b data-t="fcTitle"></b>
+        <p data-t="fcText"></p>
+      </span>
+      <span class="go" data-t="fcBtn"></span>
+    </a>
+  </section>
+
   <!-- ============ QUICK TILES ============ -->
   <section class="wrap">
     <h2 data-t="tilesH"></h2>
@@ -304,7 +327,10 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
 
   var T = {
     it: {
-      navHome:"Home", navAbout:"Chi siamo", navMedia:"Media", ctaTop:"Vieni domenica",
+      navHome:"Home", navFirst:"Prima volta qui?", navAbout:"Chi siamo", navMedia:"Media", ctaTop:"Vieni domenica",
+      fcKicker:"Prima volta qui?", fcTitle:"Vieni a conoscerci",
+      fcText:"Raccontaci qualcosa di te e come possiamo pregare per te. Lo leggiamo noi, e ti rispondiamo noi.",
+      fcBtn:"Compila il biglietto →",
       heroKicker:"Chiesa cristiana evangelica · Messina",
       heroTitle:"La grazia<br><em>cambia tutto.</em>",
       heroSub:"Bilingue, italiano e inglese. Ogni domenica alle 10:30, al Cinema Apollo di Messina.",
@@ -337,7 +363,10 @@ footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:0}
       copy:"© 2026 Chiesa EverGrace"
     },
     en: {
-      navHome:"Home", navAbout:"About us", navMedia:"Media", ctaTop:"Join us Sunday",
+      navHome:"Home", navFirst:"First time here?", navAbout:"About us", navMedia:"Media", ctaTop:"Join us Sunday",
+      fcKicker:"First time here?", fcTitle:"Come and meet us",
+      fcText:"Tell us a little about yourself and how we can pray for you. We read it, and we write back ourselves.",
+      fcBtn:"Fill in the card →",
       heroKicker:"Christian church · Messina · Sicily",
       heroTitle:"Grace Changes<br><em>Everything.</em>",
       heroSub:"Bilingual, Italian and English. Every Sunday at 10:30, at the Cinema Apollo in Messina.",

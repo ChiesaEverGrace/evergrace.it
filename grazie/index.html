@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Grazie! · Chiesa EverGrace</title>
+<meta name="description" content="Grazie — abbiamo ricevuto il tuo biglietto di benvenuto. Chiesa EverGrace, Messina.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chiesa EverGrace">
+<meta property="og:title" content="Grazie! · Chiesa EverGrace">
+<meta property="og:url" content="https://evergrace.it/grazie">
+<meta property="og:image" content="https://evergrace.it/og-image.png">
+<meta property="og:locale" content="it_IT">
+<link rel="canonical" href="https://evergrace.it/grazie">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500&family=Marcellus&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#F3EFE7; --panel:#E8E1D3; --ink:#23272A; --muted:#6C6F72; --rule:#D9D2C4;
+  --accent:#2B5870; --accent2:#2F5B48; --on-accent:#F3EFE7;
+  --display:"Marcellus","Trajan Pro",Georgia,serif;
+  --serif:"Lora",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#161B1F; --panel:#1E252A; --ink:#E7E3DB; --muted:#9A9FA4; --rule:#313A41;
+  --accent:#89B5CD; --accent2:#7DB197; --on-accent:#10181D; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.7;
+  text-align:center;padding:40px 20px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+.mark{width:96px;height:96px;border-radius:50%;box-shadow:0 0 0 6px var(--panel)}
+.tick{width:64px;height:64px;margin:0 auto 22px;border-radius:50%;background:var(--accent2);display:grid;place-items:center}
+.tick svg{width:32px;height:32px;stroke:#F3EFE7;stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.kicker{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:26px 0 0}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(36px,8vw,56px);line-height:1.05;margin:12px 0 0;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent2)}
+p.lede{margin:18px auto 0;max-width:30em;font-size:18px}
+p.sub{margin:14px auto 0;max-width:30em;color:var(--muted);font-size:17px}
+.verse{font-style:italic;color:var(--muted);font-size:16px;margin:26px auto 0;max-width:30em}
+.verse span{display:block;font-style:normal;font-family:var(--sans);font-size:13px;letter-spacing:.06em;margin-top:6px}
+
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px}
+.btn{font-family:var(--sans);font-size:14px;font-weight:500;letter-spacing:.06em;text-decoration:none;
+  padding:13px 24px;border-radius:999px;min-height:48px;display:inline-flex;align-items:center;border:1px solid transparent}
+.btn-solid{background:var(--accent2);color:#F3EFE7}
+.btn-ghost{border-color:var(--rule);color:var(--ink)}
+.btn:hover{filter:brightness(1.07)}
+
+.going{font-family:var(--sans);font-size:13px;color:var(--muted);margin:30px 0 0;display:flex;align-items:center;gap:10px;justify-content:center}
+.bar{width:140px;height:3px;border-radius:999px;background:var(--rule);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .25s linear}
+.stop{font:inherit;background:none;border:0;color:var(--accent);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:4px}
+@media (prefers-reduced-motion:no-preference){body>*{animation:in .5s ease-out}@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+
+<img class="mark" src="/logo.png" alt="">
+
+<div>
+  <p class="kicker" data-t="kicker"></p>
+  <h1 data-th="title"></h1>
+  <p class="lede" data-t="lede"></p>
+  <p class="sub" data-t="sub"></p>
+  <p class="verse" data-t="verse"><span data-t="verseRef"></span></p>
+</div>
+
+<div class="btns">
+  <a class="btn btn-solid" href="/chi-siamo" data-t="btnAbout"></a>
+  <a class="btn btn-ghost" href="/" data-t="btnHome"></a>
+</div>
+
+<p class="going" id="going" hidden>
+  <span data-t="going"></span>
+  <span class="bar" aria-hidden="true"><i id="fill"></i></span>
+  <button class="stop" id="stop" data-t="stay"></button>
+</p>
+
+<script>
+(function(){
+  var T = {
+    it: {
+      kicker:"Biglietto ricevuto",
+      title:"Grazie, <em>di cuore</em>.",
+      lede:"Abbiamo ricevuto il tuo biglietto, e lo leggiamo noi — nessun altro.",
+      sub:"Ti risponderemo presto, e se ci hai chiesto una preghiera, pregheremo per te questa settimana. Sei il benvenuto da noi, sempre.",
+      verse:"«Chi viene a me, non lo caccerò fuori.»",
+      verseRef:"Giovanni 6:37",
+      btnAbout:"Scopri chi siamo →",
+      btnHome:"Torna alla home",
+      going:"Ti portiamo a conoscerci…",
+      stay:"Resta qui"
+    },
+    en: {
+      kicker:"Card received",
+      title:"Thank you, <em>truly</em>.",
+      lede:"We have your card, and we read it ourselves — no one else.",
+      sub:"We'll be in touch soon, and if you asked us to pray, we'll pray for you this week. You are always welcome here.",
+      verse:"“Whoever comes to me I will never cast out.”",
+      verseRef:"John 6:37",
+      btnAbout:"See who we are →",
+      btnHome:"Back to home",
+      going:"Taking you to meet us…",
+      stay:"Stay here"
+    }
+  };
+
+  var lang = "it";
+  try { var s = localStorage.getItem("manna-lang"); if (s === "en" || s === "it") lang = s; } catch(e) {}
+  var t = T[lang];
+
+  // Greet them by name when the card carried one.
+  var name = "";
+  try {
+    name = (new URLSearchParams(location.search).get("n") || "").replace(/[<>]/g, "").trim().slice(0, 40);
+  } catch(e) {}
+  if (name) {
+    t = Object.create(t);
+    t.title = lang === "en" ? "Thank you, <em>" + name + "</em>." : "Grazie, <em>" + name + "</em>.";
+  }
+
+  document.documentElement.lang = lang;
+  document.title = (lang === "en" ? "Thank you!" : "Grazie!") + " · Chiesa EverGrace";
+  document.querySelectorAll("[data-t]").forEach(function(el){ if (t[el.dataset.t]) el.textContent = t[el.dataset.t]; });
+  document.querySelectorAll("[data-th]").forEach(function(el){ if (t[el.dataset.th]) el.innerHTML = t[el.dataset.th]; });
+
+  /* Then on to Chi siamo — slowly, with the progress visible and a way out,
+     so nobody is yanked off the page mid-sentence. */
+  var WAIT = 9000;
+  var going = document.getElementById("going"), fill = document.getElementById("fill"), stop = document.getElementById("stop");
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  going.hidden = false;
+  var start = Date.now(), timer = setInterval(tick, 200);
+  function tick(){
+    var p = Math.min(1, (Date.now() - start) / WAIT);
+    fill.style.width = (p * 100) + "%";
+    if (p >= 1) { clearInterval(timer); location.href = "/chi-siamo"; }
+  }
+  stop.addEventListener("click", function(){ clearInterval(timer); going.hidden = true; });
+})();
+</script>
+
+</body>
+</html>
