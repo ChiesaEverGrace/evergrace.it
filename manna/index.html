@@ -167,7 +167,7 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
     <a href="/chi-siamo"><span class="nav-it">Chi siamo</span><span class="nav-en">About us</span></a>
     <a href="/media">Media</a>
     <a href="/news">News</a>
-    <a href="/manna/" aria-current="page">Manna per Oggi</a>
+    <a href="/manna/" aria-current="page"><span class="nav-it">Manna per Oggi</span><span class="nav-en">Manna For Today</span></a>
   </nav>
   <main id="view"></main>
   <footer id="foot"></footer>
@@ -177,7 +177,7 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--rule);font-fa
 <script>
 const POSTS = [
 { id:"manna-2026-11-02", date:"2026-11-02", place:{it:"Messina, Sicilia",en:"Messina, Sicily"},
-  it:{title:"Seguire i morti?", body:`Questo fine settimana tutta la Sicilia è andata al cimitero per Ognissanti e per _il giorno dei morti_. La gente ha portato i crisantemi, ha acceso le candele e ha pulito il marmo. Le pasticcerie vendono le _ossa di morto_. I bambini hanno festeggiato Halloween.
+  it:{title:"Seguire i morti?", body:`Questo fine settimana tutta l'Italia è andata al cimitero per Ognissanti e per _il giorno dei morti_. La gente ha portato i crisantemi, ha acceso le candele e ha pulito il marmo. Persino le pasticcerie vendono le _ossa di morto_. I bambini hanno festeggiato Halloween.
 
 Ossa. Ovunque, questa settimana, ossa.
 
@@ -217,7 +217,7 @@ Io ho i miei su una tomba vuota.
 E tu, che cosa scegli?
 
 REF: Is 53:5 · Lc 24:5–6 · Ap 1:18`},
-  en:{title:"Following the Dead?", body:`This weekend all of Sicily went to the cemetery for Ognissanti and _il giorno dei morti_. People brought chrysanthemums, lit candles and wiped the marble. The bakeries sell _ossa di morto_, "bones of the dead." Kids celebrated Halloween.
+  en:{title:"Following the Dead?", body:`This weekend all of Italy went to the cemetery for Ognissanti and _il giorno dei morti_. People brought chrysanthemums, lit candles and wiped the marble. Even the bakeries sell _ossa di morto_, "bones of the dead." Kids celebrated Halloween.
 
 Bones. Everywhere this week, bones.
 
@@ -1414,7 +1414,7 @@ const UI = {
   it:{series:"Manna per Oggi", lede:"Una parola dalla Scrittura per il cammino di ogni giorno.", credit:"Riflessioni di P. Christian Moore.", verse:"«Io vi raccomando a Dio e alla parola della sua grazia, che è in grado di edificarvi e di darvi l'eredità in mezzo a tutti i santificati.»", verseRef:"Atti 20:32",
       back:"Tutti i devozionali", by:"P. Christian Moore", prev:"Precedente", next:"Successivo", refs:"RIF.", missing:"Devozionale non trovato.",
       foot:"<strong>Chiesa EverGrace</strong> · Missione Sicilia · Messina", looks:"Anteprima stile", waTitle:"Restiamo in contatto", waText:"Inquadra il codice per entrare nel nostro gruppo WhatsApp e ricevere più informazioni.", waLink:"Sei sul telefono? Apri il gruppo →", bookKicker:"Un libretto per te", bookTitle:"Lascia semplicemente che Dio ti ami", bookDesc:"Un breve libretto sull'amore di Dio, che ci ha amati quando eravamo ancora peccatori.", bookCta:"Leggi il libretto →", bookCredit:"Titolo originale: Just Let God Love You, © 1996 Grace Publications, ministero di Greater Grace World Outreach. Traduzione italiana di Chiesa EverGrace.", bookOrig:"Originale inglese (PDF)", waAlt:"Codice QR WhatsApp di Chiesa EverGrace", count:n=>n+" devozionali", locale:"it-IT"},
-  en:{series:"Manna for Today", lede:"A word from Scripture for the daily walk.", credit:"Reflections by P. Christian Moore.", verse:"“I commend you to God and to the word of His grace, which is able to build you up and give you an inheritance among all those who are sanctified.”", verseRef:"Acts 20:32",
+  en:{series:"Manna For Today", lede:"A word from Scripture for the daily walk.", credit:"Reflections by P. Christian Moore.", verse:"“I commend you to God and to the word of His grace, which is able to build you up and give you an inheritance among all those who are sanctified.”", verseRef:"Acts 20:32",
       back:"All devotionals", by:"P. Christian Moore", prev:"Previous", next:"Next", refs:"REF", missing:"Devotional not found.",
       foot:"<strong>Chiesa EverGrace</strong> · Missione Sicilia · Messina", looks:"Style preview", waTitle:"Stay in touch", waText:"Scan the code to join our WhatsApp group for more information.", waLink:"On your phone? Open the group →", bookKicker:"A booklet for you", bookTitle:"Just Let God Love You", bookDesc:"A short booklet on the love of God, who loved us while we were still sinners.", bookCta:"Read the booklet →", bookCredit:"Original title: Just Let God Love You, © 1996 Grace Publications, a ministry of Greater Grace World Outreach. Italian translation by Chiesa EverGrace.", bookOrig:"English original (PDF)", waAlt:"Chiesa EverGrace WhatsApp QR code", count:n=>n+" devotionals", locale:"en-GB"}
 };
@@ -1475,7 +1475,7 @@ const look = "pietra";
 
 function showIndex(){
   const t = UI[lang];
-  document.title = "Manna per Oggi";
+  document.title = t.series;
   view.innerHTML = `<header class="mast"><div class="mast-in"><div class="mast-text"><p class="kicker">Chiesa EverGrace · Messina</p><h1>${t.series.replace(/(Oggi|Today)$/,"<em>$1</em>")}</h1><p class="lede">${esc(t.lede)}</p><p class="credit">${esc(t.credit)}</p><p class="verse">${esc(t.verse)}<span class="verse-ref">${esc(t.verseRef)}</span></p></div></div><div class="persiana" aria-hidden="true"></div></header>
   <ul class="list">${POSTS.map(p => `<li><a class="entry" href="#${p.id}"><div class="when">${fmtDate(p.date)}${p.place ? `<span>${esc(p.place[lang].split(",")[0])}</span>` : ""}</div><div class="body"><h2>${inline(p[lang].title)}</h2><p>${esc(excerpt(p[lang].body))}</p></div></a></li>`).join("")}</ul>`;
 }
@@ -1484,7 +1484,7 @@ function showPost(id){
   const t = UI[lang], i = POSTS.findIndex(p => p.id === id);
   if (i < 0) { view.innerHTML = `<article><p>${t.missing}</p><p><a href="#">${t.back}</a></p></article>`; return; }
   const p = POSTS[i], r = render(p[lang].body), newer = POSTS[i-1], older = POSTS[i+1];
-  document.title = p[lang].title + " · Manna per Oggi";
+  document.title = p[lang].title + " · " + t.series;
   view.innerHTML = `<article>
     <p class="eyebrow">${t.series} · ${fmtDate(p.date)}${p.place ? " · "+esc(p.place[lang]) : ""}</p>
     <h1>${inline(p[lang].title)}</h1>
@@ -1505,7 +1505,7 @@ const BOOKLET_EN_PDF = "https://drcarlhstevens.com/wp-content/uploads/2022/08/Ju
 
 function showBooklet(){
   const t = UI[lang], r = render(BOOKLET);
-  document.title = "Lascia semplicemente che Dio ti ami · Manna per Oggi";
+  document.title = "Lascia semplicemente che Dio ti ami · " + t.series;
   view.innerHTML = `<article>
     <p class="eyebrow">${t.bookKicker} · Pastore Carl H. Stevens</p>
     <h1>${lang === "en" ? "Just Let God Love You" : "Lascia semplicemente che Dio ti ami"}</h1>
