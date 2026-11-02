@@ -44,6 +44,21 @@
   // Let the pages share one set of addresses for their own buttons too.
   window.EG = { links: LINKS, email: ADDR, renderSocial: render };
 
+  // Visitor stats: count clicks on WhatsApp, Instagram, YouTube, Facebook and email links
+  // as GoatCounter events (shown as "click-whatsapp" etc. on the dashboard).
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || a.hasAttribute("data-goatcounter-click")) return;
+    var h = a.href, k = null;
+    if (/chat\.whatsapp\.com|wa\.me/.test(h)) k = "whatsapp";
+    else if (/instagram\.com/.test(h)) k = "instagram";
+    else if (/youtube\.com|youtu\.be/.test(h)) k = "youtube";
+    else if (/facebook\.com/.test(h)) k = "facebook";
+    else if (/^mailto:/.test(h)) k = "email";
+    if (k && window.goatcounter && window.goatcounter.count)
+      window.goatcounter.count({ path: "click-" + k, title: location.pathname, event: true });
+  }, true);
+
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", render);
   else render();
 })();
