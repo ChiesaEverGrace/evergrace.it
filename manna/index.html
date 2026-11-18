@@ -82,7 +82,7 @@ html[lang="it"] .nav-en,html[lang="en"] .nav-it{display:none}
 .mast .lede{margin:16px 0 0;color:var(--muted);font-size:17px;max-width:34em}
 :root[data-look="pietra"] .mast .lede{margin-inline:auto}
 .credit{color:var(--muted);font-size:16px;margin:6px 0 0}
-.bloglink{margin:10px 0 0;font-size:15px}.bloglink a{color:var(--accent,inherit);text-underline-offset:3px}
+.bloglink{margin:0 0 -22px;padding:44px 0 0;text-align:center;font-size:16px}.bloglink a{color:var(--accent,inherit);text-underline-offset:3px}
 .verse-ref{display:block;font-style:normal;font-family:var(--sans);font-size:13px;letter-spacing:.06em;margin-top:4px}
 .verse{font-style:italic;color:var(--muted);font-size:16px;margin:10px 0 0}
 .persiana{height:44px;background:repeating-linear-gradient(180deg,var(--accent) 0 5px,color-mix(in srgb,var(--accent) 72%,#000) 5px 7px,var(--panel) 7px 10px);border-top:4px solid var(--accent)}
@@ -1710,8 +1710,8 @@ const look = "pietra";
 function showIndex(){
   const t = UI[lang];
   document.title = t.series;
-  view.innerHTML = `<header class="mast"><div class="mast-in"><div class="mast-text"><p class="kicker">Chiesa EverGrace · Messina</p><h1>${t.series.replace(/(Oggi|Today)$/,"<em>$1</em>")}</h1><p class="lede">${esc(t.lede)}</p><p class="credit">${esc(t.credit)}</p><p class="bloglink"><a href="https://christianhmoore.org/blog/" target="_blank" rel="noopener">${esc(t.blog)}</a></p><p class="verse">${esc(t.verse)}<span class="verse-ref">${esc(t.verseRef)}</span></p></div></div><div class="persiana" aria-hidden="true"></div></header>
-  <ul class="list">${POSTS.map(p => `<li><a class="entry" href="#${p.id}"><div class="when">${fmtDate(p.date)}${p.place ? `<span>${esc(p.place[lang].split(",")[0])}</span>` : ""}</div><div class="body"><h2>${inline(p[lang].title)}</h2><p>${esc(excerpt(p[lang].body))}</p></div></a></li>`).join("")}</ul>`;
+  view.innerHTML = `<header class="mast"><div class="mast-in"><div class="mast-text"><p class="kicker">Chiesa EverGrace · Messina</p><h1>${t.series.replace(/(Oggi|Today)$/,"<em>$1</em>")}</h1><p class="lede">${esc(t.lede)}</p><p class="credit">${esc(t.credit)}</p><p class="verse">${esc(t.verse)}<span class="verse-ref">${esc(t.verseRef)}</span></p></div></div><div class="persiana" aria-hidden="true"></div></header>
+  <ul class="list">${POSTS.map(p => `<li><a class="entry" href="#${p.id}"><div class="when">${fmtDate(p.date)}${p.place ? `<span>${esc(p.place[lang].split(",")[0])}</span>` : ""}</div><div class="body"><h2>${inline(p[lang].title)}</h2><p>${esc(excerpt(p[lang].body))}</p></div></a></li>`).join("")}</ul><p class="bloglink"><a href="https://christianhmoore.org/blog/" target="_blank" rel="noopener">${esc(t.blog)}</a></p>`;
 }
 
 function showPost(id){
